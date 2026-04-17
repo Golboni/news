@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Atlantean Chronicle — April 9–12, 2026</title>
+<title>The Atlantean Chronicle — April 13–17, 2026</title>
+<meta name="description" content="Vol. I No. 3 — Weekly intelligence brief from Atlantis ITS. Where the signal rises above the noise.">
+<meta property="og:title" content="The Atlantean Chronicle — Vol. I No. 3">
+<meta property="og:description" content="Israel-Lebanon ceasefire takes effect. Stanford AI Index confirms Anthropic leads. Polymarket Intelligence debuts. Nova-Alpha goes live.">
+<meta property="og:type" content="article">
 <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -28,6 +32,34 @@
     padding: 40px 48px;
     box-shadow: 4px 4px 20px rgba(0,0,0,0.4), inset 0 0 80px rgba(180,160,120,0.15);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  }
+
+  /* ACTION BAR */
+  .action-bar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+  .action-btn {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border: 1px solid var(--muted);
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .action-btn:hover {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
   }
 
   /* MASTHEAD */
@@ -89,10 +121,7 @@
     gap: 20px;
     flex-wrap: wrap;
   }
-  .wire-label {
-    color: #c8a060;
-    margin-right: 8px;
-  }
+  .wire-label { color: #c8a060; margin-right: 8px; }
 
   /* RULES */
   .rule-single { border-top: 1px solid var(--rule); margin: 10px 0; }
@@ -215,6 +244,53 @@
   .digest-item p { font-size: 11.5px; margin-bottom: 0; }
   .digest-item p::first-letter { all: unset; }
 
+  /* POLYMARKET BOX */
+  .polymarket-box {
+    background: #0f1923;
+    color: #d0dbe8;
+    padding: 22px 26px;
+    margin-top: 14px;
+  }
+  .polymarket-box .section-label { color: #4ecdc4; }
+  .polymarket-box h2.hed { color: #e8f0f8; }
+  .polymarket-box h3.hed { color: #e8f0f8; font-size: 15px; }
+  .polymarket-box p { color: #a0b8c8; font-size: 11.5px; }
+  .polymarket-box p::first-letter { all: unset; }
+  .polymarket-box .deck { color: #6890a0; }
+  .polymarket-box .rule-single { border-color: #1a3040; }
+  .poly-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .poly-card {
+    border: 1px solid #1a3040;
+    padding: 12px 14px;
+    background: #152030;
+  }
+  .poly-card .poly-q {
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    color: #e8f0f8;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+  .poly-card .poly-odds {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #4ecdc4;
+  }
+  .poly-card .poly-vol {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 9px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #5a7888;
+    margin-top: 4px;
+  }
+
   /* ATLANTIS BOX */
   .atlantis-box {
     background: #1a1008;
@@ -270,6 +346,23 @@
   .badge-green { background: #1a4a1a; color: #80e080; }
   .badge-amber { background: #4a3a0a; color: #e0b040; }
   .badge-red   { background: #4a1a1a; color: #e08080; }
+  .badge-cyan  { background: #0a3a4a; color: #80e0e0; }
+
+  /* SUBSCRIBE BAR */
+  .subscribe-bar {
+    background: var(--accent);
+    color: #f5f0e8;
+    text-align: center;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .subscribe-bar a { color: #f0d090; text-decoration: none; }
+  .subscribe-bar a:hover { text-decoration: underline; }
 
   /* FOOTER */
   .footer {
@@ -284,29 +377,50 @@
     color: var(--muted);
   }
 
+  @media print {
+    body { background: white; }
+    .page { box-shadow: none; margin: 0; padding: 20px 30px; max-width: 100%; }
+    .action-bar, .subscribe-bar { display: none; }
+    .polymarket-box, .atlantis-box { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+
   @media (max-width: 700px) {
     .col-2, .col-3, .col-3-wide, .col-2-wide { grid-template-columns: 1fr; }
     .col-divider, .col-divider-r { border: none; padding: 0; }
     .chronicle-title { font-size: 44px; }
-    .atlantis-status { grid-template-columns: 1fr 1fr; }
+    .atlantis-status, .poly-grid { grid-template-columns: 1fr 1fr; }
+    .page { padding: 20px 16px; }
   }
 </style>
 </head>
 <body>
 <div class="page">
 
+  <!-- SUBSCRIBE BAR -->
+  <div class="subscribe-bar">
+    The Atlantean Chronicle — Weekly Intelligence from <a href="https://atlantisits.co">Atlantis ITS</a> &nbsp;·&nbsp; <a href="mailto:shane@atlantisits.co?subject=Subscribe%20to%20The%20Atlantean%20Chronicle">Subscribe</a>
+  </div>
+
+  <!-- ACTION BUTTONS -->
+  <div class="action-bar">
+    <button class="action-btn" onclick="window.print()">🖨️ Print</button>
+    <a class="action-btn" href="mailto:?subject=The%20Atlantean%20Chronicle%20-%20Vol.%20I%20No.%203&body=Check%20out%20this%20week%27s%20intelligence%20brief%20from%20Atlantis%20ITS%3A%20https%3A%2F%2Fnews.atlantisits.co">📧 Email</a>
+    <a class="action-btn" href="https://twitter.com/intent/tweet?text=The%20Atlantean%20Chronicle%20Vol.%20I%20No.%203%20%E2%80%94%20Weekly%20intelligence%20brief%20from%20%40AtlantisITS&url=https%3A%2F%2Fnews.atlantisits.co" target="_blank">𝕏 Share</a>
+    <a class="action-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fnews.atlantisits.co" target="_blank">in Share</a>
+  </div>
+
   <!-- MASTHEAD -->
   <div class="masthead">
     <div class="dateline-top">
-      <span>Vol. I &nbsp;·&nbsp; No. 2</span>
+      <span>Vol. I &nbsp;·&nbsp; No. 3</span>
       <span>atlantisits.ai</span>
-      <span>Week of April 9–12, 2026</span>
+      <span>Week of April 13–17, 2026</span>
     </div>
     <div class="chronicle-title">The Atlantean Chronicle</div>
     <div class="tagline">"Where the signal rises above the noise"</div>
     <div class="dateline-bottom">
-      <span>Gainesville, Georgia</span>
-      <span>Sunday, April 12, 2026</span>
+      <span>Metro Atlanta, Georgia</span>
+      <span>Friday, April 17, 2026</span>
       <span>Atlantis ITS</span>
     </div>
   </div>
@@ -314,69 +428,62 @@
   <!-- WIRE -->
   <div class="wire-bar">
     <span><span class="wire-label">Wire</span></span>
-    <span>US-Iran Islamabad talks collapse without deal — Vance cites nuclear impasse</span>
+    <span>Israel-Lebanon 10-day ceasefire takes effect — celebratory gunfire in Beirut</span>
     <span>·</span>
-    <span>Strait of Hormuz still restricted — US Navy begins mine-clearing ops</span>
+    <span>Stanford AI Index 2026: Anthropic leads global model rankings</span>
     <span>·</span>
-    <span>Anthropic launches Project Glasswing — Claude Mythos finds thousands of zero-days</span>
+    <span>ICE Director Lyons resigns — Democrat wins key House special election</span>
   </div>
   <div class="rule-thick"></div>
 
   <!-- TOP STORY: FULL WIDTH -->
   <div class="section-label">Middle East · Lead Story</div>
-  <h1 class="hed">Peace Talks Collapse in Islamabad After 21 Hours; Vance Leaves Without Deal</h1>
-  <div class="deck">US and Iran hold first direct face-to-face negotiations in decades — nuclear enrichment remains the unbridgeable divide; ceasefire hangs by a thread as Strait still closed</div>
-  <div class="byline">Compiled from wire reports &nbsp;·&nbsp; April 12, 2026</div>
+  <h1 class="hed">Israel and Lebanon Begin 10-Day Ceasefire; Trump Invites Leaders to White House</h1>
+  <div class="deck">Celebratory gunfire erupts in Beirut as truce takes hold — but Lebanese army reports Israeli violations within hours; displaced families stream south despite warnings</div>
+  <div class="byline">Compiled from wire reports &nbsp;·&nbsp; April 17, 2026</div>
   <div class="rule-single"></div>
 
   <div class="col-3-wide">
     <div class="col-divider-r">
-      <p>The most significant direct diplomatic engagement between Washington and Tehran in decades ended without agreement Sunday after more than 21 hours of talks in Islamabad, Pakistan. Vice President JD Vance, leading the US delegation alongside special envoy Steve Witkoff and Jared Kushner, departed Pakistan empty-handed after Iran declined to commit to abandoning its nuclear program. "The bad news is that we have not reached an agreement," Vance told reporters before boarding Air Force Two. "And I think that's bad news for Iran much more than it's bad news for the US."</p>
-      <p>The talks — brokered by Pakistan, which has emerged as a surprising diplomatic linchpin — were described by Al Jazeera's correspondent as "neither a breakthrough nor a breakdown." Both sides agreed to keep talking through Pakistani intermediaries, and Pakistan's Foreign Minister Ishaq Dar urged both parties to uphold the fragile two-week ceasefire announced April 8th.</p>
-      <p>The core sticking point was stark: Washington demanded an affirmative commitment that Iran will not seek nuclear weapons or the tools to rapidly achieve them. Iran presented its own "red lines," including war reparations, release of frozen assets, and a halt to Israeli strikes on Hezbollah in Lebanon — a conflict the US insists falls outside the ceasefire framework.</p>
+      <p>After six weeks of devastating conflict between Israel and Hezbollah that has claimed more than 2,196 lives in Lebanon alone, a 10-day ceasefire took effect at midnight Beirut time on Thursday. The truce, brokered by President Trump following direct talks between Israeli and Lebanese officials in Washington, prompted immediate celebrations across Lebanon, with residents firing celebratory rounds into the night sky over Beirut.</p>
+      <p class="no-drop">Trump announced the ceasefire on Truth Social, calling it a "historic day" and extending invitations to both Israeli Prime Minister Netanyahu and Lebanese President Aoun for what he described as "the first meaningful talks" between the nations since 1983. Iran's Foreign Ministry welcomed the development, calling it part of a broader agreement to pause the regional conflict.</p>
+      <p class="no-drop">However, the fragility of the arrangement was immediately apparent. The Lebanese army reported multiple Israeli violations within hours of the truce taking effect, including shelling of several southern villages. Netanyahu stated that Israeli forces would remain in a "security zone" inside Lebanese territory and would not withdraw.</p>
     </div>
     <div class="col-divider-r">
-      <p class="no-drop">Complicating the talks, Iran acknowledged it had lost track of mines it planted in the Strait of Hormuz, leaving it unable to fully open the waterway even if it wanted to. The US Navy began mine-clearing operations, with two destroyers transiting the strait — the first such passage since the war began. Iranian state media disputed the military's account.</p>
+      <p class="no-drop">The broader Iran conflict, now in its seventh week, remains unresolved. US Defense Secretary Pete Hegseth warned that American forces are "maximally postured to restart combat operations" if Iran rejects a deal, while noting that Tehran's motivation to maintain the ceasefire appears high. The US naval blockade of the Strait of Hormuz continues, with a South Korean oil tanker completing the first crude shipment through the waterway since hostilities began.</p>
       <div class="pullquote">
-        "We're sweeping the strait. Whether we make a deal or not makes no difference to me."
-        <cite>— President Trump, speaking to reporters during overnight talks</cite>
+        "Our forces are maximally postured to restart combat operations should this new Iranian regime choose poorly."
+        <cite>— Pete Hegseth, US Defense Secretary, April 16</cite>
       </div>
-      <p class="no-drop">The war, now in its seventh week, has killed at least 3,000 people in Iran, over 2,000 in Lebanon, and 23 in Israel. Iran's grip on the strait has effectively severed Persian Gulf oil exports from global markets, sending crude above $94 a barrel even after the ceasefire announcement triggered a brief rally.</p>
+      <p class="no-drop">Tensions between Washington and Rome escalated further this week. Trump threatened to withhold US defense commitments after Italian PM Meloni called his fury at Pope Leo XIV's antiwar stance "unacceptable." Trump fired back demanding the Pope acknowledge Iran's killing of protesters.</p>
     </div>
     <div>
-      <p class="no-drop">Israel pressed ahead with strikes in Lebanon, killing over 300 people on the day the ceasefire was announced — the deadliest single day in Lebanon since the war began. Netanyahu authorized direct negotiations with Beirut, with Israeli-Lebanese talks expected to begin Tuesday in Washington. Iran and Pakistan say Lebanon is included in any ceasefire; Israel and the US say it is not.</p>
-      <p class="no-drop">Pope Leo XIV, in his strongest statement yet, denounced what he called the "delusion of omnipotence" driving the conflict and called on all parties to halt fighting. Egyptian, Saudi, Qatari, and Chinese officials were present in Islamabad in indirect facilitation roles.</p>
-      <p class="no-drop">Pakistan will continue its mediation role in the days ahead. The two-week ceasefire clock is running. If it expires without a framework, analysts warn a return to active strikes is likely.</p>
+      <p class="no-drop">Former Israeli diplomat Alon Pinkas dismissed Netanyahu's characterization of the deal, telling Al Jazeera that the PM was "coerced" by Trump and had "failed in his stated objective of disarming Hezbollah." Opposition leader Yair Lapid also criticized the agreement.</p>
+      <p class="no-drop">Hezbollah politician Ali Fayyad said the group would approach the ceasefire with "caution and vigilance," warning that the next phase is "thorny and fraught with pitfalls." Displaced families have already begun streaming southward despite official warnings to wait until the ceasefire's durability is confirmed.</p>
+      <p class="no-drop">Oil prices remain elevated above $110 per barrel, with Polymarket traders assigning 60% probability that Strait of Hormuz traffic normalizes by end of April.</p>
     </div>
   </div>
 
   <div class="rule-double"></div>
 
-  <!-- ROW 2: INTERNATIONAL + MARKETS -->
+  <!-- ROW 2: DOMESTIC + ECONOMY -->
   <div class="col-2">
     <div class="col-divider-r">
-      <div class="section-label">International</div>
-      <h2 class="hed">Hungary Votes; Orbán Faces First Real Test</h2>
-      <div class="deck">Challenger Péter Magyar taps voter anger over corruption and rule of law; results signal direction for NATO and European politics</div>
-      <div class="byline">April 12, 2026</div>
-      <p>Hungary went to the polls Sunday in what observers called the most consequential election in Viktor Orbán's 16 years in power. Challenger Péter Magyar, a political newcomer who emerged from obscurity a year ago, mounted an unexpectedly strong campaign tapping widespread frustration over corruption, democratic erosion, and the country's isolationist stance within the EU and NATO. Results were expected late Sunday.</p>
-      <p class="no-drop">North Korea separately confirmed its recent weapons testing spree involved ballistic missiles armed with cluster-bomb warheads, escalating concerns about Pyongyang's ambitions as it continues to expand nuclear-capable forces. Peru, meanwhile, heads to a presidential election with 35 candidates and its ninth leader in a decade, amid endemic corruption and rising crime.</p>
-
-      <div class="rule-single"></div>
-      <h3 class="hed">Artemis II Nears Reentry; NASA Optimistic</h3>
-      <p class="no-drop">NASA expressed optimism ahead of the Artemis II reentry as the four-person crew — Reid Wiseman, Victor Glover, Christina Koch, and Canadian astronaut Jeremy Hansen — completed their 10-day lunar flyby mission. If successful, they will have traveled farther from Earth than any humans since Apollo 17 in 1972.</p>
+      <div class="section-label">Domestic</div>
+      <h2 class="hed">Democrat Wins Key House Special Election; ICE Director Resigns</h2>
+      <div class="deck">Sanders/AOC-backed candidate takes seat as GOP fails to expand razor-thin majority; acting ICE chief departs amid enforcement controversies</div>
+      <div class="byline">April 17, 2026</div>
+      <p>A progressive Democrat backed by Senators Bernie Sanders and Alexandria Ocasio-Cortez won a closely watched special House election this week, denying Republicans a chance to expand their fragile majority. The result continues a pattern of Democratic overperformance in special elections during the Trump administration.</p>
+      <p class="no-drop">Separately, acting ICE Director Todd Lyons submitted his resignation to DHS Secretary Markwayne Mullin, effective May 31. The departure comes amid ongoing controversies over enforcement operations, including a Minnesota case where an ICE agent was charged with pointing a weapon at civilians during a surge operation. Trump also nominated a former Coast Guard physician as CDC chief after months of interim leadership at the agency.</p>
     </div>
     <div>
       <div class="section-label">Markets & Economy</div>
-      <h2 class="hed">Ceasefire Bounce Fades as Hormuz Stays Shut</h2>
-      <div class="deck">Brief surge on truce news reversed as Strait remains closed; oil stays above $94; food inflation fears mount globally</div>
-      <p>Markets surged when Trump announced the two-week ceasefire on April 8th — the S&P 500 rose 2.5%, the Dow jumped 1,325 points, and the Nasdaq gained 2.8%. South Korea's Kospi surged 6.9% and Germany's DAX rose 5.1%. But the gains have been tempered by the reality that the Strait of Hormuz remains effectively closed, with fewer than a dozen ships transiting since the ceasefire compared to over 100 per day before the war.</p>
-      <p class="no-drop">The IMF, World Bank, and World Food Programme jointly warned that the conflict has triggered a major energy shock that could drive up global food prices, particularly in low-income import-dependent nations. UK farm running costs are already 7% higher year-over-year; the Food and Drink Federation expects UK food inflation to hit at least 9% before year-end.</p>
-      <div class="pullquote">
-        "The Strait of Hormuz is not open. Access is being restricted, conditioned, and controlled."
-        <cite>— Sultan Al Jaber, UAE Industry Minister, April 9</cite>
-      </div>
-      <p class="no-drop">Polymarket flagged suspicious trading in the days before Trump's ceasefire announcement, with one wallet turning a $72,000 bet into $200,000 profit and another wallet created just 12 minutes before the post netting an estimated $48,500.</p>
+      <h2 class="hed">Oil Holds Above $110; Fed Expected to Stand Pat</h2>
+      <div class="deck">WTI crude stays elevated amid Hormuz uncertainty; prediction markets show 83% probability of no rate change</div>
+      <div class="byline">April 17, 2026</div>
+      <p>Crude oil prices remain stubbornly above $110 per barrel despite the Lebanon ceasefire, reflecting persistent uncertainty over Strait of Hormuz access. While the first commercial vessels have begun transiting the waterway, volumes remain a fraction of pre-war levels.</p>
+      <p class="no-drop">The Federal Reserve is widely expected to hold rates steady at its April meeting, with Polymarket traders assigning 83% probability to no change. The triple-pause scenario (no cuts through June) sits at 88% probability, suggesting rate relief remains distant despite the energy-driven inflation pressures facing consumers and small businesses.</p>
+      <p class="no-drop">NVIDIA continues to dominate AI hardware markets, with Polymarket pricing a 71% chance it remains the largest company by market cap. Global AI investment reached $581.7 billion in 2025, up 130% year-over-year.</p>
     </div>
   </div>
 
@@ -386,73 +493,111 @@
   <div class="section-label">Technology & AI</div>
   <div class="col-3">
     <div class="col-divider-r">
-      <h3 class="hed">Anthropic Unveils 'Project Glasswing' — Claude Mythos Finds Thousands of Zero-Days</h3>
-      <div class="byline">April 10, 2026</div>
-      <p>Anthropic disclosed that its unreleased Claude Mythos Preview model has reached a level of offensive cybersecurity capability that surpasses nearly all human experts — and instead of quietly shelving the finding, the company launched an industry-wide defense initiative around it. The model autonomously discovered thousands of zero-day vulnerabilities, including a 27-year-old flaw in OpenBSD and a 16-year-old bug in FFmpeg that automated testing tools had checked five million times without catching.</p>
-      <p class="no-drop">Project Glasswing launched with 12 partners including AWS, Apple, Broadcom, Cisco, CrowdStrike, and Google. Anthropic is providing up to $100 million in usage credits and coordinating with government stakeholders. The initiative reflects growing concern about AI-powered cyberattacks and aims to build defenses before similar capabilities become widely available.</p>
+      <h3 class="hed">Stanford AI Index 2026: Anthropic Leads, China Closes Gap, Benchmarks Crumble</h3>
+      <div class="byline">April 14, 2026</div>
+      <p>Stanford University released its 2026 AI Index, a 400-page assessment confirming that AI capabilities continue accelerating while benchmarks designed to measure them are "saturating in months." Anthropic holds the top position in Arena Elo rankings at 1,503, followed closely by xAI (1,495), Google (1,494), and OpenAI (1,481). Chinese labs DeepSeek and Alibaba trail by modest margins.</p>
+      <p class="no-drop">Enterprise spending data from Ramp shows Anthropic captured 37% of trackable AI spending in Q1 2026, surpassing OpenAI's 33%. Generative AI tools reached 53% global adoption within three years, faster than the personal computer or internet. However, transparency is declining sharply — the Foundation Model Transparency Index dropped from 58 to 40 as labs stopped disclosing training details.</p>
     </div>
     <div class="col-divider-r">
-      <h3 class="hed">OpenAI Eyes Ads, Projects $100B Annual Revenue by 2030</h3>
-      <div class="byline">April 10, 2026</div>
-      <p>OpenAI is projecting $2.5 billion in advertising revenue in 2026 and up to $100 billion annually by 2030, according to internal projections. An early ad pilot generated $100 million in annualized revenue within two months. The company has surpassed $25 billion in annualized revenue overall and is reportedly taking early steps toward a public listing, potentially as soon as late 2026.</p>
-      <p class="no-drop">Meanwhile, rival Anthropic is approaching $19 billion in annualized revenue. Sam Altman also outlined a sweeping policy framework calling for a public wealth fund funded partly by AI companies, taxes on automated labor, incentives for a four-day workweek, and universal access to AI tools — positioning OpenAI as both a leading developer and a proactive voice in shaping global AI regulation.</p>
+      <h3 class="hed">AI Solves PhD Physics, Fails at Reading Clocks; Employment Impact Emerges</h3>
+      <div class="byline">April 15, 2026</div>
+      <p>The Stanford report revealed a stark paradox: frontier models now solve 50% of Humanity's Last Exam questions (up from 8.8% a year ago), yet the top model reads analog clocks correctly only 50.1% of the time versus 90.1% for humans. Cybersecurity benchmarks saw AI jump from 15% to 93% success in a single year.</p>
+      <p class="no-drop">The employment picture is beginning to clarify. Software developer employment for ages 22-25 has fallen nearly 20% since 2022, with AI appearing to play a significant role alongside broader economic factors. A McKinsey survey found one-third of organizations expect AI to shrink their workforce this year, particularly in service operations and software engineering.</p>
     </div>
     <div>
-      <h3 class="hed">Shopify Launches Claude Code Toolkit; LM Studio Acquires Mobile AI Startup</h3>
-      <div class="byline">April 10, 2026</div>
-      <p>Shopify launched an official AI Toolkit with native support for Claude Code, Cursor, Codex, and VS Code, enabling AI agents to build apps and manage stores directly via Shopify's API and CLI. The move signals a broader shift toward agentic commerce automation.</p>
-      <p class="no-drop">LM Studio acquired Locally AI, bringing mobile-native on-device AI to its platform with plans to ship seamless cross-device model and agent experiences. Anthropic's Model Context Protocol crossed 97 million installs in March 2026 — the Linux Foundation announced it will take MCP under open governance, cementing its status as foundational AI infrastructure. CoreWeave and Meta also expanded their partnership to a $21 billion agreement through 2032.</p>
+      <h3 class="hed">Turkey School Shootings Shock Nation; Singer Arrested for Teen Murder</h3>
+      <div class="byline">April 16, 2026</div>
+      <p>Turkey was shaken by two mass shootings at schools in consecutive days, including an attack by a 14-year-old that killed nine people at a middle school. The incidents prompted immediate calls for policy reform in a country that has historically experienced few such events.</p>
+      <p class="no-drop">In the US, singer D4vd was arrested on suspicion of murdering a missing 14-year-old girl after her decomposing body was found in the trunk of his Tesla. The arrest shocked the music industry, with the artist having gained a substantial following on streaming platforms.</p>
+      <p class="no-drop">A federal judge ordered a halt to above-ground construction of a controversial White House ballroom project amid ongoing litigation over its legality and environmental impact.</p>
     </div>
   </div>
 
   <div class="rule-double"></div>
 
-  <!-- ROW 4: LOCAL + AFRICA DIGEST -->
+  <!-- ROW 4: LOCAL + WORLD DIGEST -->
   <div class="col-2-wide">
     <div class="col-divider-r">
-      <div class="section-label">Local & National</div>
-      <h3 class="hed">Wisconsin Court Election Extends Democratic Judicial Streak</h3>
-      <p>Wisconsin voters elected a new justice to the state Supreme Court this week, expanding the liberal-leaning majority. The result continues a pattern of Democratic overperformance in judicial and special elections since President Trump took office, signaling ongoing voter engagement in off-cycle contests with significant downstream implications for abortion rights, redistricting, and election law in the state.</p>
-      <p class="no-drop">Democrats in Washington convened on Thursday — despite Congress not being in formal session until April 13 — to force a vote on a war powers resolution to end the Iran war. Republicans declined to take it up. Melania Trump gave a surprise six-minute statement addressing her name in the Epstein files, telling reporters she had no close relationship with Epstein. Trump told a reporter he was unaware she planned to speak; a source told CNN he had been alerted beforehand.</p>
+      <div class="section-label">Local & Metro Atlanta</div>
+      <h3 class="hed">Hall County Administrator Steps Down; New Courthouse Updates; Food Truck Fridays Return</h3>
+      <p>Zach Propes announced his resignation as Hall County Administrator after more than a decade of service, marking a significant leadership transition for the county. Commission Chair Gibbs provided updates on the new Hall County courthouse project, which continues to advance through planning phases.</p>
+      <p class="no-drop">In community news, the 2026 Food Truck Friday season kicks off today at Lake Lanier Olympic Park, running 5-9 PM on the third Friday of each month through summer. Chattahoochee Golf Club remains closed through September for major infrastructure renovations. Brenau University announced the new Jacobs College of Business and Media.</p>
 
       <div class="rule-single"></div>
       <div class="section-label">Hall County Digest</div>
       <div class="digest-item">
-        <strong>Gainesville — April 12, 2026</strong>
-        <p>Lake Lanier water levels remain a concern as summer approaches; the Army Corps of Engineers is monitoring the situation ahead of peak demand season.</p>
+        <strong>Lyman Hall Day — April 17</strong>
+        <p>Hall County celebrates its namesake, Dr. Lyman Hall, one of three Georgians who signed the Declaration of Independence and governor from 1783.</p>
       </div>
       <div class="digest-item">
-        <strong>North Georgia Fire Danger</strong>
-        <p>Burn permits remain suspended across North Georgia due to elevated fire danger. Residents are advised to avoid any open burning until conditions improve.</p>
+        <strong>Lake Lanier Water Levels</strong>
+        <p>Army Corps of Engineers continues monitoring Lake Lanier levels ahead of peak summer demand. Water management remains a regional concern.</p>
       </div>
       <div class="digest-item">
-        <strong>GHS Baseball — Win Streak at 10</strong>
-        <p>Gainesville High School baseball extended its win streak to ten games after rallying past Chattahoochee as the regular season enters its final stretch.</p>
+        <strong>North Hall, Banks Stay Alive for Region Titles</strong>
+        <p>High school baseball action heated up this week with North Hall and Banks County keeping their region title hopes alive. Dawson, Flowery Branch, and Gainesville also posted region victories.</p>
       </div>
     </div>
     <div>
       <div class="section-label">World in Brief</div>
       <div class="digest-item">
-        <strong>Russia — Memorial Declared Extremist</strong>
-        <p>Russia's Supreme Court ruled the Memorial organisation, which documents Soviet-era repression, is extremist — effectively criminalising historical advocacy that contradicts state narratives.</p>
+        <strong>Iran — Nuclear Dust Claim</strong>
+        <p>Trump claimed Iran agreed to surrender its "nuclear dust," though the assertion remains unverified by independent sources. Negotiations for a second round of US-Iran talks continue through Pakistani intermediaries.</p>
       </div>
       <div class="digest-item">
-        <strong>Afghanistan-Pakistan Talks</strong>
-        <p>China brokered peace talks between Afghanistan and Pakistan, with both sides agreeing not to escalate and acknowledging terrorism as the core issue in their relationship.</p>
+        <strong>South Korea — First Oil Since Blockade</strong>
+        <p>President Lee Jae Myung celebrated a South Korean oil tanker successfully exiting the Red Sea, marking the first crude shipment to the nation since the Hormuz blockade began.</p>
       </div>
       <div class="digest-item">
-        <strong>Nigeria — 90 Killed in Borno Violence</strong>
-        <p>A wave of jihadist attacks in northeastern Nigeria's Borno state killed at least 90 people across multiple villages, including a brigadier general killed in a base assault.</p>
+        <strong>Trump vs. Pope Leo XIV</strong>
+        <p>The rift between Washington and the Vatican deepened as Trump demanded Pope Leo acknowledge Iranian atrocities. Italian PM Meloni defended the Pope, calling Trump's rhetoric "unacceptable."</p>
       </div>
       <div class="digest-item">
-        <strong>Iraq — New President Elected</strong>
-        <p>Iraq's parliament elected Nizar Amidi as president, five months after elections failed to produce a decisive majority amid continued political fragmentation.</p>
-      </div>
-      <div class="digest-item">
-        <strong>Pope Leo XIV on War</strong>
-        <p>In his strongest remarks yet, Pope Leo XIV denounced the "delusion of omnipotence" fueling the Iran conflict and demanded political leaders negotiate peace.</p>
+        <strong>AI Environmental Toll</strong>
+        <p>Stanford's report revealed that training a single large model (Grok 4) produced CO2 equivalent to 17,000 cars driving for a year. AI data center capacity reached 29.6 gigawatts globally.</p>
       </div>
     </div>
+  </div>
+
+  <div class="rule-double"></div>
+
+  <!-- POLYMARKET INTELLIGENCE -->
+  <div class="polymarket-box">
+    <div class="section-label">Polymarket Intelligence — What Smart Money Thinks</div>
+    <h2 class="hed">Prediction Market Wire</h2>
+    <div class="deck">Real-time, money-weighted forecasts from the world's largest prediction market &nbsp;·&nbsp; Data as of April 17, 2026</div>
+    <div class="rule-single"></div>
+
+    <div class="poly-grid">
+      <div class="poly-card">
+        <div class="poly-q">Iran agrees to surrender enriched uranium by April 30?</div>
+        <div class="poly-odds">68% Yes</div>
+        <div class="poly-vol">High conviction · Shifted from 50%</div>
+      </div>
+      <div class="poly-card">
+        <div class="poly-q">Strait of Hormuz traffic returns to normal by end of April?</div>
+        <div class="poly-odds">60% Yes</div>
+        <div class="poly-vol">Shifted from 43% · $30M+ volume</div>
+      </div>
+      <div class="poly-card">
+        <div class="poly-q">Fed holds rates steady in April?</div>
+        <div class="poly-odds">83% Yes</div>
+        <div class="poly-vol">$4M volume · Triple-pause at 88%</div>
+      </div>
+      <div class="poly-card">
+        <div class="poly-q">Best AI model end of April: Anthropic?</div>
+        <div class="poly-odds">66% Yes</div>
+        <div class="poly-vol">Google at 30% · $334K volume</div>
+      </div>
+      <div class="poly-card">
+        <div class="poly-q">Largest company by market cap: NVIDIA?</div>
+        <div class="poly-odds">71% Yes</div>
+        <div class="poly-vol">Alphabet at 13% · $2M volume</div>
+      </div>
+    </div>
+
+    <div class="rule-single" style="margin-top:16px;"></div>
+    <p style="font-size:10px; color:#5a7888; text-align:center;">Polymarket data is informational only — not investment advice. Predictions reflect crowd-sourced financial conviction, not guaranteed outcomes. Source: polymarket.com</p>
   </div>
 
   <div class="rule-double"></div>
@@ -461,52 +606,52 @@
   <div class="atlantis-box">
     <div class="section-label">Atlantis ITS — Internal Briefing</div>
     <h2 class="hed">Atlantis ITS Weekly Status</h2>
-    <div class="deck">atlantisits.ai &nbsp;·&nbsp; Sprint resuming April 13, 2026 &nbsp;·&nbsp; v16 current · v17 pending · Post-Italy sprint begins</div>
+    <div class="deck">atlantisits.ai &nbsp;·&nbsp; Week of April 13–17, 2026 &nbsp;·&nbsp; v18 current · Nova-Alpha online · Phase 1 Discord complete</div>
     <div class="rule-single"></div>
 
     <div class="atlantis-status">
       <div class="status-card">
-        <div class="label">Italy Trip</div>
-        <div class="val">Shane, Maranda, & Gabe returned April 11, 2026 ✈️ — Florence + Rome completed. Kenji retrieved from Custom Canine. 90 lbs, happy, well-socialized.</div>
+        <div class="label">Nova-Alpha</div>
+        <div class="val">Desktop build <span class="badge badge-green">Complete</span> — hostname Trunks, 32GB RAM, 12GB VRAM. Hybrid WSL/Windows architecture. Command Center live with real-time telemetry. PM2 persistence confirmed.</div>
       </div>
       <div class="status-card">
-        <div class="label">Atlantis Council</div>
-        <div class="val">Rule Zero & Silence Protocol <span class="badge badge-green">Verified</span> — Gemi passed live test March 29. Google AI Studio 2.0 build complete. Jimmy delivered full 6-agent UI.</div>
-      </div>
-      <div class="status-card">
-        <div class="label">Base44 Roundtable</div>
-        <div class="val">Take 6 <span class="badge badge-green">Success</span> — All three agents (Mercy, Ozzy, Scout) fired correctly. API model string fixed. No identity bleed detected.</div>
+        <div class="label">V18 Memory</div>
+        <div class="val">ATLANTIS_AI_MEMORY v18 <span class="badge badge-green">Compiled</span> — 1,047 lines. Squad surface naming convention established. Weekly cadence locked: Wed memory, Fri Chronicle.</div>
       </div>
       <div class="status-card">
         <div class="label">Discord Phase 1</div>
-        <div class="val">Ozzy <span class="badge badge-green">Live</span> &nbsp; Scout <span class="badge badge-green">Live</span> &nbsp; Mercy <span class="badge badge-amber">Pending</span> — Mercy bot is next priority. SOP-003 converted to MkDocs.</div>
+        <div class="val">Ozzy <span class="badge badge-green">Live</span> &nbsp; Scout <span class="badge badge-green">Live</span> &nbsp; Mercy <span class="badge badge-green">Live</span> — Phase 1 complete. Jimmy + Cooper bots next. Scout needs Developer Portal rebrand.</div>
       </div>
       <div class="status-card">
-        <div class="label">IceBreakrz</div>
-        <div class="val">Scripture, Riddles, Quotes, Puns, Icebreakers added. App differentiation vs Pop Off finalized. <span class="badge badge-amber">Vercel deploy pending</span></div>
+        <div class="label">Documentation</div>
+        <div class="val">SOP-004 <span class="badge badge-green">Done</span> HT-011 <span class="badge badge-green">Done</span> HT-012 <span class="badge badge-green">Done</span> HT-013 <span class="badge badge-green">Done</span> — Nova build, quick access, workspace structure, PM2 reference all completed.</div>
       </div>
       <div class="status-card">
-        <div class="label">Post-Italy Queue</div>
-        <div class="val">VPS spin-up · Mercy Discord bot · Desktop resurrection · Nova Phase 1 · Local RAG (Ollama + ChromaDB) · Notion shared brain · v17 memory file</div>
+        <div class="label">AI Squad Expansion</div>
+        <div class="val">Cowork-Ozzy <span class="badge badge-amber">Testing</span> Codex-Mercy <span class="badge badge-green">Active</span> — Multi-surface agent naming convention deployed. Trust ladder defined. <span class="badge badge-cyan">New</span></div>
+      </div>
+      <div class="status-card">
+        <div class="label">VPS Target</div>
+        <div class="val">First week of May 2026. Evaluating Hetzner + Hostinger. Phase 1: Forgejo, n8n, NTFY. Desktop POC stack proving architecture before deployment.</div>
       </div>
     </div>
 
     <div class="rule-single" style="margin-top:18px;"></div>
     <div class="col-2">
       <div>
-        <h3 class="hed">Travel App Born in Rome</h3>
-        <p>While in Florence and Rome, Shane built "Shane's Italian Phrases Guide v3.0" — a 36-phrase HTML voice toolkit using the Web Speech API with tap-to-pronounce functionality. Field tested by family; kids used it successfully with locals. Architecture is language-agnostic and deployable as a travel product line under travel.atlantisits.co.</p>
+        <h3 class="hed">Horizon Board Ships as Internal Task Engine</h3>
+        <p>The Horizon Board — a time-horizon task management app built by Opus-Ozzy — shipped this week as both a Claude artifact and a standalone Next.js component. The board organizes work into four priority columns (48 Hours, This Week, This Month, Backlog) with drag-and-drop, project color coding, and persistent storage. It doubles as a briefing engine for the Chronicle. Deployed at v1.1 with safe-clear and undo features.</p>
       </div>
       <div>
-        <h3 class="hed">Nova Architecture Defined</h3>
-        <p>Full squad consensus reached on Nova's on-prem stack: Piper TTS for system/ops voice, ElevenLabs for marketing content, Llama 8B via Ollama on the resurrected local PC (32GB RAM, 12GB VRAM), OpenClaw as orchestration layer. Phased build plan locked. Dad's PC designated as Atlantis Local AI Node post-resurrection.</p>
+        <h3 class="hed">Prediction Market Intelligence Initiative Launches</h3>
+        <p>Atlantis ITS began integrating Polymarket data as a strategic intelligence feed this week, led by Scout's research and analysis. A Discord bot is being developed to surface the top 4-5 prediction market signals on a regular cadence. The initiative positions Atlantis as a forward-looking intelligence platform rather than a conventional IT consultancy. First Polymarket Intelligence section debuts in this issue.</p>
       </div>
     </div>
   </div>
 
   <!-- FOOTER -->
   <div class="footer">
-    The Atlantean Chronicle &nbsp;·&nbsp; Published by Atlantis ITS &nbsp;·&nbsp; Metro Atlanta &nbsp;·&nbsp; April 10, 2026 &nbsp;·&nbsp; Vol. I · No. 2<br>
+    The Atlantean Chronicle &nbsp;·&nbsp; Published by <a href="https://atlantisits.co" style="color:var(--muted);text-decoration:none;">Atlantis ITS</a> &nbsp;·&nbsp; Metro Atlanta &nbsp;·&nbsp; April 17, 2026 &nbsp;·&nbsp; Vol. I · No. 3<br>
     <span style="font-size:8px; letter-spacing:1px;">"We don't predict the future. We automate it." — Atlantis AI Automations</span>
   </div>
 
