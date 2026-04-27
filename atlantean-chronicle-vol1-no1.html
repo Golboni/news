@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Atlantean Chronicle — March 27 – April 2, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --paper: #f5f0e8;
+    --paper-dark: #e8e0d0;
+    --rule: #2a2a2a;
+    --rule-light: #c0b8a8;
+    --accent: #0e4f6e;
+    --accent-warm: #8b0000;
+    --atlantis-accent: #0e6e4f;
+    --col-gap: 24px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #d4cfc5;
+    color: var(--ink);
+    font-family: 'Libre Baskerville', Georgia, serif;
+    line-height: 1.6;
+    padding: 20px;
+  }
+
+  .newspaper {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 40px 48px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.25);
+    position: relative;
+  }
+
+  .newspaper::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    text-align: center;
+    border-bottom: 4px double var(--rule);
+    padding-bottom: 12px;
+    margin-bottom: 6px;
+    position: relative;
+  }
+
+  .masthead-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 8px;
+  }
+
+  .masthead h1 {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    color: var(--ink);
+  }
+
+  .masthead-motto {
+    font-style: italic;
+    font-size: 12px;
+    color: #777;
+    margin-top: 4px;
+    letter-spacing: 1px;
+  }
+
+  .dateline-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 20px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555;
+  }
+
+  /* SECTION DIVIDERS */
+  .section-divider {
+    text-align: center;
+    margin: 28px 0 20px;
+    position: relative;
+  }
+
+  .section-divider::before {
+    content: '';
+    position: absolute;
+    left: 0; right: 0;
+    top: 50%;
+    height: 2px;
+    background: var(--rule);
+  }
+
+  .section-divider span {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 900;
+    background: var(--paper);
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .section-divider.intl span { color: var(--accent); }
+  .section-divider.local span { color: var(--accent-warm); }
+  .section-divider.atlantis span { color: var(--atlantis-accent); }
+
+  /* SECTION LABELS */
+  .section-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    display: inline-block;
+    padding-bottom: 2px;
+  }
+
+  .section-label.intl { color: var(--accent); border-bottom: 2px solid var(--accent); }
+  .section-label.local { color: var(--accent-warm); border-bottom: 2px solid var(--accent-warm); }
+  .section-label.atlantis { color: var(--atlantis-accent); border-bottom: 2px solid var(--atlantis-accent); }
+
+  /* LEAD STORY */
+  .lead-story {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--rule);
+    margin-bottom: 0;
+  }
+
+  .lead-story .headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 1.08;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+  }
+
+  .lead-story .subheadline {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-weight: 400;
+    font-style: italic;
+    color: #444;
+    line-height: 1.3;
+    max-width: 750px;
+    margin: 0 auto 16px;
+  }
+
+  .lead-story .body {
+    column-count: 3;
+    column-gap: var(--col-gap);
+    column-rule: 1px solid var(--rule-light);
+    text-align: justify;
+    font-size: 14.5px;
+    line-height: 1.65;
+    hyphens: auto;
+  }
+
+  .lead-story .body p { margin-bottom: 12px; }
+  .lead-story .body p:first-child::first-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 58px;
+    float: left;
+    line-height: 0.8;
+    padding-right: 8px;
+    padding-top: 4px;
+    font-weight: 900;
+    color: var(--accent);
+  }
+
+  /* COLUMN GRIDS */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border-bottom: 2px solid var(--rule);
+    margin-bottom: 0;
+  }
+
+  .two-col .col { padding: 20px 24px; }
+  .two-col .col:first-child { border-right: 1px solid var(--rule-light); padding-left: 0; }
+  .two-col .col:last-child { padding-right: 0; }
+
+  .col .headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 8px;
+  }
+
+  .col .subheadline {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.35;
+  }
+
+  .col .body {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .col .body p { margin-bottom: 10px; }
+
+  .three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    margin-bottom: 0;
+    border-bottom: 2px solid var(--rule);
+  }
+
+  .three-col .col { padding: 20px 20px; }
+  .three-col .col:first-child { padding-left: 0; }
+  .three-col .col:last-child { padding-right: 0; }
+  .three-col .col:not(:last-child) { border-right: 1px solid var(--rule-light); }
+  .three-col .col .headline { font-size: 22px; }
+
+  /* PULLQUOTE */
+  .pullquote {
+    border-top: 3px solid var(--ink);
+    border-bottom: 3px solid var(--ink);
+    padding: 16px 20px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .pullquote p {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+
+  .pullquote .attribution {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 8px;
+    color: #666;
+    font-style: normal;
+  }
+
+  /* BULLETIN BAR */
+  .bulletin-bar {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .bulletin-bar .label {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    white-space: nowrap;
+    color: #fff;
+    background: var(--accent);
+    padding: 4px 10px;
+  }
+
+  .bulletin-bar .items { font-size: 13px; line-height: 1.5; }
+  .bulletin-bar .items span { margin-right: 16px; }
+  .bulletin-bar .items span::after { content: ' ◆'; color: #5a9ab5; margin-left: 16px; }
+  .bulletin-bar .items span:last-child::after { content: ''; }
+
+  /* BYLINE */
+  .byline {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+
+  /* ATLANTIS ITS SPECIAL SECTION */
+  .atlantis-section {
+    background: linear-gradient(135deg, #f0f7f4 0%, #edf5f0 100%);
+    border: 2px solid var(--atlantis-accent);
+    padding: 24px 28px;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .atlantis-section::after {
+    content: '';
+    position: absolute;
+    top: 4px; left: 4px; right: 4px; bottom: 4px;
+    border: 1px solid rgba(14,110,79,0.15);
+    pointer-events: none;
+  }
+
+  .atlantis-header {
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  .atlantis-header h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--atlantis-accent);
+    letter-spacing: 1px;
+  }
+
+  .atlantis-header .tagline {
+    font-size: 12px;
+    font-style: italic;
+    color: #5a8a74;
+    margin-top: 2px;
+    letter-spacing: 0.5px;
+  }
+
+  .atlantis-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .atlantis-card {
+    border-left: 3px solid var(--atlantis-accent);
+    padding-left: 14px;
+  }
+
+  .atlantis-card .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--atlantis-accent);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .atlantis-card .card-body {
+    font-size: 13px;
+    line-height: 1.55;
+    color: #333;
+  }
+
+  .atlantis-card .card-body .status {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 3px;
+    margin-top: 4px;
+  }
+
+  .status.done { background: #d4edda; color: #155724; }
+  .status.pending { background: #fff3cd; color: #856404; }
+  .status.active { background: #cce5ff; color: #004085; }
+  .status.queued { background: #e2e3e5; color: #383d41; }
+
+  .squad-roster {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--atlantis-accent);
+    text-align: center;
+  }
+
+  .squad-roster .roster-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--atlantis-accent);
+    margin-bottom: 8px;
+  }
+
+  .squad-agents {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .agent-badge {
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .agent-badge .name {
+    font-weight: 700;
+    color: var(--atlantis-accent);
+  }
+
+  .agent-badge .role {
+    font-size: 10px;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    padding-top: 16px;
+    margin-top: 24px;
+    font-size: 11px;
+    color: #888;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .footer .ornament {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: var(--rule-light);
+  }
+
+  /* LOCAL DIGEST */
+  .local-digest {
+    border: 1px solid var(--rule-light);
+    border-left: 4px solid var(--accent-warm);
+    padding: 16px 20px;
+    margin: 20px 0;
+    background: #fdfbf7;
+  }
+
+  .local-digest-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--rule-light);
+  }
+
+  .local-digest-source {
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    font-style: italic;
+    color: #888;
+    letter-spacing: 0.5px;
+  }
+
+  .local-digest-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-warm);
+  }
+
+  .local-digest-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 24px;
+  }
+
+  .local-digest-item {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+    padding-left: 12px;
+    border-left: 1px solid var(--rule-light);
+  }
+
+  .local-digest-item strong {
+    color: var(--ink);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 800px) {
+    .newspaper { padding: 24px 20px; }
+    .masthead h1 { font-size: 40px; }
+    .lead-story .headline { font-size: 30px; }
+    .lead-story .body { column-count: 1; }
+    .two-col, .three-col { grid-template-columns: 1fr; }
+    .two-col .col:first-child { border-right: none; border-bottom: 1px solid var(--rule-light); }
+    .three-col .col:not(:last-child) { border-right: none; border-bottom: 1px solid var(--rule-light); }
+    .three-col .col, .two-col .col { padding-left: 0; padding-right: 0; }
+    .atlantis-grid { grid-template-columns: 1fr; }
+    .atlantis-section { padding: 18px 16px; }
+    .local-digest-items { grid-template-columns: 1fr; }
+  }
+
+  /* PRINT STYLES */
+  @media print {
+    * {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      color-adjust: exact !important;
+    }
+
+    body {
+      background: #fff !important;
+      padding: 0 !important;
+    }
+
+    .newspaper {
+      box-shadow: none !important;
+      max-width: 100% !important;
+      padding: 16px 20px !important;
+      background: #fff !important;
+    }
+
+    .newspaper::before { display: none !important; }
+
+    /* Colors */
+    .bulletin-bar { background: var(--ink) !important; color: var(--paper) !important; }
+    .bulletin-bar .label { background: var(--accent) !important; color: #fff !important; }
+    .lead-story .body p:first-child::first-letter { color: var(--accent) !important; }
+    .section-label.intl { color: var(--accent) !important; border-bottom-color: var(--accent) !important; }
+    .section-label.local { color: var(--accent-warm) !important; border-bottom-color: var(--accent-warm) !important; }
+    .section-label.atlantis { color: var(--atlantis-accent) !important; border-bottom-color: var(--atlantis-accent) !important; }
+    .section-divider span { background: #fff !important; }
+    .atlantis-section { background: #f5faf7 !important; border-color: var(--atlantis-accent) !important; }
+    .status.done { background: #d4edda !important; color: #155724 !important; }
+    .status.pending { background: #fff3cd !important; color: #856404 !important; }
+    .status.active { background: #cce5ff !important; color: #004085 !important; }
+    .status.queued { background: #e2e3e5 !important; color: #383d41 !important; }
+    .pullquote { border-top-color: var(--ink) !important; border-bottom-color: var(--ink) !important; }
+
+    /*
+     * TABLE-BASED LAYOUT FOR PRINT
+     * CSS Grid is unreliable in print renderers (especially Chromium).
+     * Switching to display:table/table-cell which is rock-solid for print.
+     */
+    .two-col {
+      display: table !important;
+      width: 100% !important;
+      table-layout: fixed !important;
+      border-collapse: collapse !important;
+    }
+
+    .two-col > .col {
+      display: table-cell !important;
+      width: 50% !important;
+      vertical-align: top !important;
+      padding: 12px 16px !important;
+    }
+
+    .two-col > .col:first-child {
+      border-right: 1px solid var(--rule-light) !important;
+      padding-left: 0 !important;
+    }
+
+    .two-col > .col:last-child {
+      padding-right: 0 !important;
+    }
+
+    .three-col {
+      display: table !important;
+      width: 100% !important;
+      table-layout: fixed !important;
+      border-collapse: collapse !important;
+    }
+
+    .three-col > .col {
+      display: table-cell !important;
+      width: 33.33% !important;
+      vertical-align: top !important;
+      padding: 12px 14px !important;
+    }
+
+    .three-col > .col:first-child { padding-left: 0 !important; }
+    .three-col > .col:last-child { padding-right: 0 !important; }
+
+    .three-col > .col:not(:last-child) {
+      border-right: 1px solid var(--rule-light) !important;
+    }
+
+    /* Lead story — single column in print to allow natural page breaks */
+    .lead-story .body {
+      column-count: 1 !important;
+      text-align: justify !important;
+    }
+
+    /* Kill drop cap in print — the float creates an unbreakable block */
+    .lead-story .body p:first-child::first-letter {
+      float: none !important;
+      font-size: inherit !important;
+      font-weight: inherit !important;
+      padding: 0 !important;
+      line-height: inherit !important;
+      color: inherit !important;
+    }
+
+    /* Atlantis grid — also table */
+    .atlantis-grid {
+      display: table !important;
+      width: 100% !important;
+      table-layout: fixed !important;
+      border-collapse: separate !important;
+      border-spacing: 12px !important;
+    }
+
+    .atlantis-card {
+      display: table-cell !important;
+      width: 50% !important;
+      vertical-align: top !important;
+    }
+
+    /* Local digest — also table */
+    .local-digest {
+      background: #fdfbf7 !important;
+      border-left-color: var(--accent-warm) !important;
+    }
+
+    .local-digest-items {
+      display: table !important;
+      width: 100% !important;
+      table-layout: fixed !important;
+      border-collapse: separate !important;
+      border-spacing: 8px !important;
+    }
+
+    .local-digest-item {
+      display: table-cell !important;
+      width: 50% !important;
+      vertical-align: top !important;
+    }
+
+    /* Atlantis grid has 6 cards — table-cell only works for rows of 2.
+       We need to let them wrap, so keep grid for this one but force it. */
+    .atlantis-grid {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 12px !important;
+    }
+
+    .atlantis-card {
+      display: block !important;
+      width: auto !important;
+    }
+
+    /* Same for local digest — 6 items need wrapping */
+    .local-digest-items {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 8px !important;
+    }
+
+    .local-digest-item {
+      display: block !important;
+      width: auto !important;
+    }
+
+    /* Page break strategy */
+    .two-col, .three-col, .lead-story, .atlantis-section, .local-digest {
+      break-inside: auto !important;
+      page-break-inside: auto !important;
+    }
+
+    .pullquote, .bulletin-bar, .atlantis-card, .masthead, .dateline-bar, .local-digest-item {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .section-divider {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      break-after: auto !important;
+      page-break-after: auto !important;
+    }
+
+    /* Tighten spacing for print */
+    .section-divider { margin: 10px 0 8px !important; }
+    .lead-story { padding-bottom: 12px !important; margin-bottom: 0 !important; }
+    .atlantis-section { padding: 16px 18px !important; }
+    .pullquote { margin: 12px 0 !important; padding: 10px 16px !important; }
+    .bulletin-bar { margin-bottom: 12px !important; padding: 8px 16px !important; }
+    .local-digest { margin: 12px 0 !important; }
+  }
+</style>
+</head>
+<body>
+<div class="newspaper">
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead-top">
+      <span>Vol. I · No. 1</span>
+      <span>atlantisits.ai</span>
+    </div>
+    <h1>The Atlantean Chronicle</h1>
+    <div class="masthead-motto">"Where the signal rises above the noise"</div>
+  </header>
+
+  <div class="dateline-bar">
+    <span>Gainesville, Georgia</span>
+    <span>Week of March 27 – April 2, 2026</span>
+    <span>Atlantis ITS</span>
+  </div>
+
+  <!-- BULLETIN BAR -->
+  <div class="bulletin-bar">
+    <div class="label">Wire</div>
+    <div class="items">
+      <span>Artemis II launches — first crewed lunar mission since 1972</span>
+      <span>SpaceX files for record $1.75T IPO</span>
+      <span>Stocks sell off after Trump's war address</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ SECTION I: INTERNATIONAL ═══════════════════ -->
+  <div class="section-divider intl"><span>International</span></div>
+
+  <!-- LEAD STORY -->
+  <article class="lead-story">
+    <div class="section-label intl">Middle East</div>
+    <h2 class="headline">Trump Signals Escalation in Primetime<br>Address as Allies Reject Hormuz Call</h2>
+    <p class="subheadline">Markets rattle after president offers no exit strategy; Macron calls forced reopening of strait "unrealistic"; over 30 nations convene without the U.S. to discuss shipping crisis</p>
+    <div class="byline">Compiled from wire reports · April 2, 2026</div>
+    <div class="body">
+      <p>President Trump's primetime address on Tuesday evening failed to calm global anxiety over the Iran war, offering no clear exit strategy and signaling instead that the U.S. would intensify strikes over the next two to three weeks. Markets reversed a brief rally on Wednesday as oil prices surged and stocks sold off sharply — Dow futures fell 670 points, the S&P dropped 1.6%, and the Nasdaq declined 2.1%. The S&P 500 posted its worst quarterly performance since September 2022.</p>
+      <p>French President Emmanuel Macron declared it "unrealistic" for Trump to urge allies to forcibly reopen the Strait of Hormuz, and more than 30 nations convened virtually on Thursday to discuss measures to restore freedom of navigation — notably without the United States in attendance. Over 100 international law experts signed a statement expressing concerns about violations of international law by all parties.</p>
+      <p>On the ground, U.S.-Israeli strikes destroyed the B1 bridge near Tehran — described as the tallest bridge in the Middle East — and inflicted what Iranian media called "fundamental destruction" on the Mobarakeh Steel Complex in Isfahan, bringing production to a complete halt. Amnesty International called on all sides to de-escalate strikes on civilian infrastructure. Iran's parliament approved a plan to toll the Strait of Hormuz. An Iranian strike earlier in the week hit a Kuwaiti tanker near Dubai. Gulf states reportedly want the conflict to continue until Iran is no longer a threat, even as Trump told aides privately he is willing to wind things down.</p>
+    </div>
+  </article>
+
+  <div class="three-col">
+    <article class="col">
+      <div class="section-label intl">Space</div>
+      <h3 class="headline">Artemis II Launches — Humans Return to the Moon</h3>
+      <div class="body">
+        <p>NASA launched four astronauts toward the Moon on April 1, marking the first crewed lunar mission since Apollo 17 in 1972. The Artemis II mission lifted off from Kennedy Space Center aboard the Space Launch System at 6:35 p.m. EDT. The crew — Reid Wiseman, Victor Glover, Christina Koch, and Canadian astronaut Jeremy Hansen — will fly a 10-day journey around the far side of the Moon without landing. If they reach their planned distance, they will set a new record for the farthest humans have ever traveled from Earth.</p>
+      </div>
+    </article>
+    <article class="col">
+      <div class="section-label intl">Americas</div>
+      <h3 class="headline">Cuba Blackout; Haiti Gang Massacre</h3>
+      <div class="body">
+        <p>A major blackout struck western Cuba including Havana after a fault at the Antonio Guiteras power plant, leaving millions without electricity. Air France suspended all Cuba flights through mid-June due to fuel shortages. Separately, at least 70 people were killed in a gang massacre in Haiti as a U.N. force prepares to deploy to the country.</p>
+      </div>
+    </article>
+    <article class="col">
+      <div class="section-label intl">Africa</div>
+      <h3 class="headline">Sudan, South Sudan Violence Continues</h3>
+      <div class="body">
+        <p>Forty people were killed in a drone strike on funeralgoers near Abu Zabad in West Kordofan, Sudan. In South Sudan, at least 70 were killed in an attack on a gold mine. Médecins Sans Frontières reported that rape and sexual violence have become "part of everyday life" in Sudan's Darfur region, underscoring a deepening humanitarian catastrophe.</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- ═══════════════════ SECTION II: LOCAL / NATIONAL ═══════════════════ -->
+  <div class="section-divider local"><span>Local &amp; National</span></div>
+
+  <div class="two-col">
+    <article class="col">
+      <div class="section-label local">Protest</div>
+      <h3 class="headline">'No Kings' Draws 8 Million — Including 4,000+ in Gainesville</h3>
+      <p class="subheadline">Largest single-day protest in U.S. history; over 50 events across Georgia</p>
+      <div class="body">
+        <p>More than 8 million Americans participated in the third wave of "No Kings" protests on Saturday, March 28, making it the largest single-day demonstration in U.S. history. Over 3,300 events took place across all 50 states, with nearly half held in Republican-leaning areas.</p>
+        <p>Georgia hosted over 50 events, including a turnout of over 4,000 in Gainesville. The flagship rally at the Minnesota State Capitol featured Bruce Springsteen, Sen. Bernie Sanders, Jane Fonda, and Joan Baez. Demonstrators voiced opposition to the Iran war, ICE enforcement, rising living costs, and democratic backsliding.</p>
+      </div>
+    </article>
+    <article class="col">
+      <div class="section-label local">Supreme Court</div>
+      <h3 class="headline">SCOTUS Rules 8–1 Against Conversion Therapy Ban</h3>
+      <p class="subheadline">Decision on Transgender Day of Visibility threatens similar laws in 20+ states</p>
+      <div class="body">
+        <p>The Supreme Court ruled March 31 that Colorado's conversion therapy ban for LGBTQ youth likely violates the First Amendment. The 8-1 decision — with Justices Sotomayor and Kagan joining the majority — found the law impermissibly regulates speech based on viewpoint when applied to talk therapy.</p>
+        <p>The sole dissenter, Justice Jackson, warned the ruling undermines states' ability to regulate medical care. Every major American medical association has declared the practice harmful. The ruling is expected to pressure similar laws in over 20 states.</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- GAINESVILLE TIMES LOCAL HEADLINES -->
+  <div class="local-digest">
+    <div class="local-digest-header">
+      <span class="local-digest-source">From the Gainesville Times &amp; AccessWDUN</span>
+      <span class="local-digest-label">Hall County Digest</span>
+    </div>
+    <div class="local-digest-items">
+      <div class="local-digest-item">
+        <strong>Hundreds Rally Downtown</strong> — The No Kings protest drew hundreds to downtown Gainesville on Saturday. The Gainesville Times published photo coverage of the march through the city center.
+      </div>
+      <div class="local-digest-item">
+        <strong>Lake Lanier Water Levels Monitored</strong> — The Army Corps of Engineers is responding to low water levels on Lake Lanier, prompting concern among Hall County utilities ahead of summer.
+      </div>
+      <div class="local-digest-item">
+        <strong>Wellroot Opens Family Resiliency Center</strong> — Wellroot Family Services opened a new Family Resiliency Center in Gainesville, expanding community support services.
+      </div>
+      <div class="local-digest-item">
+        <strong>Huge Development off Ga. 365</strong> — A major new development proposed along Georgia 365 in south Habersham County draws attention from Gainesville-area planners.
+      </div>
+      <div class="local-digest-item">
+        <strong>Hall Co. Dog Park Open; Fire Danger High</strong> — The large dog park is officially open. Burn permits remain suspended across North Georgia due to high fire danger.
+      </div>
+      <div class="local-digest-item">
+        <strong>GHS Baseball Streak Hits 10</strong> — Gainesville High rallied past Chattahoochee to extend its win streak to 10 games as the regular season enters the home stretch.
+      </div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <article class="col">
+      <div class="section-label local">Technology</div>
+      <h3 class="headline">Meta &amp; YouTube Found Liable; SpaceX Files Record IPO</h3>
+      <div class="body">
+        <p>A California jury on March 25 found Meta and YouTube negligent in designing addictive platforms, awarding $6 million to plaintiff K.G.M. Meta bears 70% of responsibility. The verdict came one day after a New Mexico jury ordered Meta to pay $375 million in a separate child exploitation case.</p>
+        <p>Meanwhile, SpaceX filed confidentially for what could be the largest IPO in history on April 1, targeting a $1.75 trillion valuation and up to $75 billion raise. The filing follows SpaceX's merger with Musk's xAI and puts it on track for a June listing — ahead of planned IPOs from OpenAI and Anthropic.</p>
+      </div>
+    </article>
+    <article class="col">
+      <div class="section-label local">Markets</div>
+      <h3 class="headline">Whiplash Week: Tuesday Rally Erased by Thursday Selloff</h3>
+      <div class="body">
+        <p>Markets surged on Tuesday on reports Trump might end Iran hostilities — the S&P posted its best day since May. But Trump's primetime address on Wednesday offered no exit plan and signaled escalation, triggering a sharp reversal Thursday. Dow futures dropped 670 points and the S&P fell 1.6%.</p>
+        <p>U.S. gasoline crossed $4/gallon nationally. Crude oil remains above $103. The S&P 500 closed out its worst quarter since late 2022. Maersk and other shipping firms have suspended Strait of Hormuz transits indefinitely.</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- PULLQUOTE -->
+  <div class="pullquote">
+    <p>"We're going to hit them extremely hard over the next two to three weeks."</p>
+    <div class="attribution">— President Trump, televised address, April 1</div>
+  </div>
+
+  <!-- ═══════════════════ SECTION III: ATLANTIS ITS ═══════════════════ -->
+  <div class="section-divider atlantis"><span>Atlantis ITS — Internal Briefing</span></div>
+
+  <div class="atlantis-section">
+    <div class="atlantis-header">
+      <h3>Atlantis ITS Weekly Status</h3>
+      <div class="tagline">atlantisits.ai · Sprint ending April 2, 2026 · v16 current · v17 pending · Pre-Italy deploy sprint</div>
+    </div>
+
+    <div class="atlantis-grid">
+
+      <!-- Card 1: Italy Prep -->
+      <div class="atlantis-card">
+        <div class="card-title">Italy Trip — Departing Tomorrow</div>
+        <div class="card-body">
+          Shane &amp; Maranda depart April 3 for Italy (returning April 13). Kenji dropped off at Custom Canine Unlimited today. Pop Off web deploy in progress pre-trip. Full post-Italy sprint begins on return.
+          <br><span class="status active">Pre-Trip Sprint</span>
+        </div>
+      </div>
+
+      <!-- Card 2: Discord Phase 1 -->
+      <div class="atlantis-card">
+        <div class="card-title">Discord Phase 1 — AI Squad</div>
+        <div class="card-body">
+          Ozzy and Scout live in #atlantis-ai-squad. Mercy bot (ChatGPT/OpenAI) is the final Phase 1 addition — pending config and channel invite.
+          <br><span class="status done">Ozzy ✓</span>
+          <span class="status done">Scout ✓</span>
+          <span class="status pending">Mercy ⏳</span>
+        </div>
+      </div>
+
+      <!-- Card 3: Voice Roundtable / Rule Zero -->
+      <div class="atlantis-card">
+        <div class="card-title">AI Voice Roundtable — Rule Zero Verified</div>
+        <div class="card-body">
+          Atlantis Council build (Google AI Studio 2.0 / Gemi) passed live Rule Zero &amp; Silence Protocol test on 3/29. Needs v17 documentation.
+          <br><span class="status done">Test Passed ✓</span>
+          <span class="status pending">v17 Docs ⏳</span>
+        </div>
+      </div>
+
+      <!-- Card 4: Post-Italy Projects -->
+      <div class="atlantis-card">
+        <div class="card-title">Post-Italy Priority Queue</div>
+        <div class="card-body">
+          <strong>(1)</strong> Notion as shared AI agent knowledge bridge. <strong>(2)</strong> Local RAG — Ollama + ChromaDB/LanceDB on secondary PC. <strong>(3)</strong> IceBreakrz Vercel deploy. <strong>(4)</strong> news.atlantisits.co weekly edition pipeline.
+          <br><span class="status active">Sprint Active</span>
+        </div>
+      </div>
+
+      <!-- Card 5: Apps -->
+      <div class="atlantis-card">
+        <div class="card-title">Pop Off &amp; IceBreakrz</div>
+        <div class="card-body">
+          <strong>Pop Off:</strong> Google Play Closed Alpha live. Son designing cards (punchy brief). <strong>IceBreakrz:</strong> localhost:3010, Vercel deploy queued. Differentiation finalized.
+          <br><span class="status active">Alpha / Dev</span>
+        </div>
+      </div>
+
+      <!-- Card 6: V17 Pending Items -->
+      <div class="atlantis-card">
+        <div class="card-title">v17 Memory File — Pending</div>
+        <div class="card-body">
+          <strong>1.</strong> Rule Zero test result (3/29).<br>
+          <strong>2.</strong> IceBreakrz vs Pop Off strategy.<br>
+          <strong>3.</strong> Notion bridge + local RAG plan.<br>
+          <strong>4.</strong> Italy return date + news.atlantisits.co concept.
+          <br><span class="status pending">Awaiting Write-Up</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SQUAD ROSTER -->
+    <div class="squad-roster">
+      <div class="roster-title">AI Squad Roster — Active Agents</div>
+      <div class="squad-agents">
+        <div class="agent-badge"><span class="name">Ozzy</span><br><span class="role">Claude · Arch / Infra</span></div>
+        <div class="agent-badge"><span class="name">Mercy</span><br><span class="role">ChatGPT · Content</span></div>
+        <div class="agent-badge"><span class="name">Scout</span><br><span class="role">Grok · Research</span></div>
+        <div class="agent-badge"><span class="name">Gemi</span><br><span class="role">Gemini · Lexicon / IceBreakrz</span></div>
+        <div class="agent-badge"><span class="name">Cooper</span><br><span class="role">Copilot · AAL / React</span></div>
+        <div class="agent-badge"><span class="name">Nova</span><br><span class="role">Virtual Influencer</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="ornament">— ⚓ —</div>
+    <p>The Atlantean Chronicle · Published by Atlantis ITS · Gainesville, GA · April 2, 2026</p>
+  </footer>
+
+</div>
+</body>
+</html>

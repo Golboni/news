@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Atlantean Chronicle — April 26–29, 2026</title>
+<meta name="description" content="Vol. I No. 4 — Weekly intelligence brief from Atlantis ITS. Where the signal rises above the noise.">
+<meta property="og:title" content="The Atlantean Chronicle — Vol. I No. 4">
+<meta property="og:description" content="Iran peace talks stall as Trump cancels Pakistan trip. WHCD shooting incident. Georgia wildfires now most destructive in state history. Tillis clears Warsh path to Fed Chair. Memory v20 ships.">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1008;
+    --paper: #f5f0e8;
+    --aged: #e8dfc8;
+    --rule: #2a1f0a;
+    --accent: #8b1a1a;
+    --muted: #5a4a2a;
+    --subhead: #3a2a0a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #c8b89a;
+    font-family: 'Libre Baskerville', Georgia, serif;
+    color: var(--ink);
+  }
+  .page {
+    background: var(--paper);
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 40px 48px;
+    box-shadow: 4px 4px 20px rgba(0,0,0,0.4), inset 0 0 80px rgba(180,160,120,0.15);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  }
+
+  /* ACTION BAR */
+  .action-bar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+  .action-btn {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border: 1px solid var(--muted);
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .action-btn:hover {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    text-align: center;
+    border-top: 4px double var(--rule);
+    border-bottom: 4px double var(--rule);
+    padding: 16px 0 12px;
+    margin-bottom: 8px;
+  }
+  .dateline-top {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .chronicle-title {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 72px;
+    line-height: 1;
+    color: var(--ink);
+    letter-spacing: 2px;
+  }
+  .tagline {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--muted);
+    margin: 6px 0 10px;
+    letter-spacing: 1px;
+  }
+  .dateline-bottom {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* WIRE */
+  .wire-bar {
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    margin: 10px 0 4px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .wire-label { color: #c8a060; margin-right: 8px; }
+
+  /* RULES */
+  .rule-single { border-top: 1px solid var(--rule); margin: 10px 0; }
+  .rule-double { border-top: 3px double var(--rule); margin: 14px 0; }
+  .rule-thick  { border-top: 3px solid var(--rule); margin: 10px 0; }
+
+  /* SECTION LABEL */
+  .section-label {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 18px 0 4px;
+  }
+
+  /* COLUMN GRIDS */
+  .col-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .col-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+  .col-3-wide { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 22px; }
+  .col-2-wide { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; }
+  .col-divider { border-left: 1px solid var(--rule); padding-left: 20px; }
+  .col-divider-r { border-right: 1px solid var(--rule); padding-right: 20px; }
+
+  /* HEADLINES */
+  h1.hed {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1.05;
+    margin-bottom: 6px;
+    color: var(--ink);
+  }
+  h2.hed {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+  h3.hed {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+  h4.hed {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 4px;
+  }
+  .deck {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 7px;
+    line-height: 1.4;
+  }
+  .byline {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 9.5px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 7px;
+  }
+  p {
+    font-size: 12.5px;
+    line-height: 1.72;
+    margin-bottom: 7px;
+    text-align: justify;
+    hyphens: auto;
+  }
+  p:first-of-type::first-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 900;
+    float: left;
+    line-height: 0.8;
+    margin: 4px 5px 0 0;
+    color: var(--ink);
+  }
+  .no-drop::first-letter { all: unset; }
+
+  /* PULLQUOTE */
+  .pullquote {
+    border-top: 2px solid var(--rule);
+    border-bottom: 2px solid var(--rule);
+    padding: 10px 14px;
+    margin: 14px 0;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--subhead);
+    text-align: center;
+  }
+  .pullquote cite {
+    display: block;
+    font-family: 'Source Sans 3', sans-serif;
+    font-style: normal;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+
+  /* DIGEST */
+  .digest-item { margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #c8b89a; }
+  .digest-item:last-child { border-bottom: none; }
+  .digest-item strong { font-family: 'Playfair Display', serif; font-size: 12.5px; }
+  .digest-item p { font-size: 11.5px; margin-bottom: 0; }
+  .digest-item p::first-letter { all: unset; }
+
+  /* POLYMARKET BOX */
+  .polymarket-box {
+    background: #0f1923;
+    color: #d0dbe8;
+    padding: 22px 26px;
+    margin-top: 14px;
+  }
+  .polymarket-box .section-label { color: #4ecdc4; }
+  .polymarket-box h2.hed { color: #e8f0f8; }
+  .polymarket-box h3.hed { color: #e8f0f8; font-size: 15px; }
+  .polymarket-box p { color: #a0b8c8; font-size: 11.5px; }
+  .polymarket-box p::first-letter { all: unset; }
+  .polymarket-box .deck { color: #6890a0; }
+  .polymarket-box .rule-single { border-color: #1a3040; }
+  .poly-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .poly-card {
+    border: 1px solid #1a3040;
+    padding: 12px 14px;
+    background: #152030;
+  }
+  .poly-card .poly-q {
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    color: #e8f0f8;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+  .poly-card .poly-odds {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #4ecdc4;
+  }
+  .poly-card .poly-vol {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 9px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #5a7888;
+    margin-top: 4px;
+  }
+
+  /* ATLANTIS BOX */
+  .atlantis-box {
+    background: #1a1008;
+    color: #e8dfc8;
+    padding: 22px 26px;
+    margin-top: 20px;
+  }
+  .atlantis-box .section-label { color: #c8a060; }
+  .atlantis-box h2.hed { color: #e8dfc8; }
+  .atlantis-box h3.hed { color: #e8dfc8; font-size: 15px; }
+  .atlantis-box p { color: #c8b89a; font-size: 11.5px; }
+  .atlantis-box p::first-letter { all: unset; }
+  .atlantis-box .deck { color: #a89060; }
+  .atlantis-box .byline { color: #a89060; }
+  .atlantis-box .rule-single { border-color: #3a2a10; }
+  .atlantis-box .rule-double { border-color: #3a2a10; }
+  .atlantis-status {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 14px;
+  }
+  .status-card {
+    border: 1px solid #3a2a10;
+    padding: 10px 12px;
+  }
+  .status-card .label {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 8.5px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #c8a060;
+    margin-bottom: 4px;
+  }
+  .status-card .val {
+    font-family: 'Playfair Display', serif;
+    font-size: 12.5px;
+    color: #e8dfc8;
+    line-height: 1.4;
+  }
+  .badge {
+    display: inline-block;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    margin-left: 4px;
+    vertical-align: middle;
+  }
+  .badge-green { background: #1a4a1a; color: #80e080; }
+  .badge-amber { background: #4a3a0a; color: #e0b040; }
+  .badge-red   { background: #4a1a1a; color: #e08080; }
+  .badge-cyan  { background: #0a3a4a; color: #80e0e0; }
+
+  /* SUBSCRIBE BAR */
+  .subscribe-bar {
+    background: var(--accent);
+    color: #f5f0e8;
+    text-align: center;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .subscribe-bar a { color: #f0d090; text-decoration: none; }
+  .subscribe-bar a:hover { text-decoration: underline; }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    margin-top: 28px;
+    padding-top: 12px;
+    border-top: 3px double var(--rule);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  @media print {
+    body { background: white; }
+    .page { box-shadow: none; margin: 0; padding: 20px 30px; max-width: 100%; }
+    .action-bar, .subscribe-bar { display: none; }
+    .polymarket-box, .atlantis-box { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+
+  @media (max-width: 700px) {
+    .col-2, .col-3, .col-3-wide, .col-2-wide { grid-template-columns: 1fr; }
+    .col-divider, .col-divider-r { border: none; padding: 0; }
+    .chronicle-title { font-size: 44px; }
+    .atlantis-status, .poly-grid { grid-template-columns: 1fr 1fr; }
+    .page { padding: 20px 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- SUBSCRIBE BAR -->
+  <div class="subscribe-bar">
+    The Atlantean Chronicle — Weekly Intelligence from <a href="https://atlantisits.co">Atlantis ITS</a> &nbsp;·&nbsp; <a href="mailto:shane@atlantisits.co?subject=Subscribe%20to%20The%20Atlantean%20Chronicle">Subscribe</a>
+  </div>
+
+  <!-- ACTION BUTTONS -->
+  <div class="action-bar">
+    <button class="action-btn" onclick="window.print()">🖨️ Print</button>
+    <a class="action-btn" href="mailto:?subject=The%20Atlantean%20Chronicle%20-%20Vol.%20I%20No.%204&body=Check%20out%20this%20week%27s%20intelligence%20brief%20from%20Atlantis%20ITS%3A%20https%3A%2F%2Fnews.atlantisits.co">📧 Email</a>
+    <a class="action-btn" href="https://twitter.com/intent/tweet?text=The%20Atlantean%20Chronicle%20Vol.%20I%20No.%204%20%E2%80%94%20Weekly%20intelligence%20brief%20from%20%40AtlantisITS&url=https%3A%2F%2Fnews.atlantisits.co" target="_blank">𝕏 Share</a>
+    <a class="action-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fnews.atlantisits.co" target="_blank">in Share</a>
+  </div>
+
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <div class="dateline-top">
+      <span>Vol. I &nbsp;·&nbsp; No. 4</span>
+      <span>atlantisits.ai</span>
+      <span>Week of April 26–29, 2026</span>
+    </div>
+    <div class="chronicle-title">The Atlantean Chronicle</div>
+    <div class="tagline">"Where the signal rises above the noise"</div>
+    <div class="dateline-bottom">
+      <span>Metro Atlanta, Georgia</span>
+      <span>Sunday, April 26, 2026</span>
+      <span>Atlantis ITS</span>
+    </div>
+  </div>
+
+  <!-- WIRE -->
+  <div class="wire-bar">
+    <span><span class="wire-label">Wire</span></span>
+    <span>Trump cancels Pakistan trip as Iran peace talks stall — negotiations now by phone</span>
+    <span>·</span>
+    <span>Tillis drops Warsh blockade after DOJ ends Powell probe — Senate vote Wednesday</span>
+    <span>·</span>
+    <span>Georgia wildfires now most destructive in state history — 38,500 acres, 120+ homes</span>
+  </div>
+  <div class="rule-thick"></div>
+
+  <!-- TOP STORY: FULL WIDTH -->
+  <div class="section-label">Middle East · Lead Story</div>
+  <h1 class="hed">Iran Peace Talks Stall as Trump Cancels Pakistan Mission; Negotiations Now "By Phone"</h1>
+  <div class="deck">President scraps Witkoff/Kushner trip after Iranian foreign minister leaves Islamabad — "We have all the cards" — talks continue from a distance as Strait of Hormuz traffic remains near-standstill</div>
+  <div class="byline">Compiled from wire reports &nbsp;·&nbsp; April 26, 2026</div>
+  <div class="rule-single"></div>
+
+  <div class="col-3-wide">
+    <div class="col-divider-r">
+      <p>Hopes for a near-term breakthrough in Iran ceasefire talks dimmed sharply this weekend after President Trump cancelled a planned trip by Special Envoy Steve Witkoff and Jared Kushner to Islamabad, citing a deal proposal from Iran "that should have been better." The cancellation came hours after Iranian Foreign Minister Abbas Araghchi departed Pakistan, ending two visits in 48 hours without face-to-face US engagement.</p>
+      <p class="no-drop">"We're not going to spend 15 hours in airplanes all the time going back and forth to be giving a document that was not good enough," Trump told reporters at Palm Beach International Airport. "We have all the cards. They can call us anytime they want." The president suggested talks would now continue by phone — a significant downgrade from the structured Pakistan-mediated negotiations earlier in April.</p>
+      <p class="no-drop">Araghchi continued his regional tour Sunday, meeting the Sultan of Oman in Muscat before returning to Islamabad and then traveling to Russia. Tehran has refused to return to direct negotiations until the US lifts its naval blockade of Iranian ports — a condition Washington has not entertained.</p>
+    </div>
+    <div class="col-divider-r">
+      <p class="no-drop">The diplomatic stall comes against a backdrop of severe disruption. The US Navy has redirected 37 ships under what the Treasury Department calls its "Economic Fury" sanctions campaign, and a Pentagon assessment shared with Congress in closed-door briefings indicates clearing Iranian-laid mines from the Strait of Hormuz could take up to six months. Vessel traffic through the strait remains a fraction of pre-war levels.</p>
+      <div class="pullquote">
+        "We have all the cards. If they want to talk, they can come to us, or they can call us."
+        <cite>— President Trump, April 26</cite>
+      </div>
+      <p class="no-drop">In a separate development, Trump and British Prime Minister Keir Starmer discussed the "urgent need" to reopen sea lanes through Hormuz, according to Downing Street. The conversation underscored European concern about extended energy disruption — Defense Secretary Pete Hegseth had earlier dismissed European involvement, telling reporters allies "need the Strait of Hormuz much more than we do."</p>
+    </div>
+    <div>
+      <p class="no-drop">Iran's President Masoud Pezeshkian told Pakistan's Prime Minister Shehbaz Sharif on Sunday that Tehran "would not enter forced negotiations under pressure, threats, or a blockade." Lebanese Public Ministry of Health figures meanwhile show the Lebanon death toll has risen to at least 2,496 since March 2 — a steep jump from the April 17 update, even as the US-brokered ceasefire technically remains in effect.</p>
+      <p class="no-drop">Adding complexity to the diplomatic moment: a shooting incident at the White House Correspondents' Dinner Saturday night where Trump was rushed off-stage by Secret Service after gunshots rang out. Asked whether the war could have motivated the shooter, Trump replied, "I don't think so, but you never know."</p>
+      <p class="no-drop">Polymarket prices the probability of Strait of Hormuz traffic returning to normal by April's end at low single digits, down sharply from earlier in the month.</p>
+    </div>
+  </div>
+
+  <div class="rule-double"></div>
+
+  <!-- ROW 2: WHCD + FED CHAIR -->
+  <div class="col-2">
+    <div class="col-divider-r">
+      <div class="section-label">Domestic · Security</div>
+      <h2 class="hed">Security Incident at White House Correspondents' Dinner</h2>
+      <div class="deck">Gunshots ring out at Washington Hilton; President rushed from stage by Secret Service; suspect in custody — motive under investigation</div>
+      <div class="byline">April 26, 2026</div>
+      <p>President Trump was rushed off-stage by Secret Service agents Saturday night after gunshots rang out during the White House Correspondents' Dinner at the Washington Hilton. The president was unharmed and a suspect is in custody, though investigators have not yet released a motive.</p>
+      <p class="no-drop">"I don't think so, but you never know," Trump told reporters when asked if the Iran war could have been a factor. Israeli PM Benjamin Netanyahu, Pakistani Foreign Minister Ishaq Dar, and other foreign officials issued statements expressing relief that Trump, the Vice President, and the First Lady were unharmed. Dar, mediating between Iran and the US, called the shooting "a cowardly incident" and condemned violence as "the enemy of diplomacy." Further details are expected as the investigation proceeds.</p>
+    </div>
+    <div>
+      <div class="section-label">Markets & Economy</div>
+      <h2 class="hed">Tillis Drops Warsh Blockade After DOJ Ends Powell Probe</h2>
+      <div class="deck">Senate Banking Committee votes Wednesday — Warsh on track to lead Fed before Powell term ends May 15; Polymarket prices 98% confirmation</div>
+      <div class="byline">April 26, 2026</div>
+      <p>The North Carolina Republican who had stalled Kevin Warsh's nomination to lead the Federal Reserve dropped his opposition Sunday, all but assuring confirmation of President Trump's pick before Chair Jerome Powell's term ends May 15. Senator Thom Tillis announced the move on NBC's "Meet the Press" after the Justice Department ended its criminal investigation into Powell on Friday.</p>
+      <p class="no-drop">Tillis had called the DOJ probe — focused on cost overruns in the Fed's headquarters renovation — a "vindictive prosecution" that threatened the central bank's independence. He told reporters he received assurances from the DOJ that "the case is completely and fully settled." The Senate Banking Committee is set to vote on Warsh's nomination Wednesday, April 29.</p>
+      <p class="no-drop">Polymarket traders price the probability of Warsh's confirmation at 98%, with the April 28-29 FOMC meeting carrying near-certain odds (99.7%) of no rate change. Powell can remain on the Fed Board of Governors through January 2028 even after stepping down as chair, and his lawyers have indicated he intends to do so to "defend the Federal Reserve's independence."</p>
+    </div>
+  </div>
+
+  <div class="rule-double"></div>
+
+  <!-- ROW 3: GA WILDFIRES + COLOMBIA + GAINESVILLE -->
+  <div class="section-label">Regional &amp; World</div>
+  <div class="col-3">
+    <div class="col-divider-r">
+      <h3 class="hed">Georgia Wildfires Now Most Destructive in State History</h3>
+      <div class="byline">April 26, 2026</div>
+      <p>Two massive wildfires in south Georgia have scorched more than 38,500 acres and destroyed over 120 homes, with Governor Brian Kemp telling reporters Friday that the fires have burned more homes than any other in Georgia's history. The Highway 82 Fire in Brantley County alone has destroyed at least 87 homes, with the Pineland Road Fire in Clinch and Echols counties claiming another 35.</p>
+      <p class="no-drop">Officials believe the Brantley fire was ignited by a foil party balloon landing on a live power line. A State of Emergency now covers 91 South Georgia counties, with a 30-day burn ban in effect. Smoke has drifted as far as Atlanta and Savannah, triggering air quality warnings. North Georgia residents are urged to monitor NWS advisories — the Gainesville forecast shows only spotty showers through the week, insufficient to alleviate drought stress.</p>
+    </div>
+    <div class="col-divider-r">
+      <h3 class="hed">Highway Bombing Kills 20 in Southwest Colombia</h3>
+      <div class="byline">April 26, 2026</div>
+      <p>The death toll from a Saturday bus bombing on the Pan-American Highway in Cajibio, Cauca region, rose to 20 by Sunday with at least 36 wounded, including five children. The attack — described by Colombia's army chief as a "terrorist act" — was blamed on a FARC dissident faction led by Néstor Gregorio Vera Fernández, known as "Iván Mordisco."</p>
+      <p class="no-drop">President Gustavo Petro called for "the maximum worldwide pursuit" of the group, citing 26 separate terrorist actions across Cauca and Valle del Cauca over a 48-hour stretch. Cauca and Valle del Cauca serve as critical hubs for armed groups vying for sea and river access routes to the port of Buenaventura, a key drug-trafficking transit point. The government has offered a $1M+ reward for information leading to "Marlon," identified as the regional dissident leader.</p>
+    </div>
+    <div>
+      <h3 class="hed">Gainesville Area Roundup — Spring 2026</h3>
+      <div class="byline">April 26, 2026</div>
+      <p>Hall County Elections Director Lori Wurtz confirmed early voting opens Monday, April 27 for the May 19 General Primary, with seven locations including the Gainesville Civic Center, Spout Springs Library, and Mulberry Creek Community Center. The election covers county commission, judicial, and Board of Education positions.</p>
+      <p class="no-drop">The 2026 Food Truck Friday season opened April 17 at Lake Lanier Olympic Park's Northeast Georgia Health System Plaza, continuing May 15, June 19, July 17, and Aug. 21. Lake Lanier water levels remain a regional concern as the Army Corps of Engineers monitors conditions ahead of summer demand. Hundreds participated in the "No Kings" rally in downtown Gainesville last weekend, joining a national wave of demonstrations.</p>
+    </div>
+  </div>
+
+  <div class="rule-double"></div>
+
+  <!-- ROW 4: HALL COUNTY DIGEST + WORLD IN BRIEF -->
+  <div class="col-2-wide">
+    <div class="col-divider-r">
+      <div class="section-label">Hall County Digest</div>
+      <div class="digest-item">
+        <strong>Early Voting Opens Monday</strong>
+        <p>Advance voting for the May 19 General Primary runs April 27–May 15 across seven Hall County locations. Voters should bring valid ID. Visit hallcounty.org/249/Elections for hours and details.</p>
+      </div>
+      <div class="digest-item">
+        <strong>Highway Resurfacing Coming</strong>
+        <p>GDOT has announced major resurfacing planned for two stretches of Hall County highways this year. Motorists should monitor lane closure schedules as work begins.</p>
+      </div>
+      <div class="digest-item">
+        <strong>Drought Watch Continues</strong>
+        <p>With 98% of Georgia in moderate to exceptional drought and South Georgia wildfires burning, North Georgia residents are urged to follow burn restrictions and conserve water. Lake Lanier levels remain monitored.</p>
+      </div>
+      <div class="digest-item">
+        <strong>"No Kings" Rally Draws Hundreds</strong>
+        <p>Hundreds gathered in downtown Gainesville last week for the "No Kings" rally, part of a sustained national protest movement that began in 2025. Organizers framed the event as a defense of democratic norms.</p>
+      </div>
+    </div>
+    <div>
+      <div class="section-label">World in Brief</div>
+      <div class="digest-item">
+        <strong>Iran — FM Tours the Region</strong>
+        <p>Foreign Minister Abbas Araghchi met the Sultan of Oman Sunday before traveling to Russia, continuing diplomatic outreach despite the US delegation cancellation. Tehran insists the US naval blockade must lift before direct talks resume.</p>
+      </div>
+      <div class="digest-item">
+        <strong>Strait of Hormuz — Near Standstill</strong>
+        <p>Vessel traffic through Hormuz remains drastically reduced compared to pre-war levels, per MarineTraffic data. Pentagon estimates clearing Iranian-laid mines could take up to six months.</p>
+      </div>
+      <div class="digest-item">
+        <strong>Lebanon — Death Toll Climbs</strong>
+        <p>Lebanon's Public Ministry of Health reports the death toll from Israel's campaign has reached 2,496 since March 2 — a steep jump from the April 17 figure even as the US-brokered ceasefire formally holds.</p>
+      </div>
+      <div class="digest-item">
+        <strong>Trump-Starmer Call</strong>
+        <p>The president and UK PM Keir Starmer discussed the "urgent need" to reopen sea lanes through Hormuz Sunday, Downing Street said, as European leaders press for diplomatic momentum.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rule-double"></div>
+
+  <!-- POLYMARKET INTELLIGENCE -->
+  <div class="polymarket-box">
+    <div class="section-label">Polymarket Intelligence — What Smart Money Thinks</div>
+    <h2 class="hed">Prediction Market Wire</h2>
+    <div class="deck">Real-time, money-weighted forecasts from the world's largest prediction market &nbsp;·&nbsp; Data as of April 26, 2026</div>
+    <div class="rule-single"></div>
+
+    <div class="poly-grid">
+      <div class="poly-card">
+        <div class="poly-q">Fed holds rates steady at April meeting?</div>
+        <div class="poly-odds">99.7% Yes</div>
+        <div class="poly-vol">FOMC April 28-29 · Near-certain consensus</div>
+      </div>
+      <div class="poly-card">
+        <div class="poly-q">Kevin Warsh confirmed as Fed Chair?</div>
+        <div class="poly-odds">98% Yes</div>
+        <div class="poly-vol">Tillis cleared block · Senate vote Wed April 29</div>
+      </div>
+      <div class="poly-card">
+        <div class="poly-q">Best AI model end of April: Anthropic?</div>
+        <div class="poly-odds">90% Yes</div>
+        <div class="poly-vol">High volume · Up from 66% in March</div>
+      </div>
+      <div class="poly-card">
+        <div class="poly-q">Strait of Hormuz traffic normal by end of April?</div>
+        <div class="poly-odds">Low odds</div>
+        <div class="poly-vol">Pentagon: mine clearance up to 6 months</div>
+      </div>
+      <div class="poly-card">
+        <div class="poly-q">UK — Starmer out as PM by Dec 31?</div>
+        <div class="poly-odds">70% Yes</div>
+        <div class="poly-vol">$16M volume · Active market</div>
+      </div>
+    </div>
+
+    <div class="rule-single" style="margin-top:16px;"></div>
+    <p style="font-size:10px; color:#5a7888; text-align:center;">Polymarket data is informational only — not investment advice. Predictions reflect crowd-sourced financial conviction, not guaranteed outcomes. Source: polymarket.com</p>
+  </div>
+
+  <div class="rule-double"></div>
+
+  <!-- ATLANTIS INTERNAL BOX -->
+  <div class="atlantis-box">
+    <div class="section-label">Atlantis ITS — Internal Briefing</div>
+    <h2 class="hed">Atlantis ITS Weekly Status</h2>
+    <div class="deck">atlantisits.ai &nbsp;·&nbsp; Week of April 26–29, 2026 &nbsp;·&nbsp; v20 pushed · Forgejo source-of-truth · Squad converging</div>
+    <div class="rule-single"></div>
+
+    <div class="atlantis-status">
+      <div class="status-card">
+        <div class="label">Memory v20</div>
+        <div class="val">ATLANTIS_AI_MEMORY v20 <span class="badge badge-green">Pushed</span> — Forgejo canonical source. Naming convention restructured to Agent-Surface. Document Library cleanup. <span class="badge badge-cyan">Major</span></div>
+      </div>
+      <div class="status-card">
+        <div class="label">Nova Phase 2</div>
+        <div class="val">Web search via n8n MCP + Brave <span class="badge badge-green">Live</span> — Cross-machine call path stable (Trunks → localhost:5678). Polymarket trigger tuning pending.</div>
+      </div>
+      <div class="status-card">
+        <div class="label">Forgejo POC</div>
+        <div class="val">localhost:3010 <span class="badge badge-green">Live</span> — atlantis-memory repo restructured with archive/, MEMORY_PROCEDURE, CHANGELOG. Source-of-truth for cold-start agents.</div>
+      </div>
+      <div class="status-card">
+        <div class="label">Job Engine v2</div>
+        <div class="val">localhost:3005 <span class="badge badge-green">Live</span> — 571+ leads from 7 sources with AI scoring. Stable production-grade workflow.</div>
+      </div>
+      <div class="status-card">
+        <div class="label">Squad Convergence</div>
+        <div class="val">Lyra <span class="badge badge-green">Onboarded</span> — 6th squad member (Perplexity). Squad pronouns codified. <span class="badge badge-cyan">New</span></div>
+      </div>
+      <div class="status-card">
+        <div class="label">VPS Deployment</div>
+        <div class="val"><span class="badge badge-amber">Blocked</span> — Awaiting $5K insurance check. Hetzner + Hostinger under final evaluation. Target: May 2026 launch window.</div>
+      </div>
+    </div>
+
+    <div class="rule-single" style="margin-top:18px;"></div>
+    <div class="col-2">
+      <div>
+        <h3 class="hed">Memory v20: The Great Rewrite</h3>
+        <p>The week's headline Atlantis milestone: ATLANTIS_AI_MEMORY v20 shipped to Forgejo as the squad's canonical source-of-truth. The compile featured a naming convention restructure (Agent-Surface throughout: Ozzy-Cowork, Mercy-Codex, Scout-Discord), retroactive cleanup of the Document Library, and Scout's pronoun lock to she/her. Forgejo repo introduced archive/ subfolder with MEMORY_PROCEDURE.md SOP and CHANGELOG.md. Cold-start agents now read a stable canonical path while historical versions remain audit-trail accessible.</p>
+      </div>
+      <div>
+        <h3 class="hed">Squad Convergence in Production</h3>
+        <p>This week marked the first time the AI squad visibly converged on a complex multi-agent workflow without single-agent ownership of the whole picture: Lyra flagged auth gaps, Mercy built the auth + calendar features, Mercy diagnosed memory crashes and proposed architectural splits, Ozzy-Opus executed the component split, and Shane caught the calendar feature mid-deploy preventing data loss. Six different agents — including the human — operating in lane, output stronger than any single one. The system worked as designed.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    The Atlantean Chronicle &nbsp;·&nbsp; Published by <a href="https://atlantisits.co" style="color:var(--muted);text-decoration:none;">Atlantis ITS</a> &nbsp;·&nbsp; Metro Atlanta &nbsp;·&nbsp; April 26, 2026 &nbsp;·&nbsp; Vol. I · No. 4<br>
+    <span style="font-size:8px; letter-spacing:1px;">"We don't predict the future. We automate it." — Atlantis AI Automations</span>
+  </div>
+
+</div>
+</body>
+</html>
