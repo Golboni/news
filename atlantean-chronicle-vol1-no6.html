@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Atlantean Chronicle — Vol. I · No. 6</title>
+<meta name="description" content="The Atlantean Chronicle — Weekly Intelligence from Atlantis ITS. Weekend Edition, May 8–10, 2026.">
+<meta property="og:title" content="The Atlantean Chronicle — Vol. I · No. 6">
+<meta property="og:description" content="Weekly intelligence brief from Atlantis ITS. Anthropic/SpaceX Colossus deal, Nova Phase 3 search live, MV Hondius outbreak, Gainesville Inland Port update.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://news.atlantisits.info">
+<meta name="twitter:card" content="summary_large_image">
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --paper: #f5f0e8;
+    --paper-dark: #e8e0d0;
+    --rule: #2a2a2a;
+    --rule-light: #c0b8a8;
+    --accent: #0e4f6e;          /* navy — International */
+    --accent-warm: #8b0000;     /* burgundy — National/breaking */
+    --atlantis-accent: #0e6e4f; /* teal-green — Atlantis ITS */
+    --oracle-accent: #1a5fa3;   /* electric blue — Oracle / Forward Intel */
+    --oracle-bg: #eaf2fb;
+    --oracle-card-border: #c8d7e8;
+    --col-gap: 20px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #c8c0b0;
+    color: var(--ink);
+    font-family: 'Libre Baskerville', Georgia, serif;
+    line-height: 1.55;
+    padding: 0;
+  }
+
+  /* ============================================
+     TOP BANNER (Subscribe + Share buttons)
+     Matches Vol. I · No. 4 reference
+     ============================================ */
+  .top-banner {
+    background: var(--accent-warm);
+    color: #fff;
+    padding: 11px 24px;
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .top-banner a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    padding-bottom: 1px;
+    transition: border-color 0.15s;
+  }
+  .top-banner a:hover { border-color: #fff; }
+
+  .share-bar {
+    background: var(--paper);
+    padding: 12px 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--rule-light);
+  }
+  .share-btn {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--ink);
+    background: transparent;
+    border: 1px solid var(--rule-light);
+    padding: 6px 14px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .share-btn:hover {
+    background: var(--paper-dark);
+    border-color: var(--rule);
+  }
+  .share-btn .icon { font-size: 13px; }
+
+  .dateline-strip {
+    background: var(--paper);
+    padding: 8px 24px;
+    border-bottom: 2px double var(--rule);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--atlantis-accent);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* ============================================
+     NEWSPAPER BODY
+     ============================================ */
+  .newspaper-wrap {
+    padding: 24px;
+  }
+  .newspaper {
+    max-width: 1120px;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 44px 52px;
+    box-shadow: 0 6px 40px rgba(0,0,0,0.30);
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    text-align: center;
+    border-bottom: 4px double var(--rule);
+    padding-bottom: 10px;
+    margin-bottom: 6px;
+  }
+  .masthead-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10.5px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 6px;
+    font-family: 'Source Sans 3', sans-serif;
+  }
+  .masthead h1 {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 1.05;
+    color: var(--ink);
+    letter-spacing: 1px;
+  }
+  .masthead-motto {
+    font-style: italic;
+    font-size: 11.5px;
+    color: #555;
+    margin-top: 2px;
+    letter-spacing: 0.3px;
+  }
+
+  /* INTERNAL DATELINE (between masthead and ticker) */
+  .dateline-bar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-family: 'Source Sans 3', sans-serif;
+    border-bottom: 1px solid var(--rule);
+    padding: 5px 0;
+    margin-bottom: 10px;
+    color: #444;
+  }
+
+  /* BULLETIN BAR / TICKER */
+  .bulletin-bar {
+    background: var(--ink);
+    color: #f0ead8;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 14px;
+    font-size: 11px;
+    font-family: 'Source Sans 3', sans-serif;
+    letter-spacing: 0.3px;
+    overflow: hidden;
+  }
+  .bulletin-bar .label {
+    background: var(--accent-warm);
+    color: #fff;
+    padding: 5px 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .bulletin-bar .items {
+    padding: 5px 14px;
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+  .bulletin-bar .items span::before { content: "◆ "; color: var(--accent-warm); font-size: 8px; }
+
+  /* SECTION LABELS */
+  .section-label {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid;
+  }
+  .section-label.intl { color: var(--accent); border-color: var(--accent); }
+  .section-label.local { color: var(--accent-warm); border-color: var(--accent-warm); }
+  .section-label.atlantis { color: var(--atlantis-accent); border-color: var(--atlantis-accent); }
+  .section-label.tech { color: var(--oracle-accent); border-color: var(--oracle-accent); }
+  .section-label.oracle { color: var(--oracle-accent); border-color: var(--oracle-accent); }
+
+  /* SECTION DIVIDER */
+  .section-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 18px 0 14px;
+    color: #999;
+    font-size: 11px;
+  }
+  .section-divider::before, .section-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule-light);
+  }
+  .section-divider span {
+    font-family: 'Source Sans 3', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 9.5px;
+    background: var(--paper);
+    padding: 0 6px;
+  }
+
+  /* BREAKING BANNER (in-paper) */
+  .breaking-banner {
+    background: var(--accent-warm);
+    color: #fff;
+    padding: 6px 14px;
+    margin-bottom: 12px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .breaking-banner::before {
+    content: "● BREAKING";
+    background: #fff;
+    color: var(--accent-warm);
+    padding: 2px 8px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  /* LEAD STORY */
+  .lead-story {
+    border-bottom: 2px solid var(--rule);
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+  }
+  .lead-story h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+  .lead-story .deck {
+    font-style: italic;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+  .lead-story .byline {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  .lead-story .body {
+    column-count: 3;
+    column-gap: var(--col-gap);
+    column-rule: 1px solid var(--rule-light);
+    font-size: 13.5px;
+    text-align: justify;
+    hyphens: auto;
+  }
+  .lead-story .body p { margin-bottom: 8px; }
+  .lead-story .body p:first-child::first-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 900;
+    float: left;
+    line-height: 0.8;
+    margin: 4px 6px 0 0;
+    color: var(--accent);
+  }
+
+  /* TWO-COL & THREE-COL GRIDS */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: var(--col-gap); }
+  .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--col-gap); }
+  .col-divider { border-right: 1px solid var(--rule-light); }
+
+  /* ARTICLE */
+  article h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+  article .byline {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 9.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #777;
+    margin-bottom: 6px;
+  }
+  article p {
+    font-size: 12.5px;
+    text-align: justify;
+    hyphens: auto;
+    margin-bottom: 6px;
+    line-height: 1.55;
+  }
+
+  /* MARKETS BOX */
+  .markets-box {
+    background: var(--paper-dark);
+    border: 1px solid var(--rule-light);
+    padding: 10px 14px;
+    font-size: 11.5px;
+    font-family: 'Source Sans 3', sans-serif;
+  }
+  .markets-box h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    border-bottom: 1px solid var(--rule-light);
+    padding-bottom: 4px;
+  }
+  .market-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 0;
+    border-bottom: 1px dotted var(--rule-light);
+    font-size: 11px;
+  }
+  .up { color: #1a7a4a; font-weight: 600; }
+  .down { color: #8b0000; font-weight: 600; }
+
+  /* ============================================
+     ORACLE / PREDICTION MARKET WIRE
+     Electric blue (Atlantis brand) — NOT purple
+     ============================================ */
+  .oracle-section {
+    background: var(--oracle-bg);
+    border: 1px solid var(--oracle-accent);
+    border-top: 4px solid var(--oracle-accent);
+    padding: 18px 22px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+  .oracle-header {
+    border-bottom: 2px solid var(--oracle-accent);
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+  }
+  .oracle-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .oracle-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--oracle-accent);
+    letter-spacing: 0.5px;
+  }
+  .oracle-title::before {
+    content: "◈ ";
+    font-size: 16px;
+  }
+  .oracle-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--ink);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 3px;
+  }
+  .oracle-tagline {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 11.5px;
+    font-style: italic;
+    color: #444;
+    margin-bottom: 8px;
+  }
+  .oracle-attribution {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--oracle-accent);
+    font-weight: 600;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .oracle-attribution .powered-by strong { font-weight: 700; }
+  .oracle-attribution .data-stamp {
+    color: #555;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+  }
+
+  .oracle-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--col-gap);
+  }
+  .forecast-card {
+    background: #fff;
+    border: 1px solid var(--oracle-card-border);
+    border-left: 3px solid var(--oracle-accent);
+    padding: 12px 14px;
+    margin-bottom: 12px;
+  }
+  .forecast-card:last-child { margin-bottom: 0; }
+  .forecast-card .forecast-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .forecast-tag {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 8.5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 2px 7px;
+    font-weight: 600;
+    border-radius: 2px;
+  }
+  .forecast-tag.geo { background: var(--accent); }              /* navy */
+  .forecast-tag.tech { background: var(--oracle-accent); }      /* electric blue */
+  .forecast-tag.regional { background: var(--atlantis-accent); }/* teal-green */
+  .forecast-tag.market { background: #235a8a; }                 /* deeper blue */
+
+  .confidence {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 9.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #666;
+  }
+  .confidence-bar {
+    display: inline-flex;
+    gap: 2px;
+  }
+  .confidence-pip {
+    width: 10px;
+    height: 4px;
+    background: #d0dde8;
+  }
+  .confidence-pip.filled { background: var(--oracle-accent); }
+
+  .forecast-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.25;
+    margin-bottom: 5px;
+  }
+  .forecast-card .signal {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10px;
+    color: var(--oracle-accent);
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-style: italic;
+  }
+  .forecast-card p {
+    font-size: 12px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .forecast-card .watch-for {
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1px dotted var(--oracle-card-border);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10.5px;
+    color: #555;
+  }
+  .forecast-card .watch-for strong {
+    color: var(--oracle-accent);
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  /* ============================================
+     ATLANTIS ITS OPERATIONS SECTION
+     With logo in section header
+     ============================================ */
+  .atlantis-section {
+    background: #f0f8f4;
+    border: 1px solid var(--atlantis-accent);
+    border-top: 4px solid var(--atlantis-accent);
+    padding: 18px 22px;
+    margin-top: 14px;
+  }
+  .atlantis-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-bottom: 2px solid var(--atlantis-accent);
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+  }
+  .atlantis-header img.logo {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    display: block;
+  }
+  .atlantis-header-text {
+    flex: 1;
+  }
+  .atlantis-header-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--atlantis-accent);
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+  }
+  .atlantis-header-subtitle {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #555;
+    font-weight: 500;
+  }
+  .atlantis-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--col-gap); }
+  .atlantis-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--atlantis-accent);
+  }
+  .atlantis-card p { font-size: 12px; line-height: 1.5; margin-bottom: 4px; }
+  .status {
+    display: inline-block;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 2px 7px;
+    border-radius: 2px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .status.done { background: #d4edda; color: #155724; }
+  .status.pending { background: #fff3cd; color: #856404; }
+  .status.active { background: #cce5ff; color: #004085; }
+  .status.hot { background: #f8d7da; color: #721c24; }
+
+  /* FOOTER */
+  .paper-footer {
+    border-top: 3px double var(--rule);
+    margin-top: 20px;
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .paper-footer img.footer-logo {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 6px;
+  }
+
+  /* ============================================
+     PRINT STYLES
+     ============================================ */
+  @media print {
+    body { background: white; padding: 0; }
+    .top-banner, .share-bar, .dateline-strip { display: none !important; }
+    .newspaper-wrap { padding: 0; }
+    .newspaper { box-shadow: none; padding: 20px 28px; }
+    .bulletin-bar { background: var(--ink) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .bulletin-bar .label { background: var(--accent-warm) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .breaking-banner { background: var(--accent-warm) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .atlantis-section { background: #f0f8f4 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .oracle-section { background: var(--oracle-bg) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .forecast-card { background: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .forecast-tag { color: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .forecast-tag.geo { background: var(--accent) !important; }
+    .forecast-tag.tech { background: var(--oracle-accent) !important; }
+    .forecast-tag.regional { background: var(--atlantis-accent) !important; }
+    .forecast-tag.market { background: #235a8a !important; }
+    .status.done { background: #d4edda !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .status.pending { background: #fff3cd !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .status.active { background: #cce5ff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .status.hot { background: #f8d7da !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .lead-story .body { column-count: 3 !important; }
+    article, .atlantis-section, .atlantis-card, .oracle-section, .forecast-card { break-inside: avoid; page-break-inside: avoid; }
+  }
+
+  /* RESPONSIVE — narrow viewports */
+  @media (max-width: 768px) {
+    .three-col, .two-col, .oracle-grid, .atlantis-grid {
+      grid-template-columns: 1fr;
+    }
+    .lead-story .body { column-count: 1; }
+    .col-divider { border-right: none; }
+    .newspaper { padding: 24px; }
+    .masthead h1 { font-size: 48px; }
+    .share-bar { flex-wrap: wrap; justify-content: center; }
+  }
+
+  /* ═══════════════════════════════════════════
+     TRAVEL & MOBILITY SECTION (No. 6)
+     ═══════════════════════════════════════════ */
+  :root {
+    --travel-accent: #1a5496;
+    --travel-bg: #edf3fa;
+    --travel-border: #b8ccdf;
+    --tech-accent2: #e94560;
+    --compute-gold: #c8960c;
+    --tech-bg: #f0eef8;
+    --tech-border: #c8c4dc;
+  }
+
+  .lead-photo-col img { width:100%; height:280px; object-fit:cover; display:block; filter:sepia(12%) contrast(1.05); }
+  .photo-caption { font-family:'Source Sans 3',sans-serif; font-size:10px; color:#666; padding:5px 0 0; border-top:1px solid var(--rule-light); margin-top:5px; font-style:italic; }
+  .alert-badge { position:absolute; top:12px; left:12px; background:var(--accent-warm); color:#fff; font-family:'Source Sans 3',sans-serif; font-size:9.5px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; padding:4px 10px; }
+  .stat-bar { display:flex; gap:0; background:var(--travel-bg); border:1px solid var(--travel-border); margin:8px 0; overflow:hidden; }
+  .stat-item { flex:1; padding:10px 14px; border-right:1px solid var(--travel-border); text-align:center; }
+  .stat-item:last-child { border-right:none; }
+  .stat-num { font-family:'Playfair Display',serif; font-size:20px; font-weight:700; color:var(--accent-warm); display:block; line-height:1.1; }
+  .stat-label { font-family:'Source Sans 3',sans-serif; font-size:9.5px; text-transform:uppercase; letter-spacing:1px; color:#666; margin-top:2px; display:block; }
+  .route-map-wrap { margin-top:0; }
+  .card-divider { width:28px; height:2px; background:var(--travel-accent); margin-bottom:8px; }
+  .advisory-banner { background:var(--travel-bg); border:1px solid var(--travel-border); border-left:4px solid var(--travel-accent); padding:14px 18px; display:flex; gap:16px; align-items:flex-start; }
+  .advisory-icon { font-size:22px; flex-shrink:0; margin-top:2px; }
+  .advisory-title { font-family:'Source Sans 3',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--travel-accent); margin-bottom:4px; }
+  .advisory-text { font-family:'Source Sans 3',sans-serif; font-size:12.5px; color:#333; line-height:1.55; }
+
+  .hero-banner { background:#1a1a2e; color:#fff; padding:32px 36px; position:relative; overflow:hidden; }
+  .hero-banner::before { content:''; position:absolute; top:-40px; right:-40px; width:300px; height:300px; border-radius:50%; background:radial-gradient(circle, rgba(233,69,96,0.15) 0%, transparent 70%); }
+  .hero-eyebrow { font-family:'Source Sans 3',sans-serif; font-size:10px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:#e94560; margin-bottom:12px; display:flex; align-items:center; gap:8px; }
+  .hero-eyebrow::before { content:''; display:inline-block; width:24px; height:2px; background:#e94560; }
+  .hero-headline { font-family:'Playfair Display',serif; font-size:38px; font-weight:900; line-height:1.12; color:#fff; margin-bottom:14px; letter-spacing:-0.5px; position:relative; z-index:1; }
+  .hero-headline span { color:#e94560; }
+  .hero-deck { font-family:'Libre Baskerville',serif; font-size:14px; font-style:italic; color:rgba(255,255,255,0.75); line-height:1.6; max-width:680px; position:relative; z-index:1; border-left:3px solid #e94560; padding-left:14px; margin-bottom:20px; }
+  .hero-byline { font-family:'Source Sans 3',sans-serif; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:rgba(255,255,255,0.5); position:relative; z-index:1; }
+  .metrics-bar { display:grid; grid-template-columns:repeat(5,1fr); background:#0d0d1a; border-top:2px solid #e94560; }
+  .metric-item { padding:14px 16px; border-right:1px solid rgba(255,255,255,0.08); text-align:center; }
+  .metric-item:last-child { border-right:none; }
+  .metric-num { font-family:'Playfair Display',serif; font-size:22px; font-weight:700; color:var(--compute-gold); display:block; line-height:1.1; }
+  .metric-label { font-family:'Source Sans 3',sans-serif; font-size:8.5px; text-transform:uppercase; letter-spacing:1px; color:rgba(255,255,255,0.45); margin-top:3px; display:block; }
+  .body-two-col { display:grid; grid-template-columns:3fr 2fr; gap:28px; padding:22px 0 0; }
+  .pull-quote { font-family:'Playfair Display',serif; font-size:19px; font-style:italic; font-weight:700; line-height:1.4; color:#1a1a2e; border-top:3px solid #1a1a2e; border-bottom:1px solid var(--rule-light); padding:14px 0; margin-bottom:18px; }
+  .compute-stack { background:var(--tech-bg); border:1px solid var(--tech-border); border-top:3px solid #1a1a2e; padding:16px 18px; margin-bottom:16px; }
+  .stack-title { font-family:'Source Sans 3',sans-serif; font-size:9.5px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#1a1a2e; margin-bottom:12px; padding-bottom:8px; border-bottom:1px solid var(--tech-border); }
+  .stack-item { display:flex; align-items:flex-start; gap:10px; margin-bottom:10px; padding-bottom:10px; border-bottom:1px solid rgba(200,196,220,0.4); }
+  .stack-item:last-child { border-bottom:none; margin-bottom:0; padding-bottom:0; }
+  .stack-dot { width:8px; height:8px; border-radius:50%; background:#e94560; flex-shrink:0; margin-top:5px; }
+  .stack-dot.gold { background:var(--compute-gold); }
+  .stack-dot.green { background:#2ecc71; }
+  .stack-text { font-size:11.5px; line-height:1.5; color:#333; }
+  .stack-text strong { font-family:'Source Sans 3',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; display:block; color:var(--ink); margin-bottom:2px; }
+  .impact-box { background:#1a1a2e; color:#fff; padding:14px 16px; border-left:4px solid #e94560; }
+  .impact-title { font-family:'Source Sans 3',sans-serif; font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#e94560; margin-bottom:8px; }
+  .impact-text { font-family:'Source Sans 3',sans-serif; font-size:11.5px; line-height:1.55; color:rgba(255,255,255,0.85); }
+  .impact-text li { margin-bottom:5px; padding-left:12px; position:relative; list-style:none; }
+  .impact-text li::before { content:'→'; position:absolute; left:0; color:#e94560; font-size:10px; }
+  .signal-footer { background:var(--tech-bg); border:1px solid var(--tech-border); border-left:4px solid #1a1a2e; padding:14px 18px; display:flex; gap:14px; align-items:flex-start; }
+  .signal-icon { font-size:20px; flex-shrink:0; margin-top:2px; }
+  .signal-title { font-family:'Source Sans 3',sans-serif; font-size:10px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:#1a1a2e; margin-bottom:4px; }
+  .signal-text { font-family:'Source Sans 3',sans-serif; font-size:12.5px; color:#333; line-height:1.55; }
+</style>
+</head>
+<body>
+
+<!-- TOP BANNER (Subscribe + Share buttons) -->
+<div class="top-banner">
+  THE ATLANTEAN CHRONICLE — WEEKLY INTELLIGENCE FROM ATLANTIS ITS &nbsp;·&nbsp; <a href="#subscribe">SUBSCRIBE</a>
+</div>
+
+<div class="share-bar">
+  <button class="share-btn" onclick="window.print()" aria-label="Print this article">
+    <span class="icon">🖨</span> PRINT
+  </button>
+  <a class="share-btn"
+     href="mailto:?subject=The Atlantean Chronicle — Vol. I · No. 6&body=Reading%20The%20Atlantean%20Chronicle%20Weekend%20Edition%20May%208-10%202026:%20https://news.atlantisits.info"
+     aria-label="Email this article">
+    <span class="icon">✉</span> EMAIL
+  </a>
+  <a class="share-btn"
+     href="https://twitter.com/intent/tweet?text=The%20Atlantean%20Chronicle%20Vol.%20I%20%C2%B7%20No.%206%20-%20Weekly%20Intelligence%20from%20Atlantis%20ITS&url=https://news.atlantisits.info"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Share on X">
+    <span class="icon">𝕏</span> SHARE
+  </a>
+  <a class="share-btn"
+     href="https://www.linkedin.com/sharing/share-offsite/?url=https://news.atlantisits.info"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Share on LinkedIn">
+    <span class="icon">in</span> SHARE
+  </a>
+</div>
+
+<div class="dateline-strip">
+  <span>VOL. I &nbsp;·&nbsp; NO. 6</span>
+  <span>NEWS.ATLANTISITS.INFO</span>
+  <span>WEEKEND EDITION &nbsp;·&nbsp; MAY 8–10, 2026</span>
+</div>
+
+<!-- NEWSPAPER BODY -->
+<div class="newspaper-wrap">
+<div class="newspaper">
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead-top">
+      <span>Vol. I · No. 6</span>
+      <span>atlantisits.ai &nbsp;·&nbsp; news.atlantisits.info</span>
+      <span>Price: Free · Digital Edition</span>
+    </div>
+    <h1>The Atlantean Chronicle</h1>
+    <div class="masthead-motto">"Where the signal rises above the noise"</div>
+  </header>
+
+  <div class="dateline-bar">
+    <span>Metro Atlanta, Georgia</span>
+    <span>Weekend Edition — May 8–10, 2026</span>
+    <span>Atlantis ITS · Weekend Edition</span>
+  </div>
+
+  <!-- TICKER / BULLETIN -->
+  <div class="bulletin-bar">
+    <div class="label">Wire</div>
+    <div class="items">
+      <span>Anthropic secures SpaceX Colossus 1 — 220K+ GPUs, Claude Code limits doubled</span>
+      <span>MV Hondius hantavirus outbreak — 3 dead, 149 stranded off Cape Verde</span>
+      <span>Gainesville Inland Port officially open — first containers moving</span>
+      <span>Musk v. OpenAI trial continues — $130B claim, week 2</span>
+      <span>Fed holds rates — inflation data mixed heading into June</span>
+      <span>Anthropic eyes orbital compute with SpaceX — multi-GW space data centers</span>
+    </div>
+  </div>
+
+  <!-- BREAKING BANNER -->
+  <div class="breaking-banner">
+    Anthropic + SpaceX: Colossus 1 deal doubles Claude Code limits effective immediately — see Tech &amp; AI
+  </div>
+
+  <!-- LEAD STORY -->
+  <div class="lead-story">
+    <div class="section-label intl">International · Lead Story</div>
+  <div class="lead-story">
+    <div class="lead-text-col" style="grid-column:1/-1;">
+      <h2 class="lead-headline">U.S. Strikes Iran After Navy Destroyers Attacked in Strait of Hormuz</h2>
+      <p class="lead-deck">Washington launches retaliatory strikes on Iranian missile and drone sites after Tehran targets three U.S. Navy destroyers — NATO allies left in the dark, raising fears of alliance fracture</p>
+      <div class="byline">By The Chronicle Foreign Desk &nbsp;·&nbsp; May 7–8, 2026</div>
+      <div class="two-col" style="margin-top:12px;">
+        <div>
+          <p>The United States carried out strikes on Iranian military sites Thursday after Iran launched missiles, drones, and small boats against three U.S. Navy destroyers operating in the Strait of Hormuz. U.S. Central Command confirmed that all inbound threats were eliminated before the retaliatory strikes targeted Iranian missile and drone launch facilities. Iran accused the United States of first violating a ceasefire by firing on an Iranian oil tanker heading toward the strait, a claim Washington denied.</p>
+          <p>The exchange marks the most direct military confrontation between the two countries since the Strait closure began in February. President Trump convened his national security team and, according to multiple sources, did not consult NATO allies before ordering the strikes. The decision has inflamed tensions across the alliance and is prompting urgent discussions about rethinking U.S. leadership within NATO going forward.</p>
+        </div>
+        <div>
+          <p>The conflict's economic toll continues to deepen. WTI crude settled at $94.81 on Thursday with Brent crossing $100, as the prolonged Strait closure has now been described by the International Energy Agency as the largest oil supply disruption in history, surpassing the 1970s oil shocks. Baker Hughes projects no full reopening before the second half of 2026.</p>
+          <p>In a parallel diplomatic development, the MV Hondius hantavirus situation has drawn WHO Director General Tedros Adhanom Ghebreyesus into a direct appeal to the Trump administration, hoping the outbreak will prompt broader public health engagement. Spanish authorities are now preparing to receive the vessel's 140+ passengers as it diverts to the Canary Islands after Cape Verde refused port entry.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- INTERNATIONAL BRIEFS -->
+  <div class="section-label intl">International</div>
+  <div class="three-col" style="margin-bottom:20px;">
+    <article>
+      <h3>UK Labour Suffers Heavy Losses as Reform UK Surges in Local Elections</h3>
+      <div class="byline">United Kingdom &nbsp;·&nbsp; May 8</div>
+      <p>Prime Minister Keir Starmer's Labour Party suffered significant defeats in local elections with roughly a quarter of votes counted, as the hard-right Reform UK party made major gains. Starmer said he took responsibility for the results but would not resign, calling the outcome "very tough." The results signal growing voter frustration with the governing party less than a year into its term.</p>
+    </article>
+    <article>
+      <h3>NATO Alliance Fractures as Trump Bypasses Consultation Before Iran Strikes</h3>
+      <div class="byline">Europe · NATO &nbsp;·&nbsp; May 8</div>
+      <p>Trump's decision to launch strikes on Iran without informing NATO allies has put new urgency on rethinking the alliance's structure. European defense ministers are now openly discussing scenarios where U.S. leadership of NATO can no longer be assumed, accelerating parallel European defense coordination efforts that began earlier this year.</p>
+    </article>
+    <article>
+      <h3>Trump Hosts Brazilian President Lula at White House; Joint Appearance Scrapped</h3>
+      <div class="byline">Americas &nbsp;·&nbsp; May 7</div>
+      <p>President Trump met with Brazilian President Luiz Inácio Lula da Silva at the White House Thursday, discussing trade and bilateral relations, though the two leaders canceled their scheduled joint appearance before reporters. Lula later offered a positive but vague assessment of the meeting on social media. The visit comes as Brazil navigates tariff pressures from Washington's ongoing trade realignment.</p>
+    </article>
+  </div>
+
+<!-- NATIONAL & MARKETS -->
+  <div class="section-divider"><span>National &amp; Markets</span></div>
+  <div class="section-label local">National</div>
+  <div class="two-col" style="margin-bottom:16px;">
+    <article class="col-divider">
+      <h3>April Jobs Report: 115,000 Payrolls Added, Unemployment Holds at 4.3%</h3>
+      <div class="byline">Economy &nbsp;·&nbsp; May 8 — BLS Release</div>
+      <p>The Bureau of Labor Statistics reported this morning that nonfarm payrolls increased by 115,000 in April, below the 185,000 added in March. The unemployment rate held steady at 4.3%. Job gains concentrated in healthcare, transportation and warehousing, and retail trade, while federal government employment continued to decline — the sixth consecutive month of federal workforce contraction. February payrolls were revised down by 23,000 to -156,000, underscoring the uneven labor market recovery. Wage growth of 3.4% year-over-year continues to outpace core inflation of 2.6%, providing some consumer cushion despite energy-driven price pressures from the Iran conflict.</p>
+    </article>
+    <article>
+      <h3>Consumer Credit Surges $24.86B in March — Largest Expansion Since 2024</h3>
+      <div class="byline">Finance &nbsp;·&nbsp; May 8</div>
+      <p>Federal Reserve data released Thursday showed consumer credit expanded by $24.86 billion in March — nearly double the $12.5 billion consensus estimate and the largest single-month increase since early 2024. Analysts suggest Americans are increasingly funding spending through borrowing as real wages are eroded by elevated energy costs tied to the Hormuz closure. The White House economic team cited the credit surge as a positive sign of consumer confidence, drawing sharp criticism from economists who noted the distinction between borrowing-driven consumption and income-driven growth.</p>
+      <h3 style="margin-top:14px;">Chief Justice Roberts Warns of Court's "Political Actor" Perception</h3>
+      <div class="byline">Judiciary &nbsp;·&nbsp; May 8</div>
+      <p>Chief Justice John Roberts publicly expressed concern Friday about growing public perception of the Supreme Court as an institution driven by political outcomes rather than legal principle. The rare public statement comes as the Court faces heightened scrutiny heading into its summer term, which includes several high-profile cases touching on executive power and immigration enforcement.</p>
+    </article>
+  </div>
+
+  <!-- MARKETS BOX -->
+  <div class="markets-box" style="margin-bottom:20px;">
+    <div class="markets-header" style="font-size:15px; font-weight:700; font-family:'Playfair Display',serif; padding:10px 12px 8px; border-bottom:2px solid var(--ink);">Markets at a Glance — Week of May 8, 2026</div>
+    <table style="width:100%; border-collapse:collapse; font-family:'Source Sans 3',sans-serif; font-size:12.5px;">
+      <tr style="border-bottom:1px solid var(--rule-light);">
+        <td style="padding:5px 12px; color:var(--ink);">S&amp;P 500</td>
+        <td style="padding:5px 12px; text-align:right; color:#8b0000; font-weight:600;">7,337 &nbsp;▼ 0.38% Thu close</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--rule-light);">
+        <td style="padding:5px 12px; color:var(--ink);">WTI Crude (Oil)</td>
+        <td style="padding:5px 12px; text-align:right; color:#2a7a2a; font-weight:600;">$94.81 &nbsp;▲ Hormuz risk premium</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--rule-light);">
+        <td style="padding:5px 12px; color:var(--ink);">Brent Crude</td>
+        <td style="padding:5px 12px; text-align:right; color:#2a7a2a; font-weight:600;">$100.06 &nbsp;▲ $100 milestone crossed</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--rule-light);">
+        <td style="padding:5px 12px; color:var(--ink);">NVIDIA (NVDA)</td>
+        <td style="padding:5px 12px; text-align:right; color:#2a7a2a; font-weight:600;">Dominant &nbsp;▲ 79% prob largest company May</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--rule-light);">
+        <td style="padding:5px 12px; color:var(--ink);">Bitcoin (BTC)</td>
+        <td style="padding:5px 12px; text-align:right; color:#2a7a2a; font-weight:600;">~$82,000 &nbsp;▲ 52% prob hits $85K in May</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--rule-light);">
+        <td style="padding:5px 12px; color:var(--ink);">Anthropic</td>
+        <td style="padding:5px 12px; text-align:right; color:#2a7a2a; font-weight:600;">76% AI model lead &nbsp;▲ Colossus deal catalyst</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--rule-light);">
+        <td style="padding:5px 12px; color:var(--ink);">Energy (XOM, CVX)</td>
+        <td style="padding:5px 12px; text-align:right; color:#2a7a2a; font-weight:600;">Elevated &nbsp;▲ on Iran supply risk</td>
+      </tr>
+      <tr>
+        <td style="padding:5px 12px; color:var(--ink);">Core CPI (Mar YoY)</td>
+        <td style="padding:5px 12px; text-align:right; color:#666; font-weight:600;">2.6% &nbsp;— moderating from 2.8%</td>
+      </tr>
+    </table>
+    <div style="font-family:'Source Sans 3',sans-serif; font-size:10px; color:#666; padding:6px 12px; border-top:1px solid var(--rule-light); font-style:italic;">
+      Fed holds rates. Unit labor costs undershoot consensus (2.3% vs 2.6% est) — dovish signal. Consumer credit surges $24.86B March. April payrolls +115K, unemployment 4.3%.
+    </div>
+  </div>
+
+<div style="clear:both; display:block; width:100%; margin-top:32px;"></div>
+  <div class="section-divider"><span>Local · Gainesville &amp; Hall County</span></div>
+  <div class="section-label local">Local — Gainesville Times &amp; AccessWDUN</div>
+  <div class="three-col" style="margin-bottom:14px;">
+    <article class="col-divider">
+      <h3>Gainesville Inland Port Now Open — First Containers Moving on Norfolk Southern Rail</h3>
+      <div class="byline">Economic Development &nbsp;·&nbsp; May 4–8, 2026</div>
+      <p>The Gainesville Inland Port officially opened May 4, 2026, with Norfolk Southern providing five-days-a-week rail service to the Port of Savannah. The $134 million facility — formerly the Blue Ridge Connector — provides Northeast Georgia manufacturers direct access to Savannah's global ocean carrier network, eliminating a 600-mile truck roundtrip. GPA projects 26,000 truck roundtrips eliminated in year one. At full build-out, the 104-acre terminal targets 200,000 containers annually, serving 330 regional manufacturers in poultry, heavy equipment, and forest products.</p>
+    </article>
+    <article class="col-divider">
+      <h3>Gainesville Employment Improves; Hall County Sets Second Consecutive Jobs Record</h3>
+      <div class="byline">Labor &amp; Economy &nbsp;·&nbsp; May 7, 2026 · AccessWDUN</div>
+      <p>Employment figures for March 2026 showed improvement in Gainesville and across Georgia according to state data released this week. Hall County recorded a record number of employed residents for the second consecutive month, a trend local economists attribute to the region's expanding logistics and healthcare sectors. The Gainesville metro continues to outperform statewide averages, buoyed by proximity to the Atlanta labor market and its own industrial base.</p>
+      <h3 style="margin-top:12px;">Gainesville Downtown Greenway Expansion Draws National Attention</h3>
+      <div class="byline">Development &nbsp;·&nbsp; May 7, 2026</div>
+      <p>HelloNation profiled Gainesville's ongoing downtown transformation this week, highlighting the Midland Greenway expansion and mixed-use redevelopment bringing apartments, office space, and hospitality projects to the city center. The article notes stronger evening foot traffic and a growing identity as a walkable, year-round urban environment — a significant shift for a city historically known as the gateway to Lake Lanier.</p>
+    </article>
+    <article>
+      <h3>Hall County Primary: May 19 Election Features Solicitor Race, ESPLOST Vote</h3>
+      <div class="byline">Politics &amp; Education &nbsp;·&nbsp; Election Day May 19</div>
+      <p>With early voting underway through May 15, Hall County's May 19 primary is drawing attention to two competitive races. The Hall County Solicitor General seat is contested, while county commissioners and school officials are weighing an ESPLOST vote that would fund capital improvements across Hall County Schools. A Ward 1 City Council special election is also on the ballot, filling a seat vacant since earlier this year. Additionally, the Gainesville Trolley returns this weekend with expanded summer hours, and the First Fridays Concert Series kicked off in Downtown Square.</p>
+    </article>
+  </div>
+
+<div class="section-divider"><span>Travel &amp; Mobility · Advisory</span></div>
+  <div style="margin-bottom:32px; padding-bottom:32px; border-bottom:2px solid var(--rule-light);">
+    
+
+  <!-- SECTION HEADER -->
+  <div class="section-header">
+    <span class="section-label">✈ Travel · Mobility · Advisory</span>
+    <span class="section-rule"></span>
+    
+  </div>
+
+  <!-- LEAD STORY -->
+  <div class="lead-story">
+
+    <div class="lead-photo-col">
+      <div style="position:relative; display:block;">
+        <img
+          src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1200&q=85" alt="MV Hondius expedition cruise ship at anchor" style="display:block; width:100%;"
+        />
+      </div>
+      <p class="photo-caption">MV Hondius anchored off Praia, Cape Verde — May 4, 2026. (AFP / Getty Images)</p>
+      <div class="stat-bar" style="margin-top:8px; margin-bottom:8px;">
+        <div class="stat-item">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Deaths</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">7</span>
+          <span class="stat-label">Cases</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">149</span>
+          <span class="stat-label">On Board</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">23</span>
+          <span class="stat-label">Nationalities</span>
+        </div>
+      </div>
+      <div class="route-map-wrap" style="border:1px solid var(--rule-light);">
+        <div style="background:var(--paper-dark); padding:4px 10px; font-family:'Source Sans 3',sans-serif; font-size:9px; font-weight:700; letter-spacing:1.8px; text-transform:uppercase; color:var(--travel-accent); border-bottom:1px solid var(--rule-light);">
+          ✦ Voyage Route — MV Hondius · Apr 1 – May 2026
+        </div>
+        <div style="width:100%; line-height:0;"><svg viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg" font-family="'Georgia', serif">
+  <defs>
+    <filter id="paper" x="-2%" y="-2%" width="104%" height="104%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="multiply" result="blended"/>
+      <feComposite in="blended" in2="SourceGraphic" operator="in"/>
+    </filter>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-color="#00000033"/>
+    </filter>
+    <linearGradient id="oceanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c8dcea"/>
+      <stop offset="100%" stop-color="#a8c4d8"/>
+    </linearGradient>
+    <linearGradient id="antarcticaGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8eef2"/>
+      <stop offset="100%" stop-color="#d4dfe6"/>
+    </linearGradient>
+    <!-- Dashed animated route line -->
+    <marker id="arrowhead" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#8b0000" opacity="0.85"/>
+    </marker>
+  </defs>
+
+  <!-- Ocean background -->
+  <rect width="520" height="340" fill="url(#oceanGrad)"/>
+
+  <!-- Subtle latitude grid lines -->
+  <g stroke="#8aafca" stroke-width="0.4" opacity="0.5">
+    <!-- Equator approx y=118 -->
+    <line x1="0" y1="118" x2="520" y2="118" stroke-dasharray="4,6"/>
+    <!-- Tropic of Capricorn approx y=168 -->
+    <line x1="0" y1="168" x2="520" y2="168" stroke-dasharray="4,6"/>
+    <!-- Antarctic Circle approx y=290 -->
+    <line x1="0" y1="290" x2="520" y2="290" stroke-dasharray="4,6"/>
+    <!-- Longitude lines -->
+    <line x1="130" y1="0" x2="130" y2="340" stroke-dasharray="4,6"/>
+    <line x1="260" y1="0" x2="260" y2="340" stroke-dasharray="4,6"/>
+    <line x1="390" y1="0" x2="390" y2="340" stroke-dasharray="4,6"/>
+  </g>
+
+  <!-- Latitude labels -->
+  <g font-size="7" fill="#4a7a9b" opacity="0.7" font-family="'Georgia', serif" font-style="italic">
+    <text x="4" y="116">Equator</text>
+    <text x="4" y="166">Tropic of Capricorn</text>
+    <text x="4" y="288">Antarctic Circle</text>
+  </g>
+
+  <!-- CONTINENTS (simplified outlines) -->
+
+  <!-- South America -->
+  <path d="M 155,90 C 165,85 175,88 180,95 L 190,110 195,128 192,148 185,165 178,180 170,195 162,210 155,225 150,238 148,248 152,255 158,260 155,265 148,262 140,255 138,245 140,232 144,218 148,205 150,192 148,178 145,165 142,150 140,135 140,118 142,105 148,95 Z"
+    fill="#d4c9a8" stroke="#b0a070" stroke-width="0.8" opacity="0.9"/>
+  <!-- Argentina label -->
+  <text x="148" y="220" font-size="8" fill="#5a4a2a" text-anchor="middle" font-style="italic">South</text>
+  <text x="148" y="230" font-size="8" fill="#5a4a2a" text-anchor="middle" font-style="italic">America</text>
+
+  <!-- Africa (west coast) -->
+  <path d="M 310,80 C 318,78 325,82 328,90 L 332,108 334,128 333,148 330,168 325,188 320,205 315,218 310,228 305,235 302,240 304,248 308,252 306,258 300,256 295,248 294,238 296,228 300,215 304,200 306,185 306,168 305,150 304,132 305,112 307,95 Z"
+    fill="#d4c9a8" stroke="#b0a070" stroke-width="0.8" opacity="0.9"/>
+  <text x="314" y="170" font-size="8" fill="#5a4a2a" text-anchor="middle" font-style="italic">Africa</text>
+
+  <!-- Europe (bottom) -->
+  <path d="M 290,20 C 298,18 310,22 318,28 L 322,38 318,46 310,50 300,52 292,48 288,40 286,30 Z"
+    fill="#d4c9a8" stroke="#b0a070" stroke-width="0.8" opacity="0.8"/>
+  <text x="305" y="38" font-size="7.5" fill="#5a4a2a" text-anchor="middle" font-style="italic">Europe</text>
+
+  <!-- Antarctica -->
+  <path d="M 0,310 C 40,295 90,288 140,285 C 180,282 220,280 260,280 C 300,280 350,282 400,286 C 440,289 480,295 520,305 L 520,340 L 0,340 Z"
+    fill="url(#antarcticaGrad)" stroke="#b0ccd8" stroke-width="0.8"/>
+  <text x="260" y="320" font-size="9" fill="#4a6a7a" text-anchor="middle" font-style="italic" font-weight="bold">ANTARCTICA</text>
+
+  <!-- Saint Helena island dot -->
+  <circle cx="282" cy="214" r="4" fill="#c8a050" stroke="#8b6820" stroke-width="0.8"/>
+
+  <!-- Ascension Island dot -->
+  <circle cx="272" cy="178" r="3.5" fill="#c8a050" stroke="#8b6820" stroke-width="0.8"/>
+
+  <!-- Cape Verde island dot -->
+  <circle cx="278" cy="128" r="4" fill="#c8a050" stroke="#8b6820" stroke-width="0.8"/>
+
+  <!-- ROUTE PATH: Ushuaia → Antarctica → back up → Saint Helena → Ascension → Cape Verde -->
+  <!-- Ushuaia: ~x=158, y=268 -->
+  <!-- Antarctica stop: ~x=190, y=288 -->
+  <!-- Saint Helena: x=282, y=214 -->
+  <!-- Ascension: x=272, y=178 -->
+  <!-- Cape Verde: x=278, y=128 -->
+
+  <path d="M 158,268 C 165,275 178,282 192,285 C 215,288 240,282 262,272 C 278,264 284,248 284,232 C 284,224 283,218 282,214"
+    fill="none" stroke="#8b0000" stroke-width="2" stroke-dasharray="6,4" opacity="0.85" marker-end="url(#arrowhead)"/>
+
+  <path d="M 282,214 C 281,204 276,194 273,184 L 272,178"
+    fill="none" stroke="#8b0000" stroke-width="2" stroke-dasharray="6,4" opacity="0.85" marker-end="url(#arrowhead)"/>
+
+  <path d="M 272,178 C 273,162 275,148 277,136 L 278,128"
+    fill="none" stroke="#8b0000" stroke-width="2" stroke-dasharray="6,4" opacity="0.85" marker-end="url(#arrowhead)"/>
+
+  <!-- START: Ushuaia marker -->
+  <circle cx="158" cy="268" r="6" fill="#8b0000" stroke="#fff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="165" y="262" font-size="8.5" fill="#8b0000" font-weight="bold">Ushuaia</text>
+  <text x="165" y="272" font-size="7.5" fill="#444">(Depart Apr 1)</text>
+
+  <!-- Antarctica waypoint -->
+  <circle cx="215" cy="286" r="4.5" fill="#1a5496" stroke="#fff" stroke-width="1.2"/>
+  <text x="220" y="282" font-size="7.5" fill="#1a5496" font-weight="bold">Antarctica</text>
+  <text x="220" y="291" font-size="7" fill="#444">Expedition stop</text>
+
+  <!-- Saint Helena label -->
+  <text x="290" y="211" font-size="8.5" fill="#8b0000" font-weight="bold">Saint Helena</text>
+  <text x="290" y="221" font-size="7.5" fill="#444">British territory</text>
+  <text x="290" y="230" font-size="7" fill="#666">(First death Apr ~20)</text>
+
+  <!-- Ascension label -->
+  <text x="248" y="172" font-size="8.5" fill="#8b0000" font-weight="bold">Ascension Is.</text>
+  <text x="248" y="182" font-size="7" fill="#444">Medical evacuation</text>
+
+  <!-- Cape Verde label + CURRENT -->
+  <circle cx="278" cy="128" r="7" fill="#8b0000" stroke="#fff" stroke-width="2" filter="url(#shadow)"/>
+  <text x="287" y="122" font-size="8.5" fill="#8b0000" font-weight="bold">Cape Verde</text>
+  <text x="287" y="132" font-size="7.5" fill="#444">Praia — Anchored</text>
+  <text x="287" y="141" font-size="7" fill="#8b0000" font-weight="bold">⚑ Current position</text>
+
+  <!-- LEGEND -->
+  <rect x="8" y="8" width="148" height="68" rx="2" fill="white" opacity="0.82" stroke="#c0b8a8" stroke-width="0.8"/>
+  <text x="14" y="21" font-size="8" fill="#1a1a1a" font-weight="bold" letter-spacing="1" font-family="'Georgia', serif">MV HONDIUS — ROUTE</text>
+  <line x1="14" y1="27" x2="152" y2="27" stroke="#c0b8a8" stroke-width="0.6"/>
+  <!-- legend items -->
+  <circle cx="19" cy="35" r="4" fill="#8b0000" stroke="#fff" stroke-width="1"/>
+  <text x="27" y="38" font-size="7.5" fill="#333">Departure / Incident port</text>
+  <circle cx="19" cy="48" r="3.5" fill="#1a5496" stroke="#fff" stroke-width="1"/>
+  <text x="27" y="51" font-size="7.5" fill="#333">Expedition waypoint</text>
+  <circle cx="19" cy="61" r="3.5" fill="#c8a050" stroke="#8b6820" stroke-width="0.8"/>
+  <text x="27" y="64" font-size="7.5" fill="#333">Island territory</text>
+  <!-- route line legend -->
+  <line x1="14" y1="70" x2="40" y2="70" stroke="#8b0000" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="45" y="73" font-size="7.5" fill="#333">Vessel route</text>
+
+  <!-- Title strip -->
+  <rect x="0" y="0" width="520" height="0" fill="none"/>
+  <!-- Bottom credit -->
+  <text x="516" y="337" font-size="6.5" fill="#4a7a9b" text-anchor="end" opacity="0.7">Chronicle Foreign Desk · Atlantis ITS · May 2026</text>
+</svg>
+</div>
+      </div>
+    </div>
+
+    <br>
+    <div class="lead-text-col">
+      <div class="story-section-tag" style="display:flex; align-items:center; gap:8px;">
+        Travel
+        <span style="background:var(--accent-warm); color:#fff; font-family:'Source Sans 3',sans-serif; font-size:9px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; padding:2px 8px;">⚠ Health Alert</span>
+      </div>
+	  <br>
+      <h2 class="lead-headline">Hantavirus Outbreak Strands 149 Aboard MV Hondius in Atlantic</h2>
+      <p class="lead-deck">Three passengers dead, one critically ill in South Africa — the vessel originated in Argentina, where the Andes strain of hantavirus is endemic and capable of limited human-to-human transmission.</p>
+      <div class="byline">By The Chronicle Foreign Desk · May 5–6, 2026</div>
+      <div class="story-body">
+        <p>A hantavirus cluster aboard the Dutch-flagged expedition vessel MV Hondius has killed three passengers and left one critically ill in a Johannesburg ICU, with the ship currently anchored off Praia, the capital of Cape Verde, after being refused entry to port. The World Health Organization confirmed two laboratory-positive cases of hantavirus as of May 4, with five additional suspected cases under investigation across 23 nationalities.</p>
+        <p>The MV Hondius departed Ushuaia, Argentina on April 1 on a remote Atlantic expedition routing through Antarctica, Saint Helena, and Ascension Island before the first illnesses were reported mid-April. The current investigative hypothesis is that some passengers were exposed to Andes virus (ANDV) during excursions in Argentina before boarding — and may have subsequently transmitted the virus to fellow passengers in the confined setting of the ship.</p>
+        <p>Andes virus is uniquely dangerous among the hantavirus family: it is the only known strain with documented human-to-human transmission, primarily through close household or patient contact. The CDC places the fatality rate for hantavirus pulmonary syndrome at approximately 38% once respiratory symptoms develop. There is no approved antiviral treatment.</p>
+        <p>WHO's regional director for Europe stated there is no need for broader travel restrictions, and the risk to the general public remains low. Oceanwide Expeditions is considering sailing the vessel to Spain as port access in Cape Verde remains unresolved.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECONDARY 3-COL GRID -->
+  <div class="secondary-grid">
+
+    <!-- Card 1: What is Hantavirus -->
+	<br>
+    <div class="secondary-card">
+      <img
+        src="https://images.unsplash.com/photo-1579154204601-01588f351e67?w=800&q=80" alt="Medical laboratory research"
+      />
+      <div class="card-tag">Health Briefing</div>
+      <div class="card-divider"></div>
+      <h3 class="card-headline">What Is Hantavirus — And Why the Andes Strain Matters</h3>
+      <p class="card-body">Hantaviruses are rodent-borne zoonotic diseases typically contracted through contact with infected rodent waste. Most strains cannot spread between people — with one exception. The Andes virus, endemic to Chile and Argentina, is the only hantavirus strain with confirmed human-to-human transmission, making the MV Hondius outbreak uniquely concerning for travel medicine. Fatigue, fever, and rapid progression to acute respiratory distress define the clinical course. No antiviral treatment exists; supportive care and early oxygen are the primary interventions.</p><br>
+    </div>
+
+    <!-- Card 2: Cape Verde / Location Context -->
+	<br>
+    <div class="secondary-card">
+      <img
+        src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80" alt="Cape Verde Atlantic coastline"
+      />
+      <div class="card-tag">Location · Context</div>
+      <div class="card-divider"></div>
+      <h3 class="card-headline">Cape Verde: Strategic Crossroads Becomes Outbreak Flashpoint</h3>
+      <p class="card-body">The Cabo Verde archipelago — a Portuguese-speaking island nation 570 km off West Africa's coast — is a growing tourism hub, hosting roughly 900,000 visitors annually. Its position as a maritime waypoint in the mid-Atlantic makes it a routine stop for expedition vessels and transatlantic crossings alike. The port authority's refusal to grant MV Hondius entry follows international health protocols for vessels with active outbreak notifications. Three suspected cases were separately evacuated to the Netherlands for further care, complicating the multi-country contact tracing effort now underway.</p><br>
+    </div>
+
+    <!-- Card 3: Traveler Advisory -->
+	<br>
+    <div class="secondary-card">
+      <img
+        src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80" alt="Airport terminal travel advisory"
+      />
+      <div class="card-tag">Traveler Advisory</div>
+      <div class="card-divider"></div>
+      <h3 class="card-headline">Expedition &amp; Remote Travel: What Passengers Should Know</h3>
+      <p class="card-body">Expedition voyages to remote wildlife zones — Antarctica, Patagonia, sub-Antarctic islands — carry elevated exposure risk for zoonotic disease not present on mainstream cruise itineraries. Passengers who visited rural Argentina, Chile, or similar hantavirus-endemic areas and develop fever, fatigue, or respiratory symptoms within four weeks should seek immediate evaluation and disclose their travel history. The WHO emphasizes that standard cruise travel carries no elevated hantavirus risk — the MV Hondius case is tied to the vessel's specific South American departure point and wildlife excursion activities.</p><br>
+    </div>
+  </div>
+
+  <!-- ADVISORY BANNER -->
+  <div class="advisory-banner">
+    <div class="advisory-icon">🧭</div>
+    <div class="advisory-content">
+      <div class="advisory-title">Atlantis Travel Intelligence — Standing Watch</div>
+      <p class="advisory-text">The Chronicle's Travel &amp; Mobility desk will monitor the MV Hondius situation through resolution and track any WHO risk reclassification. Travelers with upcoming expedition departures from South American ports are advised to review operator health protocols before sailing. Full WHO disease outbreak notice: <strong>DON-599 · May 4, 2026</strong>.</p>
+    </div>
+  </div>
+
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       TECH & AI SECTION  
+       ═══════════════════════════════════════════ -->
+  <div class="section-divider"><span>Technology &amp; Artificial Intelligence</span></div>
+  <div style="margin-bottom:32px; padding-bottom:32px; border-bottom:2px solid var(--rule-light);">
+    
+
+  <!-- SECTION HEADER -->
+  <div class="section-header">
+    <span class="section-label">⚡ Tech · AI · Infrastructure</span>
+    <span class="section-rule"></span>
+    
+  </div>
+
+  <!-- LEAD STORY -->
+  <div class="lead-full">
+
+    <!-- DARK HERO BANNER -->
+    <div class="hero-banner">
+      <div class="hero-eyebrow">Breaking · AI Infrastructure</div>
+      <h2 class="hero-headline">Anthropic Taps <span>Colossus</span> —<br>SpaceX Supercomputer Now Powers Claude</h2>
+      <p class="hero-deck">In a deal that rewrites the AI compute playbook, Anthropic has secured all capacity at SpaceX's Colossus 1 data center — instantly doubling Claude Code limits and raising Opus API rate limits for paid subscribers worldwide.</p>
+      <div class="hero-byline">By The Chronicle Tech Desk &nbsp;·&nbsp; May 6–8, 2026 &nbsp;·&nbsp; Sources: Anthropic, CNBC, Bloomberg, CoinDesk</div>
+    </div>
+
+    <!-- METRICS BAR -->
+    <div class="metrics-bar">
+      <div class="metric-item">
+        <span class="metric-num">220K+</span>
+        <span class="metric-label">NVIDIA GPUs</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-num">300MW</span>
+        <span class="metric-label">New Capacity</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-num">2×</span>
+        <span class="metric-label">Claude Code Limits</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-num">5GW</span>
+        <span class="metric-label">Amazon Deal</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-num">$50B</span>
+        <span class="metric-label">Fluidstack Infra</span>
+      </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="body-two-col">
+      <div class="story-body">
+        <p>Anthropic announced Wednesday it had signed an agreement with SpaceX to access all compute capacity at Colossus 1, the massive AI supercomputer cluster located in Memphis, Tennessee. The deal delivers more than 300 megawatts of power and over 220,000 NVIDIA GPUs — including dense deployments of H100, H200, and next-generation GB200 accelerators — within the month, representing one of the largest single compute acquisitions in AI history.</p>
+        <p>The agreement immediately triggered tangible upgrades for Claude users. Claude Code's five-hour rate limits were doubled for Pro, Max, Team, and Enterprise subscribers, effective the same day. Peak-hour slowdowns that had plagued Claude Pro and Max users during high-traffic periods were removed. Opus API rate limits were raised significantly, addressing a persistent bottleneck for enterprise developers building on Claude's most capable model tier.</p>
+        <p>The Colossus 1 deal is the capstone of a sweeping infrastructure buildout that Anthropic has been quietly assembling. The company has previously signed a 5-gigawatt agreement with Amazon — including nearly 1 gigawatt of new capacity arriving by year-end — a 5-gigawatt deal with Google and Broadcom coming online in 2027, a Microsoft-NVIDIA strategic partnership covering $30 billion of Azure capacity, and a $50 billion U.S. AI infrastructure investment with Fluidstack.</p>
+        <p>The deal carries unusual political texture. SpaceX merged with Elon Musk's xAI earlier this year in an all-stock deal valuing xAI at approximately $250 billion, bringing Colossus infrastructure under the rocket company's umbrella as SpaceXAI. Musk has repeatedly criticized Anthropic, calling it "misanthropic," yet said discussions with senior Anthropic staff shaped his view of the company's approach to responsible AI development. Anthropic will use Colossus 1 for Claude inference, while SpaceXAI trains future Grok models on the newer Colossus 2 cluster.</p>
+        <p>Perhaps most striking is what lies beyond the deal's immediate scope. Anthropic has expressed interest in partnering with SpaceX to develop multiple gigawatts of orbital AI compute capacity — a signal that the race for AI infrastructure is beginning to outpace what terrestrial power grids, land availability, and cooling systems can sustainably deliver.</p>
+      </div>
+
+      <div>
+        <div class="pull-quote">"The compute required to train and operate the next generation of these systems is outpacing what terrestrial power, land, and cooling can deliver."<br><small style="font-size:11px; font-weight:400; font-style:normal; color:#666; display:block; margin-top:8px;">— SpaceXAI statement, May 6, 2026</small></div>
+
+        <div class="compute-stack">
+          <div class="stack-title">⚙ Anthropic Compute Stack — May 2026</div>
+          <div class="stack-item">
+            <div class="stack-dot"></div>
+            <div class="stack-text"><strong>SpaceX / Colossus 1</strong>220K+ GPUs · 300MW · Memphis, TN · Live now</div>
+          </div>
+          <div class="stack-item">
+            <div class="stack-dot gold"></div>
+            <div class="stack-text"><strong>Amazon AWS</strong>Up to 5GW · ~1GW by end of 2026 · AWS Trainium</div>
+          </div>
+          <div class="stack-item">
+            <div class="stack-dot gold"></div>
+            <div class="stack-text"><strong>Google + Broadcom</strong>5GW · Google TPUs · Online 2027</div>
+          </div>
+          <div class="stack-item">
+            <div class="stack-dot green"></div>
+            <div class="stack-text"><strong>Microsoft + NVIDIA</strong>$30B Azure capacity · Strategic partnership</div>
+          </div>
+          <div class="stack-item">
+            <div class="stack-dot green"></div>
+            <div class="stack-text"><strong>Fluidstack</strong>$50B U.S. AI infrastructure investment</div>
+          </div>
+          <div class="stack-item">
+            <div class="stack-dot" style="background:#9b59b6;"></div>
+            <div class="stack-text"><strong>Orbital Compute 🛰</strong>Multi-GW space-based capacity — expressed interest, SpaceX partnership</div>
+          </div>
+        </div>
+
+        <div class="impact-box">
+          <div class="impact-title">⚡ Impact for Claude Users — Effective Now</div>
+          <ul class="impact-text">
+            <li>Claude Code limits doubled (Pro, Max, Team, Enterprise)</li>
+            <li>Peak-hour throttling removed on Pro + Max</li>
+            <li>Opus API rate limits raised significantly</li>
+            <li>Reliability improvements during high-traffic periods</li>
+            <li>Inference migration to Colossus begins within days</li><
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECONDARY 3-COL --><br>
+  <div class="secondary-grid">
+    <div class="sec-card">
+      <div class="card-tag">Context · Rivalry</div>
+      <div class="card-divider"></div>
+      <h3 class="card-headline">Strange Bedfellows: Musk Funds the AI He Called "Misanthropic"</h3>
+      <p class="card-body">The Anthropic-SpaceX deal is arguably the most politically charged partnership in AI history. Elon Musk, who folded xAI into SpaceX earlier this year, has repeatedly attacked Anthropic's safety-focused approach, calling it "doomed to become the opposite of its name." Yet the revenue calculus won out. SpaceXAI moved Grok training to Colossus 2, freeing Colossus 1 for Anthropic — a competitor powering rival models on Musk's own hardware. The deal lands weeks before SpaceX's planned IPO, bolstering its pitch as a neutral AI infrastructure provider.</p><br>
+    </div>
+
+    <div class="sec-card">
+      <div class="card-tag">Strategic · Orbital</div>
+      <div class="card-divider"></div>
+      <h3 class="card-headline">The Next Frontier: AI Compute in Orbit</h3>
+      <p class="card-body">Buried in the deal terms is a line that may prove more consequential than the GPU count: Anthropic has expressed interest in partnering with SpaceX on multiple gigawatts of orbital AI compute capacity. SpaceXAI has publicly cited terrestrial power, land, and cooling as hard constraints on future AI scaling. Space-based data centers would require solutions for launch costs, hardware maintenance, thermal management, and low-latency networking — challenges SpaceX's Starlink infrastructure is uniquely positioned to address. This is no longer science fiction; it is corporate roadmap language.</p><br>
+    </div>
+
+    <div class="sec-card">
+      <div class="card-tag">Analysis · Atlantis</div>
+      <div class="card-divider"></div>
+      <h3 class="card-headline">What This Means for the AI Race — and Operators Like You</h3>
+      <p class="card-body">The Colossus deal signals that the AI competition has entered a new phase. Model quality still matters, but the differentiator is now raw infrastructure scale. For operators and builders on Claude — including the Atlantis ITS stack — the immediate benefit is real: fewer throttle events, more reliable Opus access, and doubled Claude Code throughput. The longer signal: Anthropic is building for a world where AI systems require planetary-scale compute. Operators who align now with the best-resourced platforms have a structural advantage as that scale comes online.</p><br>
+    </div>
+
+  </div>
+
+  <!-- SIGNAL FOOTER -->
+  <div class="signal-footer">
+    <div class="signal-icon">🔱</div>
+    <div>
+      <div class="signal-title">Atlantis Intelligence Signal — Compute Watch</div>
+      <p class="signal-text">The Chronicle will track Anthropic's compute rollout milestones — Colossus 1 inference migration, Amazon 1GW activation, and orbital compute developments — as leading indicators of Claude capability expansion. For Atlantis ITS operators: Claude Code doubled limits are live now. Opus API rate improvements are active. No action required.</p>
+    </div>
+  </div>
+
+  </div>
+
+<div class="byline">Community &amp; Events</div>
+      <p>Gainesville is preparing to host the NCAA Rowing Championships and is currently searching for national anthem singers — a sign of the city's growing profile as a destination for major athletic competitions on Lake Lanier. Meanwhile, thousands turned out this week for the 28th Annual Duck Derby, one of Northeast Georgia's most beloved community fundraisers. On a sobering note, city officials reported a minor sewer spill near Limestone Creek, with crews responding promptly. A Michelin Star-ambition omakase sushi restaurant has been confirmed for Gainesville — described as "nothing like it in Northeast Georgia."</p>
+    </article>
+  </div>
+
+  <!-- ============================================
+       ORACLE'S CORNER — PREDICTION MARKET WIRE
+       Powered by AI-Edge Agent · May 8–10, 2026
+       ============================================ -->
+  <div class="oracle-section">
+    <div class="oracle-header">
+      <span class="oracle-title">Oracle's Corner</span>
+      <span class="oracle-subtitle">Prediction Market Intelligence · Polymarket + Kalshi · AI-Edge Agent</span>
+      <br><span class="data-stamp">Data as of Friday, May 8, 2026 — 9:00am EDT &nbsp;·&nbsp; Weekend Edition</span>
+    </div>
+
+    <div class="oracle-lead">
+      <h3>Signal Summary</h3>
+      <p>Anthropic dominates AI model prediction markets at 76% probability of best model end of May, with NVIDIA holding 79–82% probability as world's largest company. Bitcoin sits at 52% probability of reaching $85K in May. The AI bubble burst probability by year-end 2026 sits at approximately 30% — a notable risk signal despite near-term momentum. Kalshi regulated markets confirm World Cup liquidity at $911M total volume, with France leading at 17.7%. Fed rate cut probability remains low as energy-driven inflation persists.</p><br>
+    </div>
+
+    <div class="forecast-grid">
+      <div class="forecast-card">
+        <div class="forecast-tags"><span class="forecast-tag tech">AI</span><span class="forecast-tag">Polymarket</span></div>
+        <h4>Best AI Model — End of May 2026</h4>
+        <div class="confidence-bar">
+          <div class="confidence-fill" style="width:76%;"></div>
+        </div>
+        <div class="forecast-prob">76% <span>Anthropic / Claude</span></div>
+        <p class="forecast-note">$4.5M+ volume. Anthropic holding strong lead through Colossus compute announcement. SpaceX deal may accelerate Claude capability rollout, reinforcing market position.</p>
+      </div>
+
+      <div class="forecast-card">
+        <div class="forecast-tags"><span class="forecast-tag tech">Markets</span><span class="forecast-tag">Polymarket</span></div>
+        <h4>Largest Company — End of May 2026</h4>
+        <div class="confidence-bar">
+          <div class="confidence-fill" style="width:79%;"></div>
+        </div>
+        <div class="forecast-prob">79–82% <span>NVIDIA</span></div>
+        <p class="forecast-note">$11M+ volume. Dominant hold on #1 position. June outlook at 74–76%. Short-term volatility bets active but directional consensus unchanged.</p>
+      </div>
+
+      <div class="forecast-card">
+        <div class="forecast-tags"><span class="forecast-tag geo">Sports</span><span class="forecast-tag">Kalshi</span></div>
+        <h4>2026 FIFA World Cup Winner</h4>
+        <div class="confidence-bar">
+          <div class="confidence-fill" style="width:17%;"></div>
+        </div>
+        <div class="forecast-prob">France 17.7% · Spain 16.1% · England 11.2%</div>
+        <p class="forecast-note">$911M total volume across Polymarket + Kalshi. Highest liquidity sports market of 2026. France and Spain remain co-favorites; massive lead-gen opportunity tied to World Cup hype cycle building through summer.</p>
+      </div>
+
+      <div class="forecast-card">
+        <div class="forecast-tags"><span class="forecast-tag tech">Crypto</span><span class="forecast-tag">Polymarket</span></div>
+        <h4>Bitcoin Reaches $85K in May?</h4>
+        <div class="confidence-bar">
+          <div class="confidence-fill" style="width:52%;"></div>
+        </div>
+        <div class="forecast-prob">52% <span>Yes · $3M+ vol</span></div>
+        <p class="forecast-note">BTC holding firm above $80K. Current price ~$82K. Kalshi active on 15-min BTC/ETH/SOL/XRP contracts. Slight lean toward $85K by month end; macro uncertainty from Hormuz keeps ceiling in play.</p>
+      </div>
+
+      <div class="forecast-card">
+        <div class="forecast-tags"><span class="forecast-tag tech">AI</span><span class="forecast-tag">Polymarket</span></div>
+        <h4>Anthropic Valued > OpenAI in 2026?</h4>
+        <div class="confidence-bar">
+          <div class="confidence-fill" style="width:87%;"></div>
+        </div>
+        <div class="forecast-prob">85–89% <span>Yes — strong momentum</span></div>
+        <p class="forecast-note">Claude 5 release by Sep 30 2026 at 79% probability. Colossus deal and multi-GW compute partnerships position Anthropic as infrastructure leader, not just model maker.</p>
+      </div>
+
+      <div class="forecast-card">
+        <div class="forecast-tags"><span class="forecast-tag geo">Macro</span><span class="forecast-tag">Kalshi</span></div>
+        <h4>Fed Rate Cuts in 2026</h4>
+        <div class="confidence-bar">
+          <div class="confidence-fill" style="width:25%;"></div>
+        </div>
+        <div class="forecast-prob">Low probability — stability expected</div>
+        <p class="forecast-note">Markets leaning toward Fed holding rates stable or making minimal changes. Energy-driven inflation from Hormuz conflict offsetting dovish signals from wage data. Unit labor cost undershoot (2.3% vs 2.6% consensus) is the bullish data point.</p>
+      </div>
+    </div>
+
+    <div class="oracle-edge"><br>
+      <strong>Atlantis Edge Takeaway</strong> — NVIDIA dominance and Anthropic's 76% AI lead signal strong tailwinds for Nova-Alpha timing on Trunks infrastructure and Forgejo memory scaling. Double down on VPS/infra capacity now while BTC holds firm above $80K. World Cup hype cycle building through summer — France/Spain favorites position weekly content cadence for AI/hardware momentum into June earnings. AI bubble burst risk at 30% warrants monitoring but not panic; near-term signal is strongly bullish for Atlantis infrastructure build.
+    </div>
+  </div>
+
+  <!-- ============================================
+       ATLANTIS ITS OPERATIONS REPORT
+       ============================================ -->
+  <div class="atlantis-section">
+    <div class="atlantis-header">
+      <div class="atlantis-header-title">Atlantis ITS · Operations Intelligence</div>
+      <div class="atlantis-header-subtitle">Weekend Edition · May 8–10, 2026</div>
+    </div>
+
+    <div class="atlantis-grid">
+      <div class="atlantis-card highlight">
+        <div class="atlantis-card-label">Phase Milestone</div>
+        <h3>Nova Phase 3 Unlocked — Search + Memory Sync Live</h3>
+        <p>Nova CLI achieved three major capability milestones this week: <code>nova --sync-memory</code> pulls V22 memory directly from Forgejo via HTTP token, <code>nova --search</code> executes live Brave Search queries through n8n and returns structured results, and the standard <code>nova "question"</code> now reads fresh V22 context on every call. Nova-search-parser.py deployed to <code>~/nova/brain/bin/</code>. The Nova Brave Search n8n workflow is published and live at <code>localhost:5678/webhook/nova-search</code>. Baby dragon has binoculars. 🔱</p>
+      </div>
+
+      <div class="atlantis-card">
+        <div class="atlantis-card-label">Infrastructure</div>
+        <h3>Nginx Reverse Proxy Live — *.atlantis.lan</h3>
+        <p>Nginx installed on WSL2 Ubuntu with <code>*.atlantis.lan</code> reverse proxy active across all PM2 services. Windows hosts file maps <code>127.0.0.1</code> to all service hostnames. Local development now feels production-grade without VPS deployment.</p>
+      </div>
+
+      <div class="atlantis-card">
+        <div class="atlantis-card-label">Memory System</div>
+        <h3>V22 Compiled — Sonnet-Only Cadence Established</h3>
+        <p>ATLANTIS_AI_MEMORY-v22.md compiled Wednesday. Key additions: Nginx reverse proxy, dual GitHub strategy (AtlantisITS public / Golboni personal), Red/Blue AI Security Framework, Chronicle Travel section, Nova Phase 3 progress, and Forgejo HTTP token auth. Memory compile cadence locked to Sonnet going forward — Opus V30 bloat projection (~200K tokens) confirmed the discipline need.</p>
+      </div>
+
+      <div class="atlantis-card">
+        <div class="atlantis-card-label">Chronicle</div>
+        <h3>No. 6 Weekend Edition — New Section Structure Live</h3>
+        <p>Atlantean Chronicle Vol. I No. 6 introduces the permanent section order: International → National → Local Gainesville → Travel &amp; Mobility → Tech &amp; AI → Oracle's Corner → Atlantis Intel. Weekend Edition cadence (Fri–Sun) locked. Travel section debuts with MV Hondius/hantavirus coverage. Tech section debuts with Anthropic/SpaceX Colossus story. Domain migrated to <code>news.atlantisits.info</code>.</p>
+      </div>
+
+      <div class="atlantis-card">
+        <div class="atlantis-card-label">Security</div>
+        <h3>Red/Blue AI Security Framework — Nova-Kali Plan Documented</h3>
+        <p>Atlantis Red/Blue AI Security Framework established in V22. Current defenses confirmed: x-atlantis-secret header, honeypot nodes in n8n, Cloudflare WAF, Docker sandbox. Open gaps identified: rate limiting on webhooks, prompt injection detection on Lead Engine, anomaly detection on Nova Router, fake lead detection. Nova-Kali Red Team 3-phase plan targets ATTACK_SURFACE.md → PENTEST-001.md → SOP-007.</p><br>
+      </div>
+
+      <div class="atlantis-card">
+        <div class="atlantis-card-label">Squad</div>
+        <h3>VS Code WSL Integration — Ozzy-Code + Mercy-Codex on Trunks</h3>
+        <p>VS Code WSL extension (v0.104.3) live on Trunks. Both Ozzy-Code and Mercy-Codex now have direct WSL2 Ubuntu access via VS Code Remote Explorer, eliminating Windows↔WSL friction on build sessions. Ozzy-Code default model locked to <code>claude-sonnet-4-6</code> via <code>~/.bashrc</code>.</p>
+      </div>
+    </div>
+
+    <div class="atlantis-footer-note">
+      Next: VPS Phase 1 docker-compose.yml (Hetzner) · Nova chat intake page · n8n field mapping fix (plumbing + electrical) · Scout daily threat intel bot · INC-004 · SOP-006 (Credential Rotation)
+    </div>
+  </div>
+
+<!-- FOOTER -->
+  <div class="paper-footer">
+    <span>The Atlantean Chronicle · Vol. I · No. 6</span>
+    <span>"Where the signal rises above the noise"</span>
+    <span>news.atlantisits.info · Weekend Edition May 8–10, 2026 · © 2026 Atlantis ITS</span>
+  </div>
+
+</div>
+</div>
+
+</body>
+</html>
