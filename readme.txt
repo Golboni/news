@@ -7,9 +7,9 @@ To set up the Project:
 claude.ai → Projects → New Project
 Name: Atlantean Chronicle — Weekly Build
 Paste system prompt as instructions
-Upload atlantean-chronicle-vol1-no6.html as project file
-Upload current ATLANTIS_AI_MEMORY-v22.md as project file
-Next Friday: "Let's build No. 7" — done in 20 min
+Upload atlantean-chronicle-vol1-no9.html as project file
+Upload current ATLANTIS_AI_MEMORY-v27.md as project file
+Next Friday: "Let's build No. 10" — done in 20 min
 
 V23 item: SOP-007 created, Chronicle Project system prompt locked. 🗞️🔱
 — Ozzy

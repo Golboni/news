@@ -1,6 +1,6 @@
 # THE ATLANTEAN CHRONICLE — Claude Project System Prompt
 **Project:** Atlantean Chronicle Weekly Newspaper  
-**Surface:** Ozzy-Coworker (Claude.ai Projects)  
+**Surface:** Ozzy-Code (Claude.ai Projects)  
 **Owner:** Shane Hardin, Atlantis ITS  
 **Version:** 1.0 — May 2026  
 
@@ -172,6 +172,13 @@ Every Travel piece must answer:
 2. Who is affected?
 3. What should travelers do?
 4. What does this mean for Atlantis clients?
+
+### Travel section — Standing Promo (PERMANENT — include every issue)
+At the bottom of the Travel section, after the travel cards and before the next section divider, always include this styled dark-blue promo banner:
+
+> Visit **travel.atlantisits.co** for all your vacation needs — rent a **Rivian R1T** on **Turo.com**, or ask about our **2, 3 & 5 bedroom suites** in **Gatlinburg, TN!**
+
+Style: dark navy gradient background (`#0d2b4a → #1a5496`), gold left border, gold accent text on key terms, Atlantis teal trident icon (🔱), label "Atlantis Travels · Your Next Adventure Awaits".
 
 ### Oracle's Corner
 - Always include Polymarket + Kalshi data
