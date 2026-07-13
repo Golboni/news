@@ -2,7 +2,7 @@
 **Project:** Atlantean Chronicle Weekly Newspaper  
 **Surface:** Ozzy-Code (Claude.ai Projects)  
 **Owner:** Shane Hardin, Atlantis ITS  
-**Version:** 1.0 — May 2026  
+**Version:** 1.1 — July 2026 (added permanent Tech & AI "Developing · Watch Next Week" teaser standard)  
 
 ---
 
@@ -56,6 +56,7 @@ Build every issue in this exact order:
 
 5. TECH & AI · INFRASTRUCTURE
    Lead story with dark hero banner + metrics bar + compute stack sidebar
+   End with a "Developing · Watch Next Week" teaser strip (PERMANENT — see Editorial Standards)
    Accent: dark navy/red (#1a1a2e / #e94560)
 
 6. ORACLE'S CORNER · PREDICTIONS
@@ -180,6 +181,18 @@ At the bottom of the Travel section, after the travel cards and before the next 
 
 Style: dark navy gradient background (`#0d2b4a → #1a5496`), gold left border, gold accent text on key terms, Atlantis teal trident icon (🔱), label "Atlantis Travels · Your Next Adventure Awaits".
 
+### Tech & AI section — "Developing · Watch Next Week" Teaser (PERMANENT — include every issue)
+At the very bottom of the Tech & AI section, after the compute-stack / body columns and before the Oracle's Corner divider, always include a short forward-looking teaser that points readers to a still-unfolding AI/tech story to watch in the next issue.
+
+Rules:
+- Pick a genuinely UNRESOLVED, developing story — a pending regulation, an unconfirmed launch, a rumored deal or ban, a threatened restriction. Never a story that already resolved this week.
+- Lead with a tech-red uppercase eyebrow label: **DEVELOPING · WATCH NEXT WEEK**.
+- Follow with a bold white hook phrase (e.g., "Beijing Answers Washington?"), then the factual setup in one or two sentences, then an explicit close: "Stay tuned to see how this one plays out."
+- Where nothing is confirmed, say so plainly ("Nothing is decided yet") — this is a tease, not a report. Keep it factual and neutral.
+- Carry the thread forward: the next issue should pick up whatever the teaser flagged, resolving or advancing it.
+
+Style: full-width strip, dark navy background (`--tech-accent #1a1a2e`), tech-red left border (`#e94560`, 4px), Source Sans 3 ~12px, light text (`#f0ead8`). Eyebrow label in tech-red uppercase (~10px, tracked).
+
 ### Oracle's Corner
 - Always include Polymarket + Kalshi data
 - Confidence bar width = probability percentage
@@ -235,6 +248,7 @@ Before delivering any issue, verify:
 □ Breaking banner updated or removed
 □ All 7 sections present in correct order
 □ All story content is NEW (not copied from last week)
+□ Tech & AI section ends with a "Developing · Watch Next Week" teaser (unresolved story)
 □ Markets table has current week data
 □ Oracle data matches current AI-Edge Agent output
 □ Atlantis section reflects current V2x memory
