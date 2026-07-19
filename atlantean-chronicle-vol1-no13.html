@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Atlantean Chronicle — Vol. I · No. 13</title>
+  <meta name="description" content="The Atlantean Chronicle — Weekly Intelligence from Atlantis ITS. WEEKEND EDITION – July 17–19, 2026. US–Iran war widens into a seventh night of strikes as Iran hits Gulf allies. World Cup final: Spain vs. Argentina. China's Moonshot ships Kimi K3, the world's largest open model, and rattles the chip trade." />
+  <meta property="og:title" content="The Atlantean Chronicle — Vol. I · No. 13" />
+  <meta property="og:description" content="US–Iran war escalates into a seventh straight night of strikes; Iran fires on Gulf allies, Hormuz shipping chokes. World Cup final set: Spain vs. Argentina, Sunday. China's Moonshot unveils Kimi K3, a 2.8-trillion-parameter open-weight model that tops coding leaderboards and sinks semiconductors." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://news.atlantisits.info" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --paper: #f5f0e8;
+      --paper-dark: #e8e0d0;
+      --rule: #2a2a2a;
+      --rule-light: #c0b8a8;
+      --accent-warm: #8b0000;
+      --atlantis-teal: #0e6e4f;
+      --travel-accent: #1a5496;
+      --tech-accent: #1a1a2e;
+      --tech-red: #e94560;
+      --compute-gold: #c8960c;
+      --oracle-purple: #4a0e8f;
+      --oracle-bg: #f0ebf8;
+      --oracle-border: #d4c8e8;
+      --col-gap: 20px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #c8c0b0; color: var(--ink); font-family: 'Libre Baskerville', Georgia, serif; line-height: 1.55; }
+    .top-banner { background: var(--accent-warm); color: #fff; padding: 10px 24px; text-align: center; font-family: 'Source Sans 3', sans-serif; font-size: 11.5px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+    .share-bar { background: var(--paper); padding: 10px 24px; display: flex; justify-content: flex-end; align-items: center; gap: 8px; border-bottom: 1px solid var(--rule-light); }
+    .share-btn { font-family: 'Source Sans 3', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--ink); background: transparent; border: 1px solid var(--rule-light); padding: 6px 14px; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+    .share-btn:hover { background: var(--paper-dark); }
+    .dateline-strip { background: var(--paper); padding: 7px 24px; border-bottom: 2px double var(--rule); font-family: 'Source Sans 3', sans-serif; font-size: 10.5px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--atlantis-teal); font-weight: 600; display: flex; justify-content: space-between; align-items: center; }
+    .newspaper-wrap { padding: 24px; }
+    .newspaper { max-width: 1120px; margin: 0 auto; background: var(--paper); padding: 44px 52px; box-shadow: 0 6px 40px rgba(0,0,0,0.30); }
+    .masthead { text-align: center; border-bottom: 4px double var(--rule); padding-bottom: 10px; margin-bottom: 6px; }
+    .masthead-top { display: flex; justify-content: space-between; font-size: 10.5px; letter-spacing: 0.8px; text-transform: uppercase; color: #666; margin-bottom: 6px; font-family: 'Source Sans 3', sans-serif; }
+    .masthead h1 { font-family: 'UnifrakturMaguntia', cursive; font-size: 70px; font-weight: 400; line-height: 1.05; color: var(--ink); letter-spacing: 1px; }
+    .masthead-motto { font-style: italic; font-size: 11.5px; color: #555; margin-top: 2px; }
+    .dateline-bar { display: flex; justify-content: space-between; font-size: 10px; text-transform: uppercase; letter-spacing: 0.8px; font-family: 'Source Sans 3', sans-serif; border-bottom: 1px solid var(--rule); padding: 5px 0; margin-bottom: 10px; color: #444; }
+    .bulletin-bar { background: var(--ink); color: #f0ead8; display: flex; align-items: stretch; margin-bottom: 14px; font-size: 11px; font-family: 'Source Sans 3', sans-serif; overflow: hidden; }
+    .bulletin-bar .bull-label { background: var(--accent-warm); color: #fff; padding: 7px 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 10px; white-space: nowrap; flex-shrink: 0; display: flex; align-items: center; }
+    .bulletin-bar .bull-items { padding: 7px 14px; display: flex; gap: 20px; flex-wrap: wrap; align-items: center; }
+    .bulletin-bar .bull-items span::before { content: "◆ "; color: var(--accent-warm); font-size: 8px; }
+    .breaking-banner { background: var(--accent-warm); color: #fff; padding: 6px 14px; margin-bottom: 14px; font-family: 'Source Sans 3', sans-serif; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; display: flex; align-items: center; gap: 10px; }
+    .breaking-banner::before { content: "● BREAKING"; background: #fff; color: var(--accent-warm); padding: 2px 8px; font-size: 10px; font-weight: 700; letter-spacing: 1px; white-space: nowrap; }
+    .section-label { font-family: 'Source Sans 3', sans-serif; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; padding-bottom: 3px; margin-bottom: 12px; border-bottom: 2px solid; }
+    .sl-intl { color: #2c3e50; border-color: #2c3e50; }
+    .sl-nat  { color: #1a4a2e; border-color: #1a4a2e; }
+    .sl-loc  { color: #8b4513; border-color: #8b4513; }
+    .sl-trv  { color: var(--travel-accent); border-color: var(--travel-accent); }
+    .sl-tch  { color: var(--tech-accent); border-color: var(--tech-accent); }
+    .sl-orc  { color: var(--oracle-purple); border-color: var(--oracle-purple); }
+    .sl-atl  { color: var(--atlantis-teal); border-color: var(--atlantis-teal); }
+    .lead-story { border-bottom: 2px solid var(--rule); padding-bottom: 14px; margin-bottom: 16px; }
+    .lead-story h2 { font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 900; line-height: 1.1; margin-bottom: 6px; }
+    .lead-story .deck { font-style: italic; font-size: 14.5px; color: #333; margin-bottom: 8px; line-height: 1.4; }
+    .lead-story .byline { font-family: 'Source Sans 3', sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #666; margin-bottom: 10px; }
+    .lead-story .body { column-count: 3; column-gap: var(--col-gap); column-rule: 1px solid var(--rule-light); font-size: 13.5px; text-align: justify; hyphens: auto; }
+    .lead-story .body p { margin-bottom: 8px; }
+    .lead-story .body p:first-child::first-letter { font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 900; float: left; line-height: 0.8; margin: 4px 6px 0 0; color: #2c3e50; }
+    .lead-image { width: 100%; height: 500px; object-fit: cover; object-position: center top; display: block; margin-bottom: 12px; }
+    .two-col   { display: grid; grid-template-columns: 1fr 1fr; gap: var(--col-gap); }
+    .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--col-gap); }
+    .col-divider { border-right: 1px solid var(--rule-light); padding-right: var(--col-gap); }
+    article h3 { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; line-height: 1.2; margin-bottom: 4px; }
+    article .byline { font-family: 'Source Sans 3', sans-serif; font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.8px; color: #777; margin-bottom: 6px; }
+    article p { font-size: 12.5px; text-align: justify; hyphens: auto; margin-bottom: 6px; line-height: 1.55; }
+    .markets-box { background: var(--paper-dark); border: 1px solid var(--rule-light); padding: 10px 14px; }
+    .markets-title { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 700; border-bottom: 2px solid var(--ink); padding-bottom: 6px; margin-bottom: 8px; }
+    .market-row { display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid var(--rule-light); font-family: 'Source Sans 3', sans-serif; font-size: 12.5px; }
+    .market-row:last-child { border-bottom: none; }
+    .market-ticker { font-weight: 600; }
+    .up   { color: #1a7a4a; font-weight: 600; }
+    .down { color: #8b0000; font-weight: 600; }
+    .markets-footer { font-style: italic; font-family: 'Source Sans 3', sans-serif; font-size: 10px; color: #666; padding: 6px 0 0; border-top: 1px solid var(--rule-light); margin-top: 4px; }
+    .photo-caption { font-family: 'Source Sans 3', sans-serif; font-size: 10px; color: #666; padding: 5px 0 0; border-top: 1px solid var(--rule-light); margin-top: 5px; font-style: italic; }
+    .travel-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 14px; }
+    .travel-card { background: var(--paper-dark); border-left: 3px solid var(--travel-accent); padding: 10px 12px; }
+    .travel-card h4 { font-family: 'Playfair Display', serif; font-size: 13px; font-weight: 700; margin-bottom: 5px; color: var(--travel-accent); }
+    .travel-card p { font-size: 12px; text-align: left; }
+    .hero-banner { background: var(--tech-accent); color: #fff; padding: 28px 32px; margin-bottom: 16px; position: relative; overflow: hidden; }
+    .hero-banner::before { content: ''; position: absolute; top: -40px; right: -40px; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle, rgba(233,69,96,0.18) 0%, transparent 70%); }
+    .hero-eyebrow { font-family: 'Source Sans 3', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--tech-red); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+    .hero-eyebrow::before { content: ''; display: inline-block; width: 24px; height: 2px; background: var(--tech-red); }
+    .hero-banner h2 { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 900; line-height: 1.12; color: #fff; margin-bottom: 12px; position: relative; z-index: 1; }
+    .hero-banner h2 span { color: var(--tech-red); }
+    .hero-deck { font-family: 'Libre Baskerville', serif; font-size: 13px; font-style: italic; color: rgba(255,255,255,0.75); line-height: 1.6; max-width: 680px; position: relative; z-index: 1; border-left: 3px solid var(--tech-red); padding-left: 14px; margin-bottom: 18px; }
+    .hero-byline { font-family: 'Source Sans 3', sans-serif; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: rgba(255,255,255,0.5); position: relative; z-index: 1; }
+    .metrics-bar { display: grid; grid-template-columns: repeat(5, 1fr); background: #0d0d1a; border-top: 2px solid var(--tech-red); margin-bottom: 18px; }
+    .metric-item { padding: 13px 14px; border-right: 1px solid rgba(255,255,255,0.08); text-align: center; }
+    .metric-item:last-child { border-right: none; }
+    .metric-num { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--compute-gold); display: block; line-height: 1.1; }
+    .metric-label { font-family: 'Source Sans 3', sans-serif; font-size: 8.5px; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.45); margin-top: 3px; display: block; }
+    .body-two-col { display: grid; grid-template-columns: 3fr 2fr; gap: 28px; }
+    .compute-stack { background: #f0eef8; border: 1px solid #c8c4dc; border-top: 3px solid var(--tech-accent); padding: 14px 16px; margin-bottom: 14px; }
+    .stack-title { font-family: 'Source Sans 3', sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--tech-accent); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #c8c4dc; }
+    .stack-item { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid rgba(200,196,220,0.4); }
+    .stack-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .stack-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--tech-red); flex-shrink: 0; margin-top: 5px; }
+    .stack-dot.gold  { background: var(--compute-gold); }
+    .stack-dot.green { background: #2ecc71; }
+    .stack-dot.blue  { background: var(--travel-accent); }
+    .stack-dot.purple{ background: #9b5de5; }
+    .stack-text { font-size: 11.5px; line-height: 1.5; color: #333; }
+    .stack-text strong { font-family: 'Source Sans 3', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; display: block; color: var(--ink); margin-bottom: 2px; }
+    .signal-footer { background: #f0eef8; border: 1px solid #c8c4dc; border-left: 4px solid var(--tech-accent); padding: 12px 16px; display: flex; gap: 12px; align-items: flex-start; margin-top: 14px; }
+    .signal-icon { font-size: 18px; flex-shrink: 0; margin-top: 2px; }
+    .signal-title { font-family: 'Source Sans 3', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--tech-accent); margin-bottom: 4px; }
+    .signal-text { font-family: 'Source Sans 3', sans-serif; font-size: 12.5px; color: #333; line-height: 1.55; }
+    .oracle-section { background: var(--oracle-bg); border: 1px solid var(--oracle-purple); border-top: 4px solid var(--oracle-purple); padding: 18px 22px; margin-top: 14px; margin-bottom: 14px; }
+    .oracle-header { border-bottom: 2px solid var(--oracle-purple); padding-bottom: 12px; margin-bottom: 14px; }
+    .oracle-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--oracle-purple); }
+    .oracle-title::before { content: "◈ "; font-size: 16px; }
+    .oracle-subtitle { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; color: var(--ink); text-transform: uppercase; letter-spacing: 1.5px; }
+    .data-stamp { font-family: 'Source Sans 3', sans-serif; font-size: 10px; color: #555; }
+    .oracle-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--col-gap); }
+    .forecast-card { background: #fff; border: 1px solid var(--oracle-border); border-left: 3px solid var(--oracle-purple); padding: 12px 14px; margin-bottom: 12px; }
+    .forecast-card:last-child { margin-bottom: 0; }
+    .forecast-tags { margin-bottom: 6px; }
+    .forecast-tag { font-family: 'Source Sans 3', sans-serif; font-size: 8.5px; text-transform: uppercase; letter-spacing: 1px; color: #fff; padding: 2px 7px; font-weight: 600; border-radius: 2px; margin-right: 4px; }
+    .ft-geo  { background: #2c3e50; }
+    .ft-eco  { background: #1a4a2e; }
+    .ft-mkt  { background: var(--oracle-purple); }
+    .ft-ai   { background: var(--travel-accent); }
+    .forecast-card h4 { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 700; color: var(--ink); line-height: 1.25; margin-bottom: 5px; }
+    .confidence-bar { width: 100%; height: 6px; background: #d0cce8; margin: 6px 0; border-radius: 2px; overflow: hidden; }
+    .confidence-fill { height: 100%; background: var(--oracle-purple); }
+    .forecast-prob { font-family: 'Source Sans 3', sans-serif; font-size: 13px; font-weight: 700; color: var(--oracle-purple); margin-bottom: 6px; }
+    .forecast-prob span { font-size: 11px; color: #555; font-weight: 400; }
+    .forecast-note { font-size: 12px; text-align: justify; line-height: 1.5; }
+    .oracle-edge { background: var(--oracle-bg); border-top: 2px solid var(--oracle-purple); padding-top: 12px; font-size: 12.5px; line-height: 1.6; }
+    .atlantis-section { background: #f0f8f4; border: 1px solid var(--atlantis-teal); border-top: 4px solid var(--atlantis-teal); padding: 18px 22px; margin-top: 14px; }
+    .atlantis-header { display: flex; align-items: center; gap: 14px; border-bottom: 2px solid var(--atlantis-teal); padding-bottom: 12px; margin-bottom: 14px; }
+    .atlantis-header-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--atlantis-teal); margin-bottom: 2px; }
+    .atlantis-header-subtitle { font-family: 'Source Sans 3', sans-serif; font-size: 10.5px; text-transform: uppercase; letter-spacing: 1.5px; color: #555; font-weight: 500; }
+    .atlantis-stats-bar { display: grid; grid-template-columns: repeat(5, 1fr); background: var(--atlantis-teal); border-bottom: 2px solid #0a5a3f; margin-bottom: 14px; }
+    .asb-item { padding: 11px 13px; border-right: 1px solid rgba(255,255,255,0.15); text-align: center; }
+    .asb-item:last-child { border-right: none; }
+    .asb-val { font-family: 'Playfair Display', serif; font-size: 19px; font-weight: 700; color: #a8f0d0; display: block; line-height: 1.1; }
+    .asb-label { font-family: 'Source Sans 3', sans-serif; font-size: 8.5px; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.6); margin-top: 3px; display: block; }
+    .atlantis-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--col-gap); }
+    .atlantis-card-label { font-family: 'Source Sans 3', sans-serif; font-size: 9px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--atlantis-teal); font-weight: 700; margin-bottom: 4px; }
+    .atlantis-card h3 { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 700; margin-bottom: 6px; color: var(--ink); line-height: 1.25; }
+    .atlantis-card p { font-size: 12px; line-height: 1.5; margin-bottom: 4px; text-align: left; }
+    .atlantis-card code { font-size: 10.5px; background: #e8f4ee; padding: 1px 4px; color: var(--atlantis-teal); }
+    .atlantis-card.highlight { background: #e4f4ed; border-left: 3px solid var(--atlantis-teal); padding-left: 14px; }
+    .status { display: inline-block; font-family: 'Source Sans 3', sans-serif; font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; padding: 2px 7px; border-radius: 2px; font-weight: 600; margin-bottom: 5px; }
+    .status.done    { background: #d4edda; color: #155724; }
+    .status.pending { background: #fff3cd; color: #856404; }
+    .status.active  { background: #cce5ff; color: #004085; }
+    .status.hot     { background: #f8d7da; color: #721c24; }
+    .atlantis-footer-note { margin-top: 14px; padding-top: 10px; border-top: 1px solid rgba(14,110,79,0.3); font-family: 'Source Sans 3', sans-serif; font-size: 11.5px; color: #2a5a42; line-height: 1.7; }
+    .quote-box { background: var(--paper-dark); border-left: 4px solid var(--atlantis-teal); padding: 14px 18px; margin-bottom: 16px; }
+    .quote-box blockquote { font-family: 'Playfair Display', serif; font-size: 16px; font-style: italic; color: var(--ink); line-height: 1.5; margin-bottom: 4px; }
+    .quote-attrib { font-family: 'Source Sans 3', sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 0.8px; color: #777; }
+    .paper-footer { background: var(--ink); color: rgba(240,234,216,0.75); padding: 14px 52px; display: flex; justify-content: space-between; align-items: center; font-family: 'Source Sans 3', sans-serif; font-size: 10.5px; letter-spacing: 0.8px; }
+    .paper-footer a { color: rgba(240,234,216,0.75); text-decoration: none; }
+    .paper-footer a:hover { color: #fff; }
+    .section-img { width: 100%; height: 200px; object-fit: cover; display: block; margin-bottom: 10px; border: 1px solid var(--rule-light); }
+    .img-half { width: 100%; height: 160px; object-fit: cover; display: block; margin-bottom: 8px; border: 1px solid var(--rule-light); }
+    .img-full { width: 100%; height: auto; display: block; margin-bottom: 8px; border: 1px solid var(--rule-light); background: var(--paper-dark); }
+  </style>
+</head>
+<body>
+
+<div class="top-banner">Weekend Edition &middot; US&ndash;Iran War Widens Into Seventh Night &mdash; World Cup Final: Spain vs. Argentina &mdash; China's Kimi K3 Shakes the Chip Trade &middot; Metro Atlanta, Georgia &middot; July 17&ndash;19, 2026</div>
+
+<div class="share-bar">
+  <a class="share-btn" href="#" onclick="window.print();return false;">🖨 Print</a>
+  <a class="share-btn" href="mailto:?subject=The Atlantean Chronicle Vol. I No. 13&body=https://news.atlantisits.info">✉ Email</a>
+  <a class="share-btn" href="https://x.com/intent/tweet?text=The+Atlantean+Chronicle+Vol.+I+No.+13+%E2%80%94+Iran+War+Widens%2C+World+Cup+Final%2C+China%27s+Kimi+K3+Shock&url=https://news.atlantisits.info" target="_blank">𝕏 Share</a>
+  <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://news.atlantisits.info" target="_blank">in Share</a>
+  <a class="share-btn" href="https://news.atlantisits.info">🔱 Archive</a>
+  <a class="share-btn" href="https://atlantisits.co">AtlantisITS.co</a>
+</div>
+
+<div class="dateline-strip">
+  <span>Atlantis ITS &middot; Metro Atlanta, GA &middot; Est. 2006</span>
+  <span>Vol. I &middot; No. 13 &middot; July 17, 2026</span>
+  <span>news.atlantisits.info</span>
+</div>
+
+<div class="newspaper-wrap">
+<div class="newspaper">
+
+<div class="masthead">
+  <div class="masthead-top">
+    <span>Vol. I &middot; No. 13</span>
+    <span>Atlantis Intelligence Technology Solutions &middot; Metro Atlanta</span>
+    <span>July 17, 2026</span>
+  </div>
+  <h1>The Atlantean Chronicle</h1>
+  <div class="masthead-motto">"Where the signal rises above the noise"</div>
+</div>
+
+<div class="dateline-bar">
+  <span>Metro Atlanta, Georgia</span>
+  <span>Weekend Edition &mdash; July 17&ndash;19, 2026</span>
+  <span>Iran War Widens &middot; World Cup Final &middot; Kimi K3</span>
+</div>
+
+<div class="bulletin-bar">
+  <div class="bull-label">This Week</div>
+  <div class="bull-items">
+    <span>US&ndash;Iran war widens &mdash; seventh straight night of US strikes; Iran fires on Gulf allies</span>
+    <span>500+ feared dead in two shipwrecks off Myanmar since late June &mdash; IOM and UN refugee agency</span>
+    <span>World Cup final set &mdash; Spain vs. Argentina, Sunday at MetLife Stadium, New Jersey</span>
+    <span>Woman shot and killed at a Gainesville convenience store &mdash; gunman still at large</span>
+    <span>China's Moonshot ships Kimi K3, the world's largest open model &mdash; chips tumble on the shock</span>
+    <span>Canadian wildfire smoke blankets 18 states &mdash; 100M+ under air alerts; Milwaukee hits record AQI 644</span>
+  </div>
+</div>
+
+<!-- ═══ INTERNATIONAL ═══ -->
+<div class="section-label sl-intl">International &middot; World Affairs</div>
+
+<div class="breaking-banner"><span>US&ndash;Iran War Widens — Seventh Straight Night of Strikes; At Least 8 Killed in Hormozgan&nbsp;&nbsp;<span style="background:#fff;color:var(--accent-warm);padding:1px 7px;font-size:10px;font-weight:700;letter-spacing:1px;white-space:nowrap;">● Ongoing</span>&nbsp; Iran Fires on Gulf Allies — Jordan &amp; Kuwait Intercept Missiles, Hormuz Traffic Chokes · See Full Coverage Below</span></div>
+
+<div class="lead-story">
+  <h2>No Off-Ramp: The Iran Ceasefire's Collapse Hardens Into Open War as U.S. Strikes Enter a Seventh Night</h2>
+  <div class="deck">A week after President Trump declared the truce "over," the confrontation has become a sustained air war. Iranian state media reported at least eight dead and 20 wounded in overnight strikes on bridges in Hormozgan province, while Iran's return fire drew in Jordan, Kuwait, Bahrain and Saudi Arabia &mdash; and shipping through the Strait of Hormuz slowed to a trickle.</div>
+  <div class="byline">By The Chronicle International Desk &middot; July 17&ndash;19, 2026</div>
+  <div style="display:grid; grid-template-columns:2.2fr 1fr; gap:24px; align-items:start;">
+    <div class="body" style="column-count:2;">
+    <p>What was a fragile, on-paper ceasefire only two weeks ago has hardened into a sustained military campaign. By Friday the US military had carried out its seventh consecutive night of strikes on Iran, and Tehran's response had widened the conflict across the Gulf. Iran's state-run news agency reported that at least eight people were killed and 20 injured after overnight strikes hit bridges in Hormozgan province, the coastal region that fronts the Strait of Hormuz &mdash; the latest in a target set that Iranian officials say has included a railway station and civilian infrastructure.</p>
+    <p>The escalation has pulled in Iran's neighbors. Jordan's air defenses intercepted roughly 10 Iranian missiles early Saturday; Kuwait's defenses also engaged incoming fire, and Bahrain and Saudi Arabia issued shelter-in-place warnings for residents. A senior Iranian military adviser warned that the United States could face a "full-scale offensive" in the coming days if the barrage continues through the weekend &mdash; rhetoric that, whatever its credibility, signals no near-term appetite for de-escalation on either side.</p>
+    <p>The economic chokepoint remains the Strait of Hormuz. Only six vessels transited the strait in the past 24 hours, a striking contraction of a passage through which roughly 20% of the world's oil moved before the war. Tanker owners, insurers and Gulf energy exporters are all now pricing the possibility of a prolonged closure, and crude markets have moved sharply in response &mdash; the single clearest transmission line from the conflict into the global economy.</p>
+    <p>Diplomacy has not vanished, but it has thinned. The Qatari-mediated channel that produced last month's short-lived memorandum is reportedly still open, and both governments have at times signaled a willingness to keep talking. For now, though, the talking is being drowned out by the strikes. Each night that the campaign continues raises the risk of a miscalculation &mdash; a downed civilian aircraft, a hit on a Gulf oil terminal, a strike that kills foreign nationals &mdash; that could convert a bilateral war into a regional one.</p>
+    <p>For businesses with any exposure to the Gulf &mdash; energy, shipping, aviation, or the supply chains that depend on them &mdash; the operative posture is no longer "monitor for resolution" but "plan for duration." The Chronicle's Travel desk details the airspace and carrier fallout below; the Oracle prices the odds of a clean Hormuz reopening. Both point the same direction: this is now a standing condition, not a passing headline.</p>
+    </div>
+    <figure style="margin:0;">
+      <img src="pics/Iran-conflict.jpg" alt="Tanker traffic in the Strait of Hormuz, the chokepoint at the center of the US–Iran war" style="width:100%; display:block; border:1px solid var(--rule-light);" />
+      <div class="photo-caption">The Strait of Hormuz has become the war's economic fulcrum. Iran's strikes on Hormozgan bridges killed at least eight overnight as the US campaign entered its seventh night.</div>
+    </figure>
+  </div>
+</div>
+
+<div class="two-col">
+  <article class="col-divider">
+    <img src="pics/middle-east.jpg" alt="Map of the Gulf region showing U.S. and allied bases across Iraq, Kuwait and Bahrain amid the Iran war" class="img-full" />
+    <div class="photo-caption">The war spread across the Gulf this week: Jordan intercepted about 10 Iranian missiles early Saturday, Kuwait's defenses engaged incoming fire, and Bahrain and Saudi Arabia warned residents to shelter in place &mdash; drawing Iran's neighbors directly into the confrontation.</div>
+    <h3>The War Spreads: Gulf States Drawn In as Iran's Return Fire Reaches Jordan, Kuwait and the Peninsula</h3>
+    <div class="byline">The Chronicle International Desk &middot; July 17, 2026</div>
+    <p>The most consequential shift this week was geographic. Where the June exchanges were largely a US&ndash;Iran affair, Iran's retaliatory barrages have now reached the wider Gulf. Jordan reported intercepting roughly 10 Iranian missiles early Saturday; Kuwait's air defenses engaged incoming fire; and both Bahrain and Saudi Arabia issued shelter-in-place guidance to residents &mdash; a measure of how close the fighting has come to major population and energy centers.</p>
+    <p>Each new participant raises the stakes of a wider war. The Gulf monarchies host US military infrastructure and move much of the world's crude, and a direct hit on any of them &mdash; intended or errant &mdash; would test alliance commitments and insurance markets alike. For now the interceptions have held, but the margin for error narrows with every night the campaign runs.</p>
+  </article>
+  <article>
+    <h3>Myanmar, Britain, and the Wider World in Brief</h3>
+    <div class="byline">The Chronicle International Desk &middot; July 17&ndash;19, 2026</div>
+    <p><strong>Myanmar.</strong> More than 500 people are feared dead after two large shipwrecks off Myanmar's coast since late June, according to a joint statement from the International Organization for Migration and the UN refugee agency &mdash; one of the deadliest maritime disasters in the region in years, and a grim marker of the displacement driving people onto unsafe boats.</p>
+    <p><strong>United Kingdom.</strong> Britain is completing its transition to a new prime minister after Sir Keir Starmer's June resignation, with former Greater Manchester mayor Andy Burnham the presumptive successor as the Labour leadership contest closes. The turnover leaves the UK on course for its seventh prime minister in a decade &mdash; the highest churn in nearly two centuries.</p>
+    <p><strong>Energy.</strong> Global oil prices climbed again this week as the Hormuz squeeze deepened, with the risk premium now a fixture rather than a spike. Analysts warn that a sustained closure &mdash; not merely the threat of one &mdash; would ripple into fuel, freight and inflation data worldwide.</p>
+    <div class="markets-box" style="margin-top:12px;">
+      <div class="markets-title">Geopolitical Indicators</div>
+      <div class="market-row"><span class="market-ticker">US strikes on Iran (Jul 17)</span><span class="down">7th consecutive night &mdash; 8+ killed in Hormozgan</span></div>
+      <div class="market-row"><span class="market-ticker">Gulf allies drawn in</span><span class="down">Jordan/Kuwait intercept; Bahrain, Saudi shelter</span></div>
+      <div class="market-row"><span class="market-ticker">Hormuz shipping</span><span class="down">▼ ~6 vessels/24h &mdash; ~20% of world oil at risk</span></div>
+      <div class="market-row"><span class="market-ticker">Qatar-mediated talks</span><span class="up">Channel open &mdash; but drowned out by strikes</span></div>
+      <div class="markets-footer">Scout AI-Edge &middot; July 17, 2026 &middot; Open-source reporting; situation developing hour to hour</div>
+    </div>
+  </article>
+</div>
+
+<!-- ═══ NATIONAL ═══ -->
+<div class="section-label sl-nat" style="margin-top:22px;">National &middot; US Affairs</div>
+
+<div class="two-col">
+  <article class="col-divider">
+    <img src="pics/Fifa2-2026.jpg" alt="Argentina and Spain players with the World Cup trophy ahead of the 2026 final" class="img-full" />
+    <div class="photo-caption">The tournament now heads to its finish: Spain vs. Argentina at MetLife Stadium in New Jersey on Sunday, July 19, at 3 p.m. ET.</div>
+    <h3>World Cup Final Set &mdash; Spain vs. Argentina on Sunday After Atlanta Closes Out Its Tournament Run</h3>
+    <div class="byline">The Chronicle National Desk &middot; July 17&ndash;19, 2026</div>
+    <p>The 2026 World Cup has come down to two: Spain and Argentina meet in the final at MetLife Stadium in East Rutherford, New Jersey, on Sunday, July 19, at 3 p.m. ET. Spain booked its place with a 2&ndash;0 win over France, while reigning champion Argentina edged England 2&ndash;1 &mdash; the last of Metro Atlanta's eight matches, played at Mercedes-Benz Stadium before the tournament moved north. The final pits Spain's midfield control, anchored by Rodri and 18-year-old Lamine Yamal, against an Argentine side still orbiting Lionel Messi and Lautaro Mart&iacute;nez. Prediction markets lean Spain (see Oracle's Corner); more than $4 billion has traded on the winner market, the largest Polymarket has ever run.</p>
+    <h3 style="margin-top:14px;">Smoke Over the North: Canadian Wildfires Choke U.S. Air Quality</h3>
+    <div class="byline">The Chronicle National Desk &middot; July 14&ndash;18, 2026</div>
+    <p>A vast plume of Canadian wildfire smoke pushed more than 100 million Americans in 18 states under air-quality alerts this week. Milwaukee recorded its worst reading on record &mdash; an air-quality index of 644, more than double the prior record &mdash; and Detroit neared 570. Canada has seen some 3,500 fires burn more than 6 million acres this summer, with fresh clusters flaring in Ontario near the Minnesota border. Relief was forecast to arrive over the weekend as winds shift.</p>
+  </article>
+  <article>
+    <img src="pics/US-Capitol.jpg" alt="The United States Capitol dome in Washington" class="img-full" />
+    <h3>Washington in Brief &mdash; A Live Fed, ICE Under Scrutiny, and a Paywalled President</h3>
+    <div class="byline">The Chronicle National Desk &middot; July 13&ndash;18, 2026</div>
+    <p>The July 29 FOMC meeting looms as a genuine coin-flip on a rate <em>hike</em> &mdash; a debate that would have been unthinkable six months ago (see Markets and Oracle). Elsewhere, ICE operations drew mounting scrutiny after agents were involved in the deaths of three men in a single week, and court filings alleged that Medicaid officials improperly shared data on millions of people with ICE, which in turn shared it with an analytics contractor. And President Trump's Truth Social said it would begin charging for high-speed access to his posts, including statements touching national security and markets &mdash; a monetization move with no clear precedent for presidential communications.</p>
+    <p><strong>Also this week:</strong> DNI nominee Jay Clayton declined, at his confirmation hearing, to answer a senator's question about the results of the 2020 election; and Sen. Mitch McConnell said he was recovering after a fall and a bout of pneumonia.</p>
+  </article>
+</div>
+
+<!-- MARKETS BOX -->
+<div class="markets-box" style="margin-top:18px;">
+  <div class="markets-title">Markets at a Glance &mdash; Week of July 13&ndash;17, 2026 (Friday Close)</div>
+  <div class="market-row"><span class="market-ticker">S&amp;P 500</span><span class="market-val down">7,457.69 ▼ &minus;1.01% Fri &mdash; &minus;1.6% on the week</span></div>
+  <div class="market-row"><span class="market-ticker">Dow Jones</span><span class="market-val down">52,146.42 ▼ &minus;406.55 pts (&minus;0.77%) &mdash; &minus;0.9% wk</span></div>
+  <div class="market-row"><span class="market-ticker">Nasdaq</span><span class="market-val down">25,520.24 ▼ &minus;1.4% Fri &mdash; &minus;2.9% wk, chip rout deepens</span></div>
+  <div class="market-row"><span class="market-ticker">WTI Crude</span><span class="market-val up">▲ Higher &mdash; Hormuz squeeze; ~6 vessels/24h transiting the strait</span></div>
+  <div class="market-row"><span class="market-ticker">Semiconductors</span><span class="market-val down">▼ Sold off hard on China's Kimi K3 "DeepSeek shock"</span></div>
+  <div class="market-row"><span class="market-ticker">TSMC</span><span class="market-val up">▲ Q2 revenue ~$39.6B, +36% YoY on AI-chip demand</span></div>
+  <div class="market-row"><span class="market-ticker">Fed — July 29 FOMC</span><span class="market-val down">Hike odds ~46% CME / ~36% Kalshi &mdash; debate is hike vs. hold, not cut</span></div>
+  <div class="markets-footer">A risk-off week on two fronts: a Chinese open-weight AI model (Kimi K3) rattling the semiconductor trade, and the US&ndash;Iran war re-pricing oil and safe havens. Energy outperformed on the Hormuz premium while chips led the broad indices lower. Rate-cut odds for 2026 remain near zero; the live question into July 29 is whether Chair Warsh hikes. Monday's open will price the weekend war and the World Cup result.</div>
+</div>
+
+<!-- ═══ LOCAL ═══ -->
+<div class="section-label sl-loc" style="margin-top:22px; color:#8b4513; border-color:#8b4513;">Local &mdash; Gainesville Times &amp; North Georgia</div>
+
+<div class="three-col">
+  <article class="col-divider">
+    <h3>Deadly Convenience-Store Shooting in Gainesville &mdash; Gunman at Large; Spring Street Arson Charged</h3>
+    <div class="byline">Gainesville &amp; Hall County &middot; July 16&ndash;17, 2026</div>
+    <p>Gainesville was shaken by two acts of violence in as many days. Late Thursday, July 16, a woman was shot and killed inside the Subhannallah Food Mart on Mountain View Road; deputies said the gunman remained at large Friday morning and asked the public for tips. In a separate case, a Gainesville man was charged with arson and assault after a Spring Street fire on July 16. Local authorities urged residents to come forward with any information that could aid the investigations.</p>
+  </article>
+  <article class="col-divider">
+    <h3>Courthouse Site Comes Into Focus &mdash; Residents Press Commissioners on the Midtown Land Buy</h3>
+    <div class="byline">Hall County Government &middot; July 15, 2026</div>
+    <p>The question of where Hall County will build its expanded judicial complex sharpened this week. Although commissioners have not formally voted on a location, Commissioner Jeff Stowe told residents that the county's recent Midtown land purchase points to where the project is heading. Some residents pushed back, telling the board it felt as though "the decision has already been made." The exchange follows the July 8 town hall on the Judicial Complex Expansion &mdash; a longer-range plan to relieve pressure on aging court facilities &mdash; and keeps siting, scope and cost on the public agenda ahead of any funding vote.</p>
+  </article>
+  <article>
+    <h3>Food Truck Friday Rolls On &mdash; and a Reminder in the Mailbox</h3>
+    <div class="byline">City of Gainesville &amp; Hall County &middot; July 17, 2026</div>
+    <p>Amid a heavy news week, Gainesville's popular Food Truck Friday series returned July 17 on the downtown square, a warm-weather staple that continues to draw crowds through the summer. Property owners, meanwhile, should keep an eye on the mail: the Hall County Tax Assessors' Office sent 2026 Notices of Assessment earlier this month, on July 6, and the appeal window runs on a fixed clock from the notice date &mdash; worth a look now rather than later for anyone weighing a challenge.</p>
+  </article>
+</div>
+
+<!-- ═══ TRAVEL ═══ -->
+<div class="section-label sl-trv" style="margin-top:22px;">Travel &amp; Mobility &middot; Advisory</div>
+
+<div class="two-col">
+  <article class="col-divider">
+    <img src="pics/gulf-airspace.jpg" alt="Map of Middle East airspace restrictions over Iran, Iraq and the Gulf during the Iran war" class="img-full" />
+    <div class="photo-caption">The Iran war has hollowed out Gulf air travel. EASA is advising operators to avoid the airspace of Iran, Iraq, Lebanon &mdash; and now Bahrain, Kuwait, Qatar, the UAE and parts of the Gulf of Oman &mdash; while carriers extend cancellations into the fall and beyond.</div>
+    <h3>Gulf Airspace Closes In: The Iran War Reroutes Global Aviation and Pushes Advisories to Level 4</h3>
+    <div class="byline">The Chronicle Travel Desk &middot; July 14&ndash;18, 2026</div>
+    <p><strong>What happened:</strong> The renewed war has produced the sharpest Middle East aviation disruption in years. EASA's conflict-zone bulletin advises operators to avoid Iranian airspace (the Tehran/OIIX FIR) at all altitudes, and now recommends avoiding the airspace of Bahrain, Kuwait, Qatar, the UAE and parts of the Gulf of Oman as well &mdash; with Iran, Iraq and Lebanon flagged through the end of August. Carriers have responded in kind: Singapore Airlines has cancelled Dubai service through October 24 and postponed its Riyadh launch to September 1, while American Airlines has pulled JFK&ndash;Tel Aviv and Philadelphia&ndash;Doha flights through the end of 2026.</p>
+    <p><strong>Who is affected:</strong> Anyone routing through or near the Gulf. The US State Department now lists Iran, Iraq, Syria and Lebanon at Level 4 (Do Not Travel), with the UAE, Israel, Saudi Arabia, Bahrain, Kuwait, Qatar, Jordan and Oman at Level 3 (Reconsider Travel). Connections that once flowed smoothly through Gulf megahubs are being rerouted, lengthened, or cancelled outright.</p>
+    <p><strong>What to do:</strong> Treat any Gulf-transit itinerary as volatile. Reconfirm every segment directly with the operating carrier before travel, build in wide rebooking buffers, and prefer routings that avoid the affected FIRs entirely. Register travelers in the State Department's STEP program and keep carrier advisories on watch daily.</p>
+    <p><strong>For Atlantis clients:</strong> InteleTravel advisors should immediately audit any active booking that touches the Gulf between now and the fall, proactively contact affected clients, and document all rebooking and refund options in writing before departure. Assume schedules will keep moving.</p>
+  </article>
+  <article>
+    <img src="pics/smog.jpg" alt="The World Cup trophy against a haze-covered New York skyline" class="img-full" />
+    <h3>Closer to Home: Wildfire Smoke Snarls Northern Skies as the World Cup Final Surges New York</h3>
+    <div class="byline">The Chronicle Travel Desk &middot; July 17, 2026</div>
+    <p><strong>What happened:</strong> Canadian wildfire smoke drove hazardous air quality across 18 states this week, reducing visibility and prompting intermittent ground delays at Midwest and Northeast hubs even as the plume began to lift over the weekend. Separately, Sunday's World Cup final at MetLife Stadium will pour a demand spike into the already-busy New York&ndash;New Jersey airport complex.</p>
+    <p><strong>Who is affected:</strong> Travelers through Chicago, Detroit, Minneapolis and the Northeast corridor faced smoke-related delays midweek; anyone flying into the New York area around July 19 should expect final-weekend congestion at EWR, JFK and LGA.</p>
+    <p><strong>What to do:</strong> Check status the morning of travel, keep connections generous, and &mdash; for the final &mdash; build in extra ground-transit time around the stadium. Domestic disruption is easing but not gone.</p>
+    <div style="background:var(--paper-dark);border-left:3px solid var(--travel-accent);padding:10px 12px;margin-top:10px;font-size:11.5px;line-height:1.6;">
+      <strong style="font-family:'Source Sans 3',sans-serif;font-size:9px;text-transform:uppercase;letter-spacing:1.5px;color:var(--travel-accent);">Atlantis Travels &middot; Standing Watch</strong><br/>
+      Gulf: active war footing &mdash; Iran, Iraq, Syria, Lebanon at Level 4; UAE, Israel, Saudi, Bahrain, Kuwait, Qatar, Jordan, Oman at Level 3. Avoid the affected FIRs and reconfirm every Gulf segment daily. Domestic: Canadian wildfire smoke easing but still degrading Midwest/Northeast operations; New York area congested around the July 19 World Cup final. All active Gulf-transit client bookings should receive written advisory acknowledgment before departure.
+    </div>
+  </article>
+</div>
+
+<div class="travel-cards">
+  <div class="travel-card">
+    <h4>🛑 Gulf &amp; Middle East — Level 4 / Level 3</h4>
+    <p><strong>Active war footing.</strong> Iran, Iraq, Syria, Lebanon are Do Not Travel; the UAE, Israel, Saudi, Bahrain, Kuwait, Qatar, Jordan and Oman are Reconsider Travel. Airspace closures span Iran, Iraq, Lebanon plus Bahrain, Kuwait, Qatar, the UAE and the Gulf of Oman. Reroute around the region and reconfirm every segment.</p>
+  </div>
+  <div class="travel-card">
+    <h4>🌫️ Northern U.S. — Wildfire Smoke</h4>
+    <p><strong>Air-quality disruption easing.</strong> Canadian smoke put 18 states under alerts and dented visibility at Midwest and Northeast hubs midweek. Relief arrived over the weekend, but sensitive travelers should still check AQI and airport status the morning of travel.</p>
+  </div>
+  <div class="travel-card">
+    <h4>📋 InteleTravel Advisor Note</h4>
+    <p><strong>One dominant front.</strong> The Gulf war is the week's controlling travel risk &mdash; carrier cancellations now run into the fall and beyond. Run a booking audit this weekend, prioritize written documentation for any Gulf-transit client, and flag New York&ndash;area itineraries around the July 19 final.</p>
+  </div>
+</div>
+
+<div style="margin-top:16px; background:linear-gradient(135deg,#0d2b4a,#1a5496); border-left:4px solid var(--compute-gold); padding:14px 20px; display:flex; align-items:center; gap:16px; border-radius:2px;">
+  <span style="font-size:28px; flex-shrink:0;">🔱</span>
+  <div>
+    <div style="font-family:'Source Sans 3',sans-serif; font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--compute-gold); margin-bottom:5px;">Atlantis Travels &middot; Your Next Adventure Awaits</div>
+    <p style="font-family:'Libre Baskerville',serif; font-size:13px; color:#f0ead8; line-height:1.6; margin:0; text-align:left;">Visit <a href="https://travel.atlantisits.co" target="_blank" style="color:var(--compute-gold); font-weight:700; text-decoration:underline;">travel.atlantisits.co</a> for all your vacation needs &mdash; rent a <strong style="color:#fff;">Rivian R1T</strong> on <a href="https://turo.com/us/en/truck-rental/united-states/gainesville-ga/rivian/r1t/3496896?endDate=07%2F31%2F2026&endTime=10%3A00&searchId=jDP4mSJG&startDate=07%2F24%2F2026&startTime=10%3A00" target="_blank" style="color:#fff; font-weight:700; text-decoration:underline;">Turo.com</a>, or ask about our <strong style="color:var(--compute-gold);">2, 3 &amp; 5 bedroom suites</strong> in <strong style="color:#fff;">Gatlinburg, TN!</strong></p>
+  </div>
+</div>
+
+<!-- ═══ TECHNOLOGY ═══ -->
+<div class="section-label sl-tch" style="margin-top:22px;">Technology &middot; AI Industry</div>
+
+<div class="hero-banner">
+  <div class="hero-eyebrow">AI Frontier &middot; Open Weights &middot; July 2026</div>
+  <h2>Beijing Answered: China's Moonshot Ships <span>Kimi K3</span> &mdash; and the Chip Trade Blinks</h2>
+  <div class="hero-deck">Last week the Chronicle asked whether Beijing would answer Washington. It did &mdash; not with restrictions, but with release. On Friday, Moonshot AI unveiled Kimi K3, a 2.8-trillion-parameter open-weight model that topped a major front-end coding leaderboard ahead of Fable 5 and GPT-5.6 Sol, sent semiconductors sliding, and reopened a question Silicon Valley thought it had closed: how big is America's lead, really?</div>
+  <div class="hero-byline">Ozzy &middot; Architecture Analysis &middot; July 17, 2026</div>
+</div>
+
+<div class="metrics-bar">
+  <div class="metric-item"><span class="metric-num">2.8T</span><span class="metric-label">Kimi K3 Params · Open-Weight</span></div>
+  <div class="metric-item"><span class="metric-num">#1</span><span class="metric-label">Arena Frontend Code</span></div>
+  <div class="metric-item"><span class="metric-num">Oct '26?</span><span class="metric-label">Anthropic S-1 Prep</span></div>
+  <div class="metric-item"><span class="metric-num">Gemini 3.5</span><span class="metric-label">Delayed — Coding Miss</span></div>
+  <div class="metric-item"><span class="metric-num">+36%</span><span class="metric-label">TSMC Q2 Revenue YoY</span></div>
+</div>
+
+<div class="body-two-col">
+  <div>
+    <article>
+      <h3>The New DeepSeek Shock: Kimi K3 Tops a Coding Leaderboard and Rattles the Trade</h3>
+      <div class="byline">Ozzy &middot; Architecture Analysis &middot; July 16&ndash;17, 2026</div>
+      <p>On Friday, Beijing-based Moonshot AI released Kimi K3, which the company billed as the world's largest open AI model at 2.8 trillion parameters &mdash; and, crucially, open-weight, meaning its parameters can be downloaded and run privately. Moonshot claims K3 outperforms every rival except Anthropic's Claude Fable 5 and OpenAI's GPT-5.6 Sol on overall capability, while beating Claude Opus 4.8 and GPT-5.5 on coding and general-agent benchmarks. In blind testing by the AI evaluator Arena, developers preferred Kimi over every leading US model for front-end coding &mdash; including Fable 5 and Sol &mdash; giving K3 the top spot on the Frontend Code Arena with a 76% pairwise win rate; in the broader text ranking it outranked the standard Opus 4.8 and tied Sol.</p>
+      <p>The market reaction was immediate and familiar. Semiconductors sold off hard &mdash; a rerun of the "DeepSeek shock" &mdash; on the same logic that unsettled investors 18 months ago: if a Chinese lab can reach the frontier with an open model, the premium baked into US AI hardware and the moats around US labs both look less certain. The Nasdaq fell 2.9% on the week, led by chips, even as TSMC reported blockbuster quarterly revenue up 36% year over year. Alarm registered in Washington as much as in Silicon Valley, where the durability of America's AI lead is now, once again, an open question.</p>
+      <h3 style="margin-top:14px;">Anthropic Presses Its Lead: Samsung Silicon Talks and an S-1 as Early as October</h3>
+      <div class="byline">Scout &middot; AI Intelligence &middot; July 14&ndash;16, 2026</div>
+      <p>Anthropic spent the week converting its revenue lead into structural position. The company is reportedly in talks with Samsung to build a custom AI chip tuned to its Claude models &mdash; the same vertical-silicon path Google, Amazon, Meta and OpenAI have taken &mdash; and is said to be preparing an S-1 for an IPO as early as October, underpinned by locked-in long-term compute deals that make its revenue unusually predictable. Anthropic is now tracking toward roughly $47 billion annualized and reported profitability in 2026, on the strength of Claude Code and enterprise adoption. Separately, its Project Glasswing cybersecurity program expanded from 50 partner organizations to 150 across 15 countries, extending coverage to utilities, healthcare systems and under-resourced open-source projects.</p>
+      <h3 style="margin-top:14px;">The Field Around It: OpenAI Builds a Delivery Arm, Google Slips on Gemini 3.5</h3>
+      <div class="byline">Scout &middot; AI Intelligence &middot; July 14&ndash;17, 2026</div>
+      <p>OpenAI kept pushing from model-maker toward end-to-end provider, launching OpenAI Deployment Co. (DeployCo) &mdash; a majority-owned consulting subsidiary with more than $4 billion in initial investment &mdash; and acquiring applied-AI firm Tomoro, whose ~150 engineers join the new unit. It also introduced GPT-Live, a full-duplex voice system that listens, speaks and reasons simultaneously, with live translation and web search mid-conversation. Google, meanwhile, delayed the broad release of Gemini 3.5 Pro after internal testing found it fell short on coding and long-horizon reasoning, keeping it in limited enterprise preview &mdash; a reminder that even the best-resourced labs can miss a beat while the frontier keeps moving in weeks.</p>
+    </article>
+    <div class="signal-footer">
+      <div class="signal-icon">⚡</div>
+      <div>
+        <div class="signal-title">Atlantis AI-OS Signal</div>
+        <div class="signal-text">Kimi K3 is the cleanest vindication yet of the Atlantis thesis. A frontier-class model arrived this week not as a restricted API behind a national-security wall but as open weights anyone can download &mdash; which means the scarce resource is, again, not raw capability but a stack that can absorb it. K3 slots directly into the sovereign lane alongside DeepSeek and the local models: no US or Chinese export directive reaches a model already sitting on your own disk. The June restriction era and the July release wave told the same story from opposite ends, and this week completed it &mdash; the most capable open model on a major coding board now comes out of Beijing. Atlantis routes Opus 4.8 for strategy, keeps Sonnet 5 in the evaluation lane, holds DeepSeek for heavy code, and now adds Kimi K3 to the open-weight sovereign lane for testing. The moat was never the model. It is the substrate that can run any of them &mdash; and as of this weekend, the gate to that substrate, VPS Phase 1, is finally open: the first production node is live.</div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="compute-stack">
+      <div class="stack-title">Model Landscape &middot; July 2026</div>
+      <div class="stack-item">
+        <div class="stack-dot gold"></div>
+        <div class="stack-text"><strong>Claude Opus 4.8 &mdash; PRIMARY</strong>Atlantis strategy route. 1M context, Dynamic Workflows. API: claude-opus-4-8. Kimi K3 edged the standard Opus 4.8 on Arena text and coding &mdash; watch the gap, hold the lane.</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-dot" style="background:#cc0000;"></div>
+        <div class="stack-text"><strong>Kimi K3 (Moonshot) &mdash; NEW · OPEN-WEIGHT</strong>World's largest open model at 2.8T params. #1 on Arena Frontend Code (76% win rate), ahead of Fable 5 and GPT-5.6 Sol. Add to the sovereign/open-weight lane for local evaluation &mdash; downloadable, no export gate.</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-dot purple"></div>
+        <div class="stack-text"><strong>Claude Sonnet 5 &mdash; EVAL LANE</strong>"Most agentic Sonnet yet" &mdash; near-Opus capability at lower cost, built for multi-step tool use. Mid-tier routing evaluation for cheaper agentic work.</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-dot green"></div>
+        <div class="stack-text"><strong>Claude Fable 5 &mdash; RESTORED</strong>Controls lifted June 30; redeployed worldwide. Still the top-ranked model on overall capability. Creative/scenario lane (Ozzy-Fable).</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-dot" style="background:#111;"></div>
+        <div class="stack-text"><strong>GPT-5.6 Sol / Grok 4.5 &mdash; TRACKED</strong>Sol (OpenAI flagship) tied Kimi on Arena text; Grok 4.5 (SpaceXAI &times; Cursor) ranked behind the leaders. Both tracked for comparison, neither on the Atlantis spine.</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-dot blue"></div>
+        <div class="stack-text"><strong>DeepSeek V4 Pro</strong>Atlantis primary complex-code route. No US export-control jurisdiction over the Chinese-hosted endpoint &mdash; now joined by Kimi K3 in the open-weight column.</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-dot green"></div>
+        <div class="stack-text"><strong>Local lane (Hermes + atlantis-coder)</strong>Fully sovereign. No directive &mdash; restriction or reversal &mdash; reaches a locally hosted model. The architecture argument made concrete.</div>
+      </div>
+    </div>
+    <div class="compute-stack">
+      <div class="stack-title">Tech Watch &middot; July 2026</div>
+      <div class="stack-item">
+        <div class="stack-dot gold"></div>
+        <div class="stack-text"><strong>Anthropic &mdash; Silicon &amp; S-1</strong>In talks with Samsung for a custom Claude-tuned chip; reportedly prepping an S-1 for an October IPO. ~$47B annualized, profitable in 2026.</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-dot blue"></div>
+        <div class="stack-text"><strong>TSMC &mdash; +36% YoY</strong>Q2 revenue ~$39.6B on AI-chip demand from NVIDIA, Apple and others &mdash; the foundry underneath the whole race, even on a red week for chip equities.</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-dot purple"></div>
+        <div class="stack-text"><strong>OpenAI &amp; Google &mdash; Diverging Weeks</strong>OpenAI launches DeployCo ($4B) and buys Tomoro; ships full-duplex GPT-Live. Google delays Gemini 3.5 Pro on coding/reasoning shortfalls.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:14px; background:var(--tech-accent); color:#f0ead8; border-left:4px solid var(--tech-red); padding:11px 16px; font-family:'Source Sans 3',sans-serif; font-size:12px; line-height:1.55;">
+  <strong style="color:var(--tech-red); text-transform:uppercase; letter-spacing:1.5px; font-size:10px;">Developing &middot; Watch Next Week</strong> &nbsp;&mdash;&nbsp; <strong style="color:#fff;">Washington's Countermove?</strong> A Chinese open-weight model now tops a major coding leaderboard and just wiped billions off chip stocks &mdash; and the alarm in Washington is audible. Whether the response is fresh curbs on inbound Chinese models, new chip controls, or nothing at all is undecided. Nothing has been announced. Stay tuned to see how this one plays out.
+</div>
+
+<!-- ═══ ORACLE'S CORNER ═══ -->
+
+<div class="oracle-section">
+  <div class="oracle-header">
+    <div class="oracle-title">Oracle's Corner</div>
+    <div class="oracle-subtitle">Prediction Market Intelligence &middot; Polymarket + Kalshi</div>
+    <div class="data-stamp">Compiled by Scout (AI-Edge) &middot; Data: July 17&ndash;18, 2026 &middot; World Cup and Fed odds from live Polymarket / Kalshi / CME FedWatch; geopolitical and IPO lines are Scout estimates</div>
+  </div>
+
+  <div class="oracle-grid">
+    <div>
+      <div class="forecast-card">
+        <div class="forecast-tags"><span class="forecast-tag ft-mkt">Sports</span><span class="forecast-tag ft-mkt">Polymarket</span></div>
+        <h4>Spain Wins the 2026 World Cup (vs. Argentina, July 19)</h4>
+        <div class="confidence-bar"><div class="confidence-fill" style="width:58%;"></div></div>
+        <div class="forecast-prob">58% <span>&mdash; Argentina 42% · final at MetLife Stadium</span></div>
+        <p class="forecast-note">Polymarket makes Spain the favorite at 58% to Argentina's 42% in Sunday's final at MetLife Stadium in New Jersey. Spain arrives on tactical control &mdash; Rodri in midfield, 18-year-old Lamine Yamal on the wing &mdash; after a 2&ndash;0 win over France; Argentina, the reigning champion, edged England 2&ndash;1 in Atlanta behind Messi and Mart&iacute;nez. More than $2.3M has traded on the matchup and over $4B on the winner market overall, the largest Polymarket has ever run. A tight, high-quality final that the market sees leaning Spain but far from settled.</p>
+      </div>
+      <div class="forecast-card">
+        <div class="forecast-tags"><span class="forecast-tag ft-eco">Economy</span><span class="forecast-tag ft-mkt">Kalshi / CME</span></div>
+        <h4>Fed Hikes at the July 29 FOMC Meeting</h4>
+        <div class="confidence-bar"><div class="confidence-fill" style="width:42%;"></div></div>
+        <div class="forecast-prob">~40% <span>&mdash; ~46% CME FedWatch · ~36% Kalshi</span></div>
+        <p class="forecast-note">The debate has fully inverted. Hike odds for July 29 sit near 46% on CME FedWatch and 36% on Kalshi &mdash; up from under 10% earlier this month &mdash; while a cut is priced at essentially zero. Chair Kevin Warsh's arrival flipped the number of officials projecting a 2026 hike from zero to nine in six weeks, though a softer jobs report and his guarded remarks at Sintra trimmed the odds back off their highs. Every meeting is now "live" for a hike. Watch payrolls and CPI into month-end; a hike into a chip selloff and an oil shock would be a genuine jolt.</p>
+      </div>
+    </div>
+    <div>
+      <div class="forecast-card">
+        <div class="forecast-tags"><span class="forecast-tag ft-geo">Geopolitical</span><span class="forecast-tag ft-geo">Scout Est.</span></div>
+        <h4>Strait of Hormuz Fully Open for Commercial Shipping by Aug 31, 2026</h4>
+        <div class="confidence-bar"><div class="confidence-fill" style="width:15%;"></div></div>
+        <div class="forecast-prob">~15% <span>&mdash; DOWN hard as the ceasefire becomes open war</span></div>
+        <p class="forecast-note">A month ago a revived MOU made a clean reopening look plausible at ~38%. It has since collapsed. With US strikes in a seventh night, Iran firing on Gulf allies, and only about six vessels transiting the strait in 24 hours, a durable full reopening by month-end now looks remote &mdash; it would require both a real ceasefire and an enforceable navigation agreement, neither of which is close. The Qatari channel is open but drowned out. Upside only on a sudden, verified de-escalation; downside toward single digits on any strike that hits shipping or a Gulf terminal directly.</p>
+      </div>
+      <div class="forecast-card">
+        <div class="forecast-tags"><span class="forecast-tag ft-ai">AI Markets</span><span class="forecast-tag ft-geo">Scout Est.</span></div>
+        <h4>Anthropic IPO Prices in Calendar Year 2026</h4>
+        <div class="confidence-bar"><div class="confidence-fill" style="width:72%;"></div></div>
+        <div class="forecast-prob">~72% <span>&mdash; UP on reported S-1 prep for October</span></div>
+        <p class="forecast-note">The estimate climbs as the pieces line up. Anthropic is reportedly preparing an S-1 for an IPO as early as October, backed by locked-in long-term compute deals that make its revenue unusually legible to underwriters, and it is now confirmed ahead of OpenAI on revenue at a ~$47B run-rate and profitable this year. With the June regulatory overhang gone and OpenAI's own listing reportedly slipping to 2027, Anthropic stands alone as the near-term frontier-AI IPO candidate. Residual risk is market conditions &mdash; a chip selloff and a live war are not an ideal tape to price a mega-IPO into &mdash; and the ever-present possibility of timing slippage.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="oracle-edge">
+    <br/><strong>Atlantis Edge Takeaway</strong> &mdash; Three of this week's four signals rhyme with the Atlantis thesis. The Fed market has hardened from "how many cuts" to "will they hike," keeping the cost of capital high and rewarding operators who generate cash rather than burn it. The Iran war re-priced oil and dragged the Hormuz-reopening line into the teens &mdash; geopolitical risk as a permanent line item, not a quarterly surprise. And Kimi K3 delivered the cleanest proof yet of why a multi-model, partly sovereign stack matters: the most capable open model on a major coding board now ships from Beijing, downloadable, beyond any single government's reach. Anthropic's revenue lead and IPO run validate the bet on Claude as the strategy layer, even as the field it leads gets more crowded and more open at once. The through-line is unchanged and sharper: durability comes from owning the substrate, not renting a model. And this weekend the substrate got real: after nine cycles as the single honest bottleneck, VPS Phase 1 went live &mdash; the sovereign-infrastructure gate is finally open, and the August Alpha moves from blocked to buildable.
+  </div>
+</div>
+
+<!-- ═══ ATLANTIS OPS ═══ -->
+
+<div class="atlantis-section">
+  <div class="atlantis-header">
+    <div>
+      <div class="atlantis-header-title">Atlantis ITS &middot; Operations Intelligence</div>
+      <div class="atlantis-header-subtitle">V30 Active &middot; Weekend Window &middot; July 17&ndash;19, 2026</div>
+    </div>
+  </div>
+
+  <div class="atlantis-stats-bar">
+    <div class="asb-item"><span class="asb-val">V30</span><span class="asb-label">Memory Active</span></div>
+    <div class="asb-item"><span class="asb-val">No. 13</span><span class="asb-label">Chronicle Live</span></div>
+    <div class="asb-item"><span class="asb-val">7 Games</span><span class="asb-label">Entertainment Live</span></div>
+    <div class="asb-item"><span class="asb-val">CB-009</span><span class="asb-label">Needs Review</span></div>
+    <div class="asb-item"><span class="asb-val">LIVE</span><span class="asb-label">VPS Phase 1 Online</span></div>
+  </div>
+
+  <div class="quote-box">
+    <blockquote>"We don&rsquo;t just create the future. We automate it."</blockquote>
+    <div class="quote-attrib">&mdash; AtlantisITS.ai Positioning &middot; V30 Compile &middot; July 15, 2026</div>
+  </div>
+
+  <div class="atlantis-grid">
+    <div class="atlantis-card highlight">
+      <div class="atlantis-card-label">📰 Chronicle / Phase Milestone</div>
+      <span class="status done">No. 13 Published</span>
+      <h3>Vol. I &middot; No. 13 &mdash; Thirteen Straight on the Locked Template</h3>
+      <p>The Atlantean Chronicle Vol. I No. 13 is live for the July 17&ndash;19, 2026 weekend &mdash; thirteen consecutive issues since the No. 6 template lock. This edition tracks the week the June restriction era's arc finally closed the other way: No. 12 covered Washington lifting the Fable 5 controls; No. 13 covers Beijing answering with Kimi K3, an open-weight frontier model that tops a coding board and rattles the chip trade. The Chronicle continues as a week-over-week intelligence layer on how the frontier picture bears on the Atlantis stack.</p>
+      <p>Build discipline holds: fresh WebSearch-sourced reporting across all seven sections, template untouched since No. 6. Target: publish to Vercel at <code>news.atlantisits.info</code> for the weekend audience.</p>
+    </div>
+
+    <div class="atlantis-card">
+      <div class="atlantis-card-label">🎮 Product / Entertainment</div>
+      <span class="status done">Platform Live</span>
+      <h3>Atlantis Entertainment Ships &mdash; Seven Games Live at entertainment.atlantisits.ai</h3>
+      <p>A third standalone consumer lane joined Pop Off and IceBreakrz this cycle: the Atlantis Entertainment platform went live at <code>entertainment.atlantisits.ai</code>, built end to end by Mercy-Sol. Seven table games are built and unit-tested &mdash; Klondike, Spider, Corked, Sixes Wild, Push Your Luck, Loaded and Phase Shift &mdash; with real playability and scoring bugs found and fixed along the way. Phase Shift has a full 2&ndash;6-player multiplayer architecture designed (not yet built). It is a platform in its own right, deliberately distinct from the Vineyard Nights JV, though Corked and Push Your Luck can double as venue waiting-room hooks.</p>
+    </div>
+
+    <div class="atlantis-card">
+      <div class="atlantis-card-label">🧠 Memory / Governance</div>
+      <span class="status active">V30 · CB-009 Review</span>
+      <h3>V30 Compile Lands; Commerce Strategy Reaches Ratification Gate</h3>
+      <p>V30 is the active compile &mdash; a clean cycle with full visibility into the intervening week (no blind gap). It added the Entertainment platform section, established the new FIN (Finance Policy) document category, and bumped the registry to v2.0 (structural). CB-009 &mdash; the Atlantis Commerce &amp; Payment Platform Strategy &mdash; reached v1.2 after two full Mercy&ndash;Ozzy review passes: a Georgia single-member LLC, a single Stripe/Lemon Squeezy commerce ecosystem, and full revenue-lane mapping. It sits <code>needs-review</code>, pending Shane's ratification &mdash; the next control point before the LLC checklist (HT-034) begins.</p>
+    </div>
+
+    <div class="atlantis-card">
+      <div class="atlantis-card-label">🍷 Revenue / Partnership</div>
+      <span class="status active">Signature-Ready</span>
+      <h3>Vineyard Nights &mdash; MOU v1.3 Ready to Sign; Whippoorwill Package Approved at v2.1</h3>
+      <p>The winery joint venture is signature-ready: MOU v1.3 has all five review corrections applied, and the "Murder at the Whippoorwill Club" production package reached v2.1 &mdash; victim renamed, history claims made evidence-safe, play modes and casting guidance locked. The Phase 1A AI-suspect-chat spec was corrected before implementation handoff. One open reconciliation before signing: the MOU's $149/mo figure versus CB-008's $75/$129/$249 tiers must be squared with the venue partner, plus the detective-vs-suspect player-role decision.</p>
+    </div>
+
+    <div class="atlantis-card">
+      <div class="atlantis-card-label">🛡️ Security</div>
+      <span class="status pending">Gates Open</span>
+      <h3>Nova Launch Gates Unchanged &mdash; Hardening Documented, Not Yet Executed</h3>
+      <p>Nova stays internal-only. The security plan is documented but saw no new execution this cycle: the HT-032 prompt-injection loop must be re-run as genuinely isolated calls, public and internal contexts separated into distinct instances, and an output-side guard added to the existing input check. Connector security (HT-033) remains a two-layer job &mdash; tool-description scanning plus code/dependency review &mdash; not yet run against any server. INC-006's unauthenticated LiteLLM route is still flagged as the bigger near-term risk. All of it stays a closed launch gate until executed.</p>
+    </div>
+
+    <div class="atlantis-card">
+      <div class="atlantis-card-label">🟢 Critical Path &mdash; Cleared</div>
+      <span class="status done">Phase 1 Live</span>
+      <h3>VPS Phase 1 Goes Live &mdash; The Nine-Cycle Blocker Clears and the August Alpha Is Back in Play</h3>
+      <p>After nine cycles as the single honest bottleneck, VPS Phase 1 is real: the first production cloud node &mdash; the sovereign substation the whole roadmap has waited on &mdash; was provisioned and is online as of this weekend. The two-cycle escalation is resolved, and the gate that directly threatened the August 2026 Alpha bundle is cleared. The work now shifts from &ldquo;get the go decision&rdquo; to execution: harden the box, stand up the Alpha stack (AAI-NOC &middot; Council &middot; Nova Grid &middot; Horizon Runway &middot; Repo Radar &middot; Pulse &middot; OPS), and hold the SOP-008 gates before anything faces the public internet. The bottleneck has moved from approval to deployment &mdash; exactly where it belongs.</p>
+    </div>
+  </div>
+
+  <div class="atlantis-footer-note">
+    <strong>This Weekend:</strong> Publish No. 13 to Vercel &nbsp;&middot;&nbsp; Ratify or return CB-009, then start the LLC / commerce sequence (HT-034) &nbsp;&middot;&nbsp; VPS Phase 1 is live &mdash; begin hardening before it faces the internet &nbsp;&middot;&nbsp; Sign or return Vineyard MOU v1.3 &nbsp;&nbsp;|&nbsp;&nbsp;
+    <strong>Next Week Action Queue:</strong> Stand up the Alpha stack on VPS Phase 1 behind the SOP-008 gates (AAI-NOC, Council, Nova Grid, Horizon Runway, Repo Radar, Pulse, OPS) &nbsp;&middot;&nbsp; Decide Entertainment posture (static-first vs. backend-ready) before Phase Shift multiplayer build &nbsp;&middot;&nbsp; Settle the mystery detective-vs-suspect role &nbsp;&middot;&nbsp; Re-run HT-032 as isolated calls + define Nova public/internal split and output check &nbsp;&middot;&nbsp; Run HT-033 connector layers against a live server &nbsp;&middot;&nbsp; Reconcile MOU pricing with the venue partner; plan the after-hours winery beta &nbsp;&middot;&nbsp; Evaluate Kimi K3 in the open-weight sovereign lane &nbsp;&nbsp;|&nbsp;&nbsp;
+    <strong>Watching:</strong> Iran&ndash;Hormuz war into Monday's open &nbsp;&middot;&nbsp; World Cup final (Spain v. Argentina) Sunday &nbsp;&middot;&nbsp; Washington's response to Kimi K3 and the chip selloff
+  </div>
+</div>
+
+<div class="paper-footer">
+  <span>The Atlantean Chronicle &middot; Vol. I &middot; No. 13</span>
+  <span>"Where the signal rises above the noise"</span>
+  <span><a href="https://news.atlantisits.info">news.atlantisits.info</a> &middot; Weekend Edition &mdash; July 17&ndash;19, 2026 &middot; &copy; 2026 Atlantis ITS</span>
+</div>
+
+</div><!-- .newspaper -->
+</div><!-- .newspaper-wrap -->
+
+</body>
+</html>
