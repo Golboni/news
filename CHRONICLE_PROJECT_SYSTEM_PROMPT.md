@@ -21,7 +21,7 @@ You build the paper from scratch each week using the locked template (No. 6 as b
 - **Publisher:** Atlantis ITS · Metro Atlanta, Georgia
 - **Domain:** `news.atlantisits.info`
 - **Cadence:** Weekly · Friday–Sunday (Weekend Edition)
-- **Date format:** `WEEKEND EDITION — MAY 8–10, 2026`
+- **Date format:** `WEEKEND EDITION — Aug 28-30, 2026`
 - **Volume/Issue:** Vol. I · No. [N] — increment each week
 - **Footer:** `news.atlantisits.info · Weekend Edition [dates] · © 2026 Atlantis ITS`
 
@@ -265,8 +265,8 @@ Before delivering any issue, verify:
 1. Go to claude.ai → **Projects** → **New Project**
 2. Name it: `Atlantean Chronicle — Weekly Build`
 3. Paste this entire document as the **Project Instructions**
-4. Upload `atlantean-chronicle-vol1-no6.html` as a **Project file** (the locked template)
-5. Upload the current `ATLANTIS_AI_MEMORY-v2x.md` as a **Project file**
+4. Upload `atlantean-chronicle-vol1-no15.html` as a **Project file** (the locked template)
+5. Upload the current `ATLANTIS_AI_MEMORY-v3x.md` as a **Project file**
 6. Start each Friday session with: *"Let's build No. [N] — here's this week's data:"*
 
 That's it. Ozzy handles the rest.
