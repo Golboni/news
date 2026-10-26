@@ -628,8 +628,14 @@
 .top-link:hover,.top-link:focus-visible{background:#8b0000;color:#fff;}
 @media (max-width:700px){.top-link{right:10px;bottom:10px;padding:6px 9px;font-size:10px;letter-spacing:1px;}}
 @media print{.top-link{display:none;}}
+.current-issue{position:fixed;left:16px;z-index:50;background:#1a1a1a;color:#f5f0e8;border:1px solid #c0b8a8;border-left:3px solid #0e6e4f;padding:8px 12px;font-family:'Source Sans 3',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.25);bottom:60px;}
+.current-issue:hover,.current-issue:focus-visible{background:#0e6e4f;color:#fff;}
+@media (max-width:700px){.current-issue{left:10px;bottom:44px;padding:6px 9px;font-size:10px;letter-spacing:1px;}}
+@media print{.current-issue{display:none;}}
 </style>
 <a class="prev-issue" href="atlantean-chronicle-vol1-no15.html" aria-label="Previous issue: Vol. I No. 15">&larr; Previous Issue &middot; No. 15</a>
 <a class="top-link" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" aria-label="Back to top">&uarr; Top</a>
+<a class="current-issue" href="index.html" aria-label="Go to the current issue">&#128305; Current Issue &rarr;</a>
+<script>(function(){if(/\/(index\.html)?$/.test(location.pathname)){var e=document.querySelector('.current-issue');if(e)e.style.display='none';}})();</script>
 </body>
 </html>

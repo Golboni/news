@@ -194,7 +194,7 @@ Rules:
 Style: full-width strip, dark navy background (`--tech-accent #1a1a2e`), tech-red left border (`#e94560`, 4px), Source Sans 3 ~12px, light text (`#f0ead8`). Eyebrow label in tech-red uppercase (~10px, tracked).
 
 ### Previous-Issue Link (PERMANENT — include every issue)
-Just before `</body>`, include the standing previous-issue block: a small `<style>` for `.prev-issue` (fixed bottom-left, ink background, paper text, accent-warm left border, Source Sans 3 caps, hidden in print, smaller on mobile) plus `<a class="prev-issue" href="atlantean-chronicle-vol1-no[N-1].html">&larr; Previous Issue &middot; No. [N-1]</a>`. The share-bar button points to the same file, labeled "Previous Issue". Copy the block from the prior issue and change the two numbers. The same block also carries a matching `.top-link` button (fixed bottom-right, red right border, "&uarr; Top", smooth-scrolls to the masthead). The chain ends at No. 13, the oldest issue live on the site (`archive/` is gitignored and not deployed).
+Just before `</body>`, include the standing previous-issue block: a small `<style>` for `.prev-issue` (fixed bottom-left, ink background, paper text, accent-warm left border, Source Sans 3 caps, hidden in print, smaller on mobile) plus `<a class="prev-issue" href="atlantean-chronicle-vol1-no[N-1].html">&larr; Previous Issue &middot; No. [N-1]</a>`. The share-bar button points to the same file, labeled "Previous Issue". Copy the block from the prior issue and change the two numbers. The same block also carries a matching `.top-link` button (fixed bottom-right, red right border, "&uarr; Top", smooth-scrolls to the masthead). A `.current-issue` button ("Current Issue", teal left border) sits stacked above Previous Issue, links to `index.html` (always the newest issue), and hides itself via a one-line script when viewed at `/` or `/index.html`; old issues never need re-editing. The chain ends at No. 13, the oldest issue live on the site (`archive/` is gitignored and not deployed).
 
 ### Oracle's Corner
 - Always include Polymarket + Kalshi data
@@ -257,7 +257,7 @@ Before delivering any issue, verify:
 □ Atlantis section reflects current V2x memory
 □ Footer: news.atlantisits.info · Weekend Edition [dates] · © 2026 Atlantis ITS
 □ Share links updated with new issue title
-□ Previous-issue button + share-bar link point to No. [N-1]; Top button present
+□ Previous-issue button + share-bar link point to No. [N-1]; Top + Current Issue buttons present
 □ No .co domains — all .info
 □ No personal contact info in public content
 ```
